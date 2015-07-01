@@ -6,7 +6,7 @@ kramdown:
 
 permalink: pretty
 source: docs
-baseurl: ""
+baseurl: "/style-guide"
 
 version: 0.1.0
 

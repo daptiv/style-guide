@@ -24,10 +24,18 @@ module.exports = function(grunt) {
         jekyll: {
             options: {
                 src: 'docs',
-                dest: '_site',
                 config: '_config.yml'
             },
-            dev: {}
+            dev: {
+                options: {
+                    dest: '_site/style-guide'
+                }
+            },
+            publish: {
+                options: {
+                    dest: '_site'
+                }
+            }
         },
 
         connect: {
@@ -82,11 +90,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('default', ['less', 'cssmin:css', 'jekyll']);
+    grunt.registerTask('default', ['less', 'cssmin:css', 'jekyll:dev']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
 
     // Publish to GitHub
-    grunt.registerTask('publish', ['jekyll', 'buildcontrol:pages']);
+    grunt.registerTask('publish', ['less', 'cssmin:css', 'jekyll:publish', 'buildcontrol:pages']);
 };
