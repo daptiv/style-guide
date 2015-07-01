@@ -66,7 +66,7 @@ module.exports = function(grunt) {
             },
             pages: {
                 options: {
-                    remote: 'git://github.com/daptiv/StyleGuide.git',
+                    remote: 'git@github.com:daptiv/style-guide.git',
                     branch: 'gh-pages'
                 }
             }
