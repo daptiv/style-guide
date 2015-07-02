@@ -1,0 +1,26 @@
+{
+    "developers": [
+        {
+            "name": "Bosky Atlani",
+            "value": "@boskya"
+        },
+        {
+            "name": "Chris Bobo",
+            "value": "@chrisbobo"
+        },
+        {
+            "name": "Greg Boxer",
+            "value": "@greglboxer"
+        },
+        {
+            "name": "James Trinklein",
+            "value": "@jtrinklein"
+        },
+        {
+            "name": "Jonathan Park",
+            "value": "@park9140"
+        }
+    ],
+    "testers": [ ],
+    "requirements": [ ]
+}
