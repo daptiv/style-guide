@@ -78,6 +78,35 @@ module.exports = function(grunt) {
                     branch: 'gh-pages'
                 }
             }
+        },
+
+        // Runs CSS reporting
+        parker: {
+            options: {
+                metrics: [
+                    'TotalStylesheets',
+                    'TotalStylesheetSize',
+                    'TotalRules',
+                    'TotalSelectors',
+                    'TotalIdentifiers',
+                    'TotalDeclarations',
+                    'SelectorsPerRule',
+                    'IdentifiersPerSelector',
+                    'SpecificityPerSelector',
+                    'TopSelectorSpecificity',
+                    'TopSelectorSpecificitySelector',
+                    'TotalIdSelectors',
+                    'TotalUniqueColours',
+                    'TotalImportantKeywords',
+                    'TotalMediaQueries'
+                ],
+                file: "docs/.css-stats.md",
+                title: "Css Stats",
+                colophon: true
+            },
+            src: [
+                '_css/*.css'
+            ]
         }
     });
 
@@ -87,10 +116,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-parker');
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['less', 'cssmin:css']);
+    grunt.registerTask('styles', ['less', 'cssmin:css', 'parker']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);

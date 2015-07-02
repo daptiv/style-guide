@@ -1,6 +1,7 @@
 bin/
 vendor/
 node_modules/
+bower_components/
 _css/
 _site/
 docs/style-guide.min.css

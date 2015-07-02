@@ -1,6 +1,7 @@
 ---
 layout: simple
 title: Scaffolding
+section: Guide
 ---
 
 Scaffolding refers to the global resets and dependencies that Daptiv is built upon.
