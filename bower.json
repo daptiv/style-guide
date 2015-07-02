@@ -1,20 +1,22 @@
 {
-  "name": "StyleGuide",
-  "version": "0.1.0",
-  "homepage": "https://github.com/daptiv/style-guide",
+  "name": "style-guide",
+  "homepage": "https://daptiv.github.io/style-guide",
   "authors": [
-    "Daptiv Solutions LLC"
+    "Changepoint Corporation"
   ],
-  "description": "Daptiv common styles and pattern library",
-  "main": "less/styleguide.less",
-  "license": "MIT",
+  "description": "Daptiv product common styles",
+  "main": "less/style-guide.less",
   "private": true,
   "ignore": [
     "docs/",
     ".gitignore",
     "_config.yml",
-    "Gruntfile.js"
+    "Gruntfile.js",
     "node_modules",
     "bower_components",
+    ".pullquester",
+    "Gemfile",
+    "Gemfile.lock",
+    "package.json"
   ]
 }
