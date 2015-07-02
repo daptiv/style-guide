@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+        <title>
+            {{ page.title }} &middot; Style Guide
+        </title>
+
+        <link rel="stylesheet" href="{{ site.baseurl }}/style-guide.min.css">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/img/apple-touch-icon-precomposed.png">
+        <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    </head>
+    <body>
+
+    <header>
+        <nav class="daptiv-nav">
+            <a class="daptiv-nav-tab {% if page.title == "Guide" %}selected{% endif %}" href="{{ site.baseurl }}/scaffolding">Guide</a>
+            <a href="{{ site.github.repo }}" target="_blank">GitHub</a>
+            <a href="{{ site.github.repo }}/blob/master/README.md#install" target="_blank">Install</a>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+        {{ content }}
+
+        <footer class="footer">
+            Copyright Changepoint {{ site.time | date: '%Y' }}.<br>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Currently v{{ site.version }}.</strong>
+        </footer>
+    </div>
+
+    </body>
+</html>

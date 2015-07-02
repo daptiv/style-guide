@@ -1,0 +1,14 @@
+markdown: kramdown
+highlighter: pygments
+
+kramdown:
+  auto_ids: true
+
+permalink: pretty
+source: docs
+baseurl: "/style-guide"
+
+version: 0.1.0
+
+github:
+  repo: https://github.com/daptiv/style-guide
