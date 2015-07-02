@@ -13,8 +13,11 @@
     "docs/",
     ".gitignore",
     "_config.yml",
-    "Gruntfile.js"
+    "Gruntfile.js",
     "node_modules",
     "bower_components",
+    ".pullquester",
+    "Gemfile",
+    "Gemfile.lock"
   ]
 }
