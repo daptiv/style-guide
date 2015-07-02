@@ -18,5 +18,8 @@
     "Gemfile",
     "Gemfile.lock",
     "package.json"
-  ]
+  ],
+  "devDependencies": {
+    "pygments": "~2.0.2"
+  }
 }
