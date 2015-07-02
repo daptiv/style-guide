@@ -1,12 +1,11 @@
 {
-  "name": "StyleGuide",
-  "homepage": "https://github.com/daptiv/style-guide",
+  "name": "style-guide",
+  "homepage": "https://daptiv.github.io/style-guide",
   "authors": [
-    "Daptiv Solutions LLC"
+    "Changepoint Corporation"
   ],
-  "description": "Daptiv common styles and pattern library",
-  "main": "less/styleguide.less",
-  "license": "MIT",
+  "description": "Daptiv product common styles",
+  "main": "less/style-guide.less",
   "private": true,
   "ignore": [
     "docs/",
