@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<div class="columns docs-layout">
+<div class="content-area">
+    {% if page.section == "Guide" %}
+      {% include guidemenu.html %}
+    {% endif %}
     <h1 class="page-title">
         {{ page.title }}
     </h1>

@@ -10,5 +10,8 @@ baseurl: "/style-guide"
 
 version: 0.1.0
 
+port: 8888
+host: localhost
+
 github:
   repo: https://github.com/daptiv/style-guide

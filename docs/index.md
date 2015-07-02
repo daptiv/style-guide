@@ -1,6 +1,7 @@
 ---
 layout: simple
 title: Home
+section: Home
 ---
 
 Style Guide
