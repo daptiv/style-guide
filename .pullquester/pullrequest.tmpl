@@ -1,11 +1,11 @@
 <%= config.title %>
 
 <%= config.description %>
-<% if (config.reviewers && config.reviewers.length > 0) { %>###Review<% } %>
+<% if (config.reviewers && config.reviewers.length > 0) { %>### Review<% } %>
 <% _.forEach(config.reviewers, function(reviewer) { %> - [ ] <%- reviewer %>
 <% }); %>
 
-###After Merge
+### After Merge
 
-- [ ] page is updated
+- [ ] [site](https://daptiv.github.io/style-guide) is updated
 
