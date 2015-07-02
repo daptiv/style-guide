@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             jekyll: {
                 files: {
-                    '_site/style-guide.css': 'less/style-guide.less'
+                    '_css/docs.css': 'docs/docs.less'
                 }
             }
         },
@@ -18,6 +18,10 @@ module.exports = function(grunt) {
             css: {
                 src: ['_css/style-guide.css'],
                 dest: 'docs/style-guide.min.css'
+            },
+            jekyll: {
+                src: ['_css/docs.css'],
+                dest: 'docs/docs.min.css'
             }
         },
 
@@ -53,7 +57,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             less: {
-                files: ['less/**/*.less', 'docs/docs.less'],
+                files: ['less/**/*.less'],
                 tasks: ['styles', 'jekyll:dev']
             },
             jekyll: {
@@ -120,7 +124,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['less', 'cssmin:css', 'parker']);
+    grunt.registerTask('styles', ['less', 'cssmin', 'parker']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
