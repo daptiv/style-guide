@@ -58,7 +58,7 @@ module.exports = function(grunt) {
             },
             jekyll: {
                 files: ['docs/**/*.md', 'docs/**/*.html'],
-                tasks: ['jekyll'],
+                tasks: ['jekyll:dev'],
                 options: {
                     spawn: false
                 }
