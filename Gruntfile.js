@@ -54,7 +54,7 @@ module.exports = function(grunt) {
             },
             less: {
                 files: ['less/**/*.less', 'docs/docs.less'],
-                tasks: ['less']
+                tasks: ['styles', 'jekyll:dev']
             },
             jekyll: {
                 files: ['docs/**/*.md', 'docs/**/*.html'],
@@ -90,11 +90,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('default', ['less', 'cssmin:css', 'jekyll:dev']);
+    grunt.registerTask('styles', ['less', 'cssmin:css']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
 
     // Publish to GitHub
-    grunt.registerTask('publish', ['less', 'cssmin:css', 'jekyll:publish', 'buildcontrol:pages']);
+    grunt.registerTask('publish', ['styles', 'jekyll:publish', 'buildcontrol:pages']);
+
+    grunt.registerTask('default', ['styles', 'jekyll:dev']);
 };
