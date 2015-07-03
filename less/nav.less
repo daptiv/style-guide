@@ -1,10 +1,13 @@
+@import "colors.less";
+@import "typography.less";
 
-@daptiv-nav-bg: #027DD1;
-@daptiv-nav-tab-selected-bg: #00B4FF;
+@daptiv-nav-bg: @color-dark-blue;
+@daptiv-nav-tab-selected-bg: @color-light-blue;
 @daptiv-nav-height: 38px;
+@daptiv-nav-font-family: @font-family-base;
 @daptiv-nav-font-size: 13px;
-@daptiv-nav-font-color: #FFF;
-@daptiv-nav-font-color-hover: #9ADBF8;
+@daptiv-nav-font-color: @color-text-white;
+@daptiv-nav-font-color-hover: @color-text-light-blue;
 @daptiv-nav-tab-h-pad: 14px;
 
 .daptiv-nav {
@@ -12,13 +15,14 @@
     height: @daptiv-nav-height;
     line-height: @daptiv-nav-height;
     font-size: @daptiv-nav-font-size;
-    font-family: Arial;
+    font-family: @daptiv-nav-font-family;
 
     .daptiv-nav-tab {
-        padding: 0 @daptiv-nav-tab-h-pad;
         display: inline-block;
+        padding: 0 @daptiv-nav-tab-h-pad;
         color: @daptiv-nav-font-color;
         text-decoration: none;
+
         &:hover {
             color: @daptiv-nav-font-color-hover;
         }
