@@ -109,7 +109,7 @@ module.exports = function(grunt) {
                 colophon: true
             },
             src: [
-                '_css/*.css'
+                '_css/style-guide.css'
             ]
         }
     });
