@@ -1,12 +1,16 @@
 {
   "name": "daptiv-style-guide",
-  "version": "0.1.3",
+  "version": "0.9.3",
   "description": "Common styles and pattern library for Daptiv",
   "author": "Changepoint",
   "homepage": "https://daptiv.github.com/style-guide",
   "repository": {
     "type": "git",
     "url": "git://github.com/daptiv/style-guide.git"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "update-version": "node ./util/update-version.js"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
