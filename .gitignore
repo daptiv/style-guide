@@ -6,3 +6,4 @@ _css/
 _site/
 docs/style-guide.min.css
 docs/docs.min.css
+Gemfile.lock
