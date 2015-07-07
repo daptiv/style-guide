@@ -16,15 +16,6 @@ function updatePackageVersion(version) {
     fs.writeFileSync(file, JSON.stringify(pkg, null, indentDepth));
 }
 
-function updateSiteVersion(version) {
-    var file = path.resolve(repoRoot, '_config.yml');
-    var config = fs.readFileSync(file, encoding);
-
-    config = config.replace(/version: .*/, 'version: ' + version);
-
-    fs.writeFileSync(file, config);
-}
-
 var version = null;
 
 var args = [];
@@ -39,6 +30,4 @@ if (!parsed.version) {
 else {
     console.log('version: ' + parsed.version);
     updatePackageVersion(parsed.version);
-    updateSiteVersion(parsed.version);
 }
-
