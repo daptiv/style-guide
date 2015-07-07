@@ -6,4 +6,5 @@ _css/
 _site/
 docs/style-guide.min.css
 docs/docs.min.css
+.sass-cache/
 Gemfile.lock

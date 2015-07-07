@@ -1,0 +1,20 @@
+//== Side Menu
+//
+$side-menu-top-margin: 15px;
+$side-menu-item-vertical-padding: 8px;
+$side-menu-item-horizontal-padding: 10px;
+
+.daptiv-side-menu {
+    margin-top: $side-menu-top-margin;
+}
+
+.daptiv-side-menu-item {
+    background-color: $color-medium-gray;
+    color: $color-black;
+    display:block;
+    padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
+
+    &:hover {
+        background-color: $color-light-light-blue;
+    }
+}

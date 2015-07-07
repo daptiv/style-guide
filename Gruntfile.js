@@ -1,15 +1,19 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        less: {
+        sass: {
+            options: {
+                precision: 6,
+                sourceComments: false,
+            },
             dist: {
                 files: {
-                    '_css/style-guide.css': 'less/style-guide.less'
+                    '_css/style-guide.css': 'styles/style-guide.scss'
                 }
             },
             jekyll: {
                 files: {
-                    '_css/docs.css': 'docs/docs.less'
+                    '_css/docs.css': 'docs/docs.scss'
                 }
             }
         },
@@ -56,8 +60,8 @@ module.exports = function(grunt) {
             options: {
                 livereload: true
             },
-            less: {
-                files: ['less/**/*.less'],
+            sass: {
+                files: ['styles/**/*.scss'],
                 tasks: ['styles', 'jekyll:dev']
             },
             jekyll: {
@@ -117,14 +121,14 @@ module.exports = function(grunt) {
     // Load dependencies
     grunt.loadNpmTasks('grunt-build-control');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-parker');
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['less', 'cssmin']);
+    grunt.registerTask('styles', ['sass', 'cssmin']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
