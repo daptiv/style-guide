@@ -6,30 +6,31 @@ $swatch-width-height: 90px;
 $swatch-label-height: 30px;
 
 .swatch-with-label {
-    display:inline-block;
-    width: $swatch-width-height;
+    display: inline-block;
     height: $swatch-width-height + $swatch-label-height + 2px;
-    vertical-align: top;
     margin: 4px;
+    vertical-align: top;
+    width: $swatch-width-height;
 
     label{
-        background-color:white;
-        width:$swatch-width-height;
-        display:block;
+        background-color: white;
+        display: block;
         height: $swatch-label-height;
         font-size: 1.2em;
+        font-weight: bold;
         margin: 4px;
         text-align: center;
-        font-weight: bold;
+        width: $swatch-width-height;
     }
+
     .swatch {
         display:block;
-        width: $swatch-width-height;
-        height: $swatch-width-height;
         border-radius: 0.25rem;
-        padding:$swatch-padding ;
-        vertical-align:top;
         box-shadow: 2px 2px 2px $color-medium-gray;
+        height: $swatch-width-height;
+        padding: $swatch-padding;
+        vertical-align: top;
+        width: $swatch-width-height;
     }
 }
 
