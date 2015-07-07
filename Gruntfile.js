@@ -134,10 +134,13 @@ module.exports = function(grunt) {
     grunt.registerTask('serve',['default', 'connect', 'watch']);
 
     grunt.registerTask('generate-config', 'generates jekyll configuration file', function() {
-        var pkgVersion = grunt.config.get('pkg.version');
-        grunt.file.copy('./config.yml', './_config.yml', function (file) {
-            return grunt.template.process(file, { data: { version: pkgVersion } });
-        });
+        var pkg = grunt.config.get('pkg');
+        grunt.file.copy('./config.yml', './_config.yml', { process: function (file) {
+            var options = {
+                data: pkg
+            };
+            return grunt.template.process(file, options);
+        }});
     });
     // Publish to GitHub
     grunt.registerTask('publish', ['styles', 'generate-config', 'jekyll:publish', 'buildcontrol:pages']);
