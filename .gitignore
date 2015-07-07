@@ -4,6 +4,7 @@ node_modules/
 bower_components/
 _css/
 _site/
+_config.yml
 docs/style-guide.min.css
 docs/docs.min.css
 .sass-cache/

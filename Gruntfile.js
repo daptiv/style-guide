@@ -133,8 +133,14 @@ module.exports = function(grunt) {
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
 
+    grunt.registerTask('generate-config', 'generates jekyll configuration file', function() {
+        var pkgVersion = grunt.config.get('pkg.version');
+        grunt.file.copy('./config.yml', './_config.yml', function (file) {
+            return grunt.template.process(file, { data: { version: pkgVersion } });
+        });
+    });
     // Publish to GitHub
-    grunt.registerTask('publish', ['styles', 'jekyll:publish', 'buildcontrol:pages']);
+    grunt.registerTask('publish', ['styles', 'generate-config', 'jekyll:publish', 'buildcontrol:pages']);
 
-    grunt.registerTask('default', ['styles', 'jekyll:dev']);
+    grunt.registerTask('default', ['styles', 'generate-config', 'jekyll:dev']);
 };
