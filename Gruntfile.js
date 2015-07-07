@@ -128,7 +128,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['sass', 'cssmin', 'parker']);
+    grunt.registerTask('styles', ['sass', 'cssmin']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
