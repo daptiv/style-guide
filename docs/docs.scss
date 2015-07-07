@@ -1,22 +1,108 @@
-@import "../styles/style-guide.scss";
+@import "../styles/style-guide";
 @import "../bower_components/pygments/css/default.css";
 
-.swatch {
-    display:inline-block;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 0.25rem;
-    border-color: black;
+$swatch-padding: 5px;
+$swatch-width-height: 90px;
+$swatch-label-height: 30px;
+$swatch-margin: 4px;
+
+.swatch-with-label {
+    display: inline-block;
+    height: $swatch-width-height + $swatch-label-height + 2px;
+    margin: $swatch-margin;
+    vertical-align: top;
+    width: $swatch-width-height;
+
+    label {
+        background-color: $color-white;
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        height: $swatch-label-height;
+        margin: $swatch-margin;
+        text-align: center;
+        width: $swatch-width-height;
+    }
+
+    .swatch {
+        border-radius: 0.25rem;
+        box-shadow: 2px 2px 2px $color-medium-gray;
+        display: block;
+        height: $swatch-width-height;
+        padding: $swatch-padding;
+        vertical-align: top;
+        width: $swatch-width-height;
+    }
 }
 
 .swatch-dark-blue {
-    background-color: $color-dark-blue
+    background-color: $color-dark-blue;
+};
+
+.swatch-medium-dark-blue {
+    background-color: $color-medium-dark-blue;
+};
+
+.swatch-medium-blue {
+    background-color: $color-medium-blue;
+};
+
+.swatch-medium-light-blue {
+    background-color: $color-medium-light-blue;
 };
 
 .swatch-light-blue {
-    background-color: $color-light-blue
+    background-color: $color-light-blue;
 };
 
-.swatch-text-light-blue {
-    background-color: $color-text-light-blue;
+.swatch-text-medium-blue {
+    background-color: $color-text-medium-blue;
+}
+
+.swatch-text-medium-dark-blue {
+    background-color: $color-text-medium-dark-blue;
+}
+
+.swatch-text-black {
+    background-color: $color-text-black;
+}
+
+.swatch-text-white {
+    background-color: $color-text-white;
+}
+
+.swatch-black {
+    background-color: $color-black;
+}
+
+.swatch-dark-dark-gray {
+    background-color: $color-dark-dark-gray;
+}
+
+.swatch-dark-gray {
+    background-color: $color-dark-gray;
+}
+
+.swatch-medium-dark-gray {
+    background-color: $color-medium-dark-gray;
+}
+
+.swatch-medium-gray {
+    background-color: $color-medium-gray;
+}
+
+.swatch-medium-light-gray {
+    background-color: $color-medium-light-gray;
+}
+
+.swatch-light-medium-gray {
+    background-color: $color-light-medium-gray;
+}
+
+.swatch-light-gray {
+    background-color: $color-light-gray;
+}
+
+.swatch-white {
+    background-color: $color-white;
 }

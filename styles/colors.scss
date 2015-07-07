@@ -3,15 +3,25 @@
 //## Primary colors, gray colors, typography colors
 
 //Primary Colors
-$color-dark-blue: #027DD1;
-$color-light-blue: #00B4FF;
-$color-light-light-blue: #E9F6FD;
-
-//Typography colors
-$color-text-white: #FFFFFF;
-$color-text-light-blue: #9AD8F8;
-$color-text-medium-blue: #00B4FF;
+$color-dark-blue: #027dd1;
+$color-medium-dark-blue: #00b4ff;
+$color-medium-blue: #9adbf8;
+$color-medium-light-blue: #ccebfb;
+$color-light-blue: #e9f6fd;
 
 //Black and grayscale colors
-$color-black: #333333;
-$color-medium-gray: #F2F2F2;
+$color-black: #333;
+$color-dark-dark-gray: #666;
+$color-dark-gray: #999;
+$color-medium-dark-gray: #b4b4b4;
+$color-medium-gray: #ccc;
+$color-medium-light-gray: #ddd;
+$color-light-medium-gray: #efefef;
+$color-light-gray: #f5f5f5;
+$color-white: #fff;
+
+//Typography colors
+$color-text-white: $color-white;
+$color-text-medium-blue: $color-medium-blue;
+$color-text-medium-dark-blue: $color-medium-dark-blue;
+$color-text-black: $color-black;
