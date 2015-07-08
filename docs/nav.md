@@ -15,6 +15,11 @@ These are the different types of navigation components.
 
 Navigation for switching views. Results in a collection of left aligned, horizontal
 
+<nav class="daptiv-nav">
+    <a class="daptiv-nav-tab selected" href="#">Home</a>
+    <a class="daptiv-nav-tab" href="#">About</a>
+    <a class="daptiv-nav-tab" href="#">Contact</a>
+</nav>
 {% highlight html %}
 <nav class="daptiv-nav">
     <a class="daptiv-nav-tab selected" href="#">Home</a>
