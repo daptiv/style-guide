@@ -22,6 +22,7 @@ $daptiv-nav-tab-h-pad: 14px;
         padding: 0 $daptiv-nav-tab-h-pad;
         color: $daptiv-nav-font-color;
         text-decoration: none;
+        cursor:default;
 
         &:not(.selected):hover {
             color: $daptiv-nav-font-color-hover;
