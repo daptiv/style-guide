@@ -36,10 +36,6 @@ section: Guide
     <label>Dark Dark Gray</label>
 </div>
 <div class="swatch-with-label">
-    <div class="swatch swatch-dark-dark-gray"></div>
-    <label>Dark Dark Gray</label>
- </div>
-<div class="swatch-with-label">
     <div class="swatch swatch-dark-gray"></div>
     <label>Dark Gray</label>
 </div>
