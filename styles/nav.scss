@@ -1,3 +1,4 @@
+@import "font-awesome/scss/font-awesome.scss";
 @import "colors.scss";
 @import "typography.scss";
 
@@ -5,10 +6,13 @@ $daptiv-nav-bg: $color-dark-blue;
 $daptiv-nav-tab-selected-bg: $color-medium-dark-blue;
 $daptiv-nav-height: 38px;
 $daptiv-nav-font-family: $font-family-base;
-$daptiv-nav-font-size: 13px;
+$daptiv-nav-font-size: 14px;
 $daptiv-nav-font-color: $color-text-white;
 $daptiv-nav-font-color-hover: $color-text-medium-blue;
 $daptiv-nav-tab-h-pad: 14px;
+$whitespace: 8px;
+$half-whitespace: $whitespace / 2;
+$icon-size-small: 16px;
 
 .daptiv-nav {
     background: $daptiv-nav-bg;
@@ -19,17 +23,32 @@ $daptiv-nav-tab-h-pad: 14px;
     width:100%;
 
     .daptiv-nav-tab {
+        color: $daptiv-nav-font-color;
+        cursor:default;
         display: inline-block;
         padding: 0 $daptiv-nav-tab-h-pad;
-        color: $daptiv-nav-font-color;
         text-decoration: none;
-        cursor:default;
+        & > * {
+            vertical-align: middle;
+        }
 
         &:not(.selected):hover {
             color: $daptiv-nav-font-color-hover;
         }
         &.selected {
             background: $daptiv-nav-tab-selected-bg;
+        }
+    }
+
+    .daptiv-nav-menu-tab {
+        @extend .daptiv-nav-tab;
+
+        &::after {
+            @extend .fa;
+
+            content: $fa-var-caret-down;
+            font-size: $icon-size-small;
+            margin-left: $half-whitespace;
         }
     }
 }

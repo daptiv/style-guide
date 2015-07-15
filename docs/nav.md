@@ -27,3 +27,19 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-nav-tab" href="#">Contact</a>
 </nav>
 {% endhighlight %}
+
+## Navigation Menu-Tab
+
+<nav class="daptiv-nav">
+    <a class="daptiv-nav-tab selected" href="#">Home</a>
+    <a class="daptiv-nav-tab" href="#">About</a>
+    <a class="daptiv-nav-menu-tab" href="#">Menu</a>
+</nav>
+
+{% highlight html %}
+<nav class="daptiv-nav">
+    <a class="daptiv-nav-tab selected" href="#">Home</a>
+    <a class="daptiv-nav-tab" href="#">About</a>
+    <a class="daptiv-nav-menu-tab" href="#">Menu</a>
+</nav>
+{% endhighlight %}
