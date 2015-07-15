@@ -1,20 +1,39 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        sass: {
+
+        buildcontrol: {
             options: {
-                precision: 6,
-                sourceComments: false,
+                dir: '_site',
+                commit: true,
+                push: true,
+                message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
             },
-            dist: {
-                files: {
-                    '_css/style-guide.css': 'styles/style-guide.scss'
+            pages: {
+                options: {
+                    remote: 'git@github.com:daptiv/style-guide.git',
+                    branch: 'gh-pages'
                 }
-            },
-            jekyll: {
-                files: {
-                    '_css/docs.css': 'docs/docs.scss'
+            }
+        },
+
+        connect: {
+            server: {
+                options: {
+                    livereload: true,
+                    port: 8888,
+                    base: './_site'
                 }
+            }
+        },
+
+        copy: {
+            fonts: {
+                expand: true,
+                src: 'bower_components/font-awesome/fonts/*',
+                dest: 'docs/fonts/',
+                flatten: true,
+                filter: 'isFile'
             }
         },
 
@@ -46,48 +65,6 @@ module.exports = function(grunt) {
             }
         },
 
-        connect: {
-            server: {
-                options: {
-                    livereload: true,
-                    port: 8888,
-                    base: './_site'
-                }
-            }
-        },
-
-        watch: {
-            options: {
-                livereload: true
-            },
-            sass: {
-                files: ['styles/**/*.scss'],
-                tasks: ['styles', 'jekyll:dev']
-            },
-            jekyll: {
-                files: ['docs/**/*.md', 'docs/**/*.html', 'docs/**/*.scss'],
-                tasks: ['styles', 'jekyll:dev'],
-                options: {
-                    spawn: false
-                }
-            }
-        },
-
-        buildcontrol: {
-            options: {
-                dir: '_site',
-                commit: true,
-                push: true,
-                message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-            },
-            pages: {
-                options: {
-                    remote: 'git@github.com:daptiv/style-guide.git',
-                    branch: 'gh-pages'
-                }
-            }
-        },
-
         // Runs CSS reporting
         parker: {
             options: {
@@ -115,6 +92,40 @@ module.exports = function(grunt) {
             src: [
                 '_css/style-guide.css'
             ]
+        },
+
+        sass: {
+            options: {
+                precision: 6,
+                sourceComments: false,
+            },
+            dist: {
+                files: {
+                    '_css/style-guide.css': 'styles/style-guide.scss'
+                }
+            },
+            jekyll: {
+                files: {
+                    '_css/docs.css': 'docs/docs.scss'
+                }
+            }
+        },
+
+        watch: {
+            options: {
+                livereload: true
+            },
+            sass: {
+                files: ['styles/**/*.scss'],
+                tasks: ['styles', 'jekyll:dev']
+            },
+            jekyll: {
+                files: ['docs/**/*.md', 'docs/**/*.html', 'docs/**/*.scss'],
+                tasks: ['styles', 'jekyll:dev'],
+                options: {
+                    spawn: false
+                }
+            }
         }
     });
 
@@ -124,11 +135,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-parker');
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['sass', 'cssmin']);
+    grunt.registerTask('styles', ['sass', 'cssmin', 'copy:fonts']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
