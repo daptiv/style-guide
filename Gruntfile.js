@@ -98,6 +98,7 @@ module.exports = function(grunt) {
             options: {
                 precision: 6,
                 sourceComments: false,
+                loadPath: ['./styles/', './bower_components/']
             },
             dist: {
                 files: {
