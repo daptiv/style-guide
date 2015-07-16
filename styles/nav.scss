@@ -1,30 +1,31 @@
 @import "font-awesome/scss/font-awesome.scss";
 @import "colors.scss";
 @import "typography.scss";
+@import "variables.scss";
 
 $daptiv-nav-bg: $color-dark-blue;
 $daptiv-nav-tab-selected-bg: $color-medium-dark-blue;
 $daptiv-nav-height: 38px;
-$daptiv-nav-font-family: $font-family-base;
 $daptiv-nav-font-size: 14px;
 $daptiv-nav-font-color: $color-text-white;
 $daptiv-nav-font-color-hover: $color-text-medium-blue;
 $daptiv-nav-tab-h-pad: 14px;
-$whitespace: 8px;
-$half-whitespace: $whitespace / 2;
-$icon-size-small: 16px;
+
+$daptiv-nav-menuitem-height: 28px;
+$daptiv-nav-menuitem-min-width: 150px;
+$daptiv-nav-menuitem-max-width: 300px;
 
 .daptiv-nav {
     background: $daptiv-nav-bg;
     height: $daptiv-nav-height;
     line-height: $daptiv-nav-height;
     font-size: $daptiv-nav-font-size;
-    font-family: $daptiv-nav-font-family;
-    width:100%;
+    font-family: $font-family-base;
+    width: 100%;
 
     .daptiv-nav-tab {
         color: $daptiv-nav-font-color;
-        cursor:default;
+        cursor: default;
         display: inline-block;
         padding: 0 $daptiv-nav-tab-h-pad;
         text-decoration: none;
@@ -48,7 +49,36 @@ $icon-size-small: 16px;
 
             content: $fa-var-caret-down;
             font-size: $icon-size-small;
-            margin-left: $half-whitespace;
+            margin-left: $half-whitespace-unit;
+        }
+    }
+}
+
+.daptiv-nav-menu-dropdown {
+    background: $color-medium-light-gray;
+    display: inline-block;
+    line-height: $daptiv-nav-menuitem-height;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+
+    .daptiv-nav-menuitem {
+        background: $color-light-medium-gray;
+        color: $color-black;
+        cursor: default;
+        display: block;
+        margin: $border-width-base;
+        max-width: $daptiv-nav-menuitem-max-width;
+        min-width: $daptiv-nav-menuitem-min-width;
+        text-overflow: ellipsis;
+        padding-left: $standard-whitespace-unit;
+        padding-right: $standard-whitespace-unit;
+        text-decoration: none;
+
+        &:not(.selected):hover {
+            background: $color-light-blue;
+        }
+        &.selected {
+            color: $color-medium-dark-blue;
         }
     }
 }
