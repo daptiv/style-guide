@@ -61,8 +61,7 @@ $daptiv-nav-menuitem-max-width: 300px;
     font-size: $font-size-base;
     font-family: $font-family-base;
 
-    .daptiv-nav-menuitem {
-        background: $color-light-medium-gray;
+    .daptiv-nav-menuitem-base {
         color: $color-black;
         cursor: default;
         display: block;
@@ -77,6 +76,18 @@ $daptiv-nav-menuitem-max-width: 300px;
         &:not(.selected):hover {
             background: $color-light-blue;
         }
+        &.selected {
+            color: $color-medium-dark-blue;
+        }
+    }
+    .daptiv-nav-menuitem {
+        @extend .daptiv-nav-menuitem-base;
+        background: $color-white;
+    }
+    .daptiv-nav-menuitem-alternate {
+        @extend .daptiv-nav-menuitem-base;
+        background: $color-light-medium-gray;
+
         &.selected {
             color: $color-medium-dark-blue;
         }
