@@ -15,6 +15,6 @@ We use [hound](https://houndci.com) to run linting on our scss files.
 
 #Deploy
 
-Run 'grunt serve' to deploy changes to the local web server. (This also adds a 'watch' so that subsequent changes are deployed automatically.)
-Go to: //localhost:8888
-Click on 'style-guide'
+* Run 'grunt serve' to deploy changes to the local web server. (This also adds a 'watch' so that subsequent changes are deployed automatically.)
+* Go to: //localhost:8888
+* Click on 'style-guide'
