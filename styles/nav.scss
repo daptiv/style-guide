@@ -75,6 +75,7 @@ $daptiv-nav-menuitem-max-width: 300px;
 
         &:not(.selected):hover {
             background: $color-light-blue;
+            color: $color-black;
         }
         &.selected {
             color: $color-medium-dark-blue;
@@ -83,12 +84,18 @@ $daptiv-nav-menuitem-max-width: 300px;
     .daptiv-nav-menuitem {
         @extend .daptiv-nav-menuitem-base;
         background: $color-white;
+
+        &.selected {
+            background: $color-white;
+            color: $color-medium-dark-blue;
+        }
     }
     .daptiv-nav-menuitem-alternate {
         @extend .daptiv-nav-menuitem-base;
         background: $color-light-medium-gray;
 
         &.selected {
+            background: $color-light-medium-gray;
             color: $color-medium-dark-blue;
         }
     }
