@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: $font-family-base;
     font-size: $font-size-base;
     color: $color-black;
 }
 
-a {
-    text-decoration: none;
+form {
+  margin: 0;
 }
