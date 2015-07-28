@@ -10,10 +10,13 @@ a {
 }
 
 body {
+    min-height: 100%;
     font-family: $font-family-base;
     font-size: $font-size-base;
     color: $color-black;
-    margin: 0;
+    margin:0;
+	padding: 0;
+	border: 0;
 }
 
 form {
@@ -21,5 +24,5 @@ form {
 }
 
 html {
-  height: 99.5%;
+  height: 100%;
 }
