@@ -47,3 +47,21 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 </div>
 
 {% endhighlight %}
+
+## Alternate Navigation Menu-Tab Dropdown
+
+<div class="daptiv-nav-menu-dropdown">
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 1</a>
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 2</a>
+    <a class="daptiv-nav-menuitem-alternate selected" href="#">Selected Item 3</a>
+</div>
+
+{% highlight html %}
+
+<div class="daptiv-nav-menu-dropdown">
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 1</a>
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 2</a>
+    <a class="daptiv-nav-menuitem-alternate selected" href="#">Selected Item 3</a>
+</div>
+
+{% endhighlight %}

@@ -61,24 +61,40 @@ $daptiv-nav-menuitem-max-width: 300px;
     font-size: $font-size-base;
     font-family: $font-family-base;
 
-    .daptiv-nav-menuitem {
-        background: $color-light-medium-gray;
+    .daptiv-nav-menuitem-base {
         color: $color-black;
         cursor: default;
         display: block;
         margin: $border-width-base;
         max-width: $daptiv-nav-menuitem-max-width;
         min-width: $daptiv-nav-menuitem-min-width;
-        text-overflow: ellipsis;
         padding-left: $standard-whitespace-unit;
         padding-right: $standard-whitespace-unit;
         text-decoration: none;
+        text-overflow: ellipsis;
 
         &:not(.selected):hover {
             background: $color-light-blue;
+            color: $color-black;
         }
         &.selected {
             color: $color-medium-dark-blue;
+        }
+    }
+    .daptiv-nav-menuitem {
+        @extend .daptiv-nav-menuitem-base;
+        background: $color-white;
+
+        &.selected {
+            background: $color-white;
+        }
+    }
+    .daptiv-nav-menuitem-alternate {
+        @extend .daptiv-nav-menuitem-base;
+        background: $color-light-medium-gray;
+
+        &.selected {
+            background: $color-light-medium-gray;
         }
     }
 }
