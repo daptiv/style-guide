@@ -5,12 +5,24 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
+    min-height: 100%;
     font-family: $font-family-base;
     font-size: $font-size-base;
     color: $color-black;
+    margin:0;
+    padding: 0;
+    border: 0;
 }
 
-a {
-    text-decoration: none;
+form {
+  margin: 0;
+}
+
+html {
+  height: 100%;
 }

@@ -13,38 +13,24 @@ These are the different types of navigation components.
 
 ## Tab Navigation
 
-Navigation for switching views. Results in a collection of left aligned, horizontal
+Navigation for switching views. Results in a collection of left aligned, horizontal tabs. The example below shows a selected, regular and menu tab; the later causes display of the [Tab Navigation Menu Dropdown](#tab-navigation-menu-dropdown).
 
 <nav class="daptiv-nav">
     <a class="daptiv-nav-tab selected" href="#">Home</a>
     <a class="daptiv-nav-tab" href="#">About</a>
     <a class="daptiv-nav-tab" href="#">Contact</a>
+    <a class="daptiv-nav-menu-tab" href="#">Menu</a>
 </nav>
 {% highlight html %}
 <nav class="daptiv-nav">
     <a class="daptiv-nav-tab selected" href="#">Home</a>
     <a class="daptiv-nav-tab" href="#">About</a>
     <a class="daptiv-nav-tab" href="#">Contact</a>
-</nav>
-{% endhighlight %}
-
-## Navigation Menu-Tab
-
-<nav class="daptiv-nav">
-    <a class="daptiv-nav-tab selected" href="#">Home</a>
-    <a class="daptiv-nav-tab" href="#">About</a>
-    <a class="daptiv-nav-menu-tab" href="#">Menu</a>
-</nav>
-
-{% highlight html %}
-<nav class="daptiv-nav">
-    <a class="daptiv-nav-tab selected" href="#">Home</a>
-    <a class="daptiv-nav-tab" href="#">About</a>
     <a class="daptiv-nav-menu-tab" href="#">Menu</a>
 </nav>
 {% endhighlight %}
 
-## Navigation Menu-Tab Dropdown
+## Tab Navigation Menu Dropdown
 
 <div class="daptiv-nav-menu-dropdown">
     <a class="daptiv-nav-menuitem" href="#">Item 1</a>
@@ -62,38 +48,20 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% endhighlight %}
 
-## Sub-Navigation Tab
+## Alternate Tab-Navigation Menu Dropdown
 
-<div class="daptiv-subnav">
-    <a class="daptiv-subnav-tab selected" href="#">Item 1</a>
-    <a class="daptiv-subnav-tab" href="#">Item 2</a>
-    <a class="daptiv-subnav-menu-tab" href="#">Selected Item 3</a>
+<div class="daptiv-nav-menu-dropdown">
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 1</a>
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 2</a>
+    <a class="daptiv-nav-menuitem-alternate selected" href="#">Selected Item 3</a>
 </div>
 
 {% highlight html %}
 
-<div class="daptiv-subnav">
-    <a class="daptiv-subnav-tab selected" href="#">Item 1</a>
-    <a class="daptiv-subnav-tab" href="#">Item 2</a>
-    <a class="daptiv-subnav-menu-tab" href="#">Selected Item 3</a>
-</div>
-
-{% endhighlight %}
-
-## Sub-Navigation Tab Dropdown
-
-<div class="daptiv-subnav-menu-dropdown">
-    <a class="daptiv-subnav-menuitem" href="#">Item 1</a>
-    <a class="daptiv-subnav-menuitem" href="#">Item 2</a>
-    <a class="daptiv-subnav-menuitem selected" href="#">Selected Item 3</a>
-</div>
-
-{% highlight html %}
-
-<div class="daptiv-subnav-menu-dropdown">
-    <a class="daptiv-subnav-menuitem" href="#">Item 1</a>
-    <a class="daptiv-subnav-menuitem" href="#">Item 2</a>
-    <a class="daptiv-subnav-menuitem selected" href="#">Selected Item 3</a>
+<div class="daptiv-nav-menu-dropdown">
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 1</a>
+    <a class="daptiv-nav-menuitem-alternate" href="#">Item 2</a>
+    <a class="daptiv-nav-menuitem-alternate selected" href="#">Selected Item 3</a>
 </div>
 
 {% endhighlight %}
