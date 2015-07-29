@@ -48,7 +48,7 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% endhighlight %}
 
-## Alternate Navigation Menu-Tab Dropdown
+## Alternate Tab-Navigation Menu Dropdown
 
 <div class="daptiv-nav-menu-dropdown">
     <a class="daptiv-nav-menuitem-alternate" href="#">Item 1</a>
@@ -65,3 +65,36 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 </div>
 
 {% endhighlight %}
+
+## Tab Sub-Navigation
+
+<nav class="daptiv-subnav">
+    <a class="daptiv-subnav-tab selected" href="#">Home</a>
+    <a class="daptiv-subnav-tab" href="#">About</a>
+    <a class="daptiv-subnav-tab" href="#">Contact</a>
+    <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
+</nav>
+{% highlight html %}
+<nav class="daptiv-subnav">
+    <a class="daptiv-subnav-tab selected" href="#">Home</a>
+    <a class="daptiv-subnav-tab" href="#">About</a>
+    <a class="daptiv-subnav-tab" href="#">Contact</a>
+    <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
+</nav>
+{% endhighlight %}
+
+## Tab Sub-Navigation Menu Dropdown
+
+<div class="daptiv-subnav-menu-dropdown">
+    <a class="daptiv-subnav-menuitem" href="#">Item 1</a>
+    <a class="daptiv-subnav-menuitem" href="#">Item 2</a>
+    <a class="daptiv-subnav-menuitem selected" href="#">Selected Item 3</a>
+</div>
+{% highlight html %}
+<div class="daptiv-subnav-menu-dropdown">
+    <a class="daptiv-subnav-menuitem" href="#">Item 1</a>
+    <a class="daptiv-subnav-menuitem" href="#">Item 2</a>
+    <a class="daptiv-subnav-menuitem selected" href="#">Selected Item 3</a>
+</div>
+{% endhighlight %}
+<br />

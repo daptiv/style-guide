@@ -15,6 +15,17 @@ $daptiv-nav-menuitem-height: 28px;
 $daptiv-nav-menuitem-min-width: 150px;
 $daptiv-nav-menuitem-max-width: 300px;
 
+$daptiv-subnav-bg: $color-white;
+$daptiv-subnav-tab-selected: $color-medium-dark-blue;
+$daptiv-subnav-height: $daptiv-nav-height + 2px;
+$daptiv-subnav-font-size: 12px;
+$daptiv-subnav-font-color: $color-dark-blue;
+$daptiv-subnav-font-color-hover: $color-text-medium-blue;
+$daptiv-subnav-tab-h-pad: 14px;
+
+/*
+    Main Navigation tab
+*/
 .daptiv-nav {
     background: $daptiv-nav-bg;
     height: $daptiv-nav-height;
@@ -25,7 +36,6 @@ $daptiv-nav-menuitem-max-width: 300px;
 
     .daptiv-nav-tab {
         color: $daptiv-nav-font-color;
-        cursor: default;
         display: inline-block;
         padding: 0 $daptiv-nav-tab-h-pad;
         text-decoration: none;
@@ -63,7 +73,6 @@ $daptiv-nav-menuitem-max-width: 300px;
 
     .daptiv-nav-menuitem-base {
         color: $color-black;
-        cursor: default;
         display: block;
         margin: $border-width-base;
         max-width: $daptiv-nav-menuitem-max-width;
@@ -96,5 +105,54 @@ $daptiv-nav-menuitem-max-width: 300px;
         &.selected {
             background: $color-light-medium-gray;
         }
+    }
+}
+
+/*
+    Sub Navigation tab
+*/
+.daptiv-subnav {
+    background: $daptiv-subnav-bg;
+    height: $daptiv-subnav-height;
+    line-height: $daptiv-subnav-height;
+    font-size: $daptiv-subnav-font-size;
+    font-family: $font-family-base;
+    width: 100%;
+
+    .daptiv-subnav-tab {
+        color: $daptiv-subnav-font-color;
+        display: inline-block;
+        padding: 0 $daptiv-subnav-tab-h-pad;
+        text-decoration: none;
+        & > * {
+            vertical-align: middle;
+        }
+
+        &:not(.selected):hover {
+            color: $daptiv-subnav-font-color-hover;
+        }
+        &.selected {
+            color: $daptiv-subnav-tab-selected;
+        }
+    }
+
+    .daptiv-subnav-menu-tab {
+        @extend .daptiv-subnav-tab;
+
+        &::after {
+            @extend .fa;
+
+            content: $fa-var-caret-down;
+            font-size: $icon-size-small;
+            margin-left: $half-whitespace-unit;
+        }
+    }
+}
+
+.daptiv-subnav-menu-dropdown {
+    @extend .daptiv-nav-menu-dropdown;
+
+    .daptiv-subnav-menuitem {
+        @extend .daptiv-nav-menuitem ;
     }
 }
