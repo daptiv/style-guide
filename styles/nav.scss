@@ -81,6 +81,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         padding-right: $standard-whitespace-unit;
         text-decoration: none;
         text-overflow: ellipsis;
+        overflow: hidden;
 
         &:not(.selected):hover {
             background: $color-light-blue;
