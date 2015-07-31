@@ -79,6 +79,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         margin: $border-width-base;
         max-width: $daptiv-nav-menuitem-max-width;
         min-width: $daptiv-nav-menuitem-min-width;
+        overflow: hidden;
         padding-left: $standard-whitespace-unit;
         padding-right: $standard-whitespace-unit;
         text-decoration: none;
