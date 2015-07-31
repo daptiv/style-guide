@@ -1,17 +1,18 @@
 // classes for grid layout
 
 $grid-gutter-width: 10px;
+
 .daptiv-container {
-    margin-right:auto;
-    margin-left:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .daptiv-column {
-    display:inline-block;
-    vertical-align: top;
+    display: inline-block;
     margin: 0 -0.125em;
-    padding-right: $grid-gutter-width;
     padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    vertical-align: top;
 }
 
 .daptiv-one-fourth {

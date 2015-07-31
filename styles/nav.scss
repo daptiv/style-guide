@@ -1,7 +1,7 @@
-@import "font-awesome/scss/font-awesome.scss";
-@import "colors.scss";
-@import "typography.scss";
-@import "variables.scss";
+@import 'font-awesome/scss/font-awesome';
+@import 'colors';
+@import 'typography';
+@import 'variables';
 
 $daptiv-nav-bg: $color-dark-blue;
 $daptiv-nav-tab-selected-bg: $color-medium-dark-blue;
@@ -28,10 +28,10 @@ $daptiv-subnav-tab-h-pad: 14px;
 */
 .daptiv-nav {
     background: $daptiv-nav-bg;
+    font-family: $font-family-base;
+    font-size: $daptiv-nav-font-size;
     height: $daptiv-nav-height;
     line-height: $daptiv-nav-height;
-    font-size: $daptiv-nav-font-size;
-    font-family: $font-family-base;
     width: 100%;
 
     .daptiv-nav-tab {
@@ -39,6 +39,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         display: inline-block;
         padding: 0 $daptiv-nav-tab-h-pad;
         text-decoration: none;
+
         & > * {
             vertical-align: middle;
         }
@@ -46,6 +47,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         &:not(.selected):hover {
             color: $daptiv-nav-font-color-hover;
         }
+
         &.selected {
             background: $daptiv-nav-tab-selected-bg;
         }
@@ -67,9 +69,9 @@ $daptiv-subnav-tab-h-pad: 14px;
 .daptiv-nav-menu-dropdown {
     background: $color-medium-light-gray;
     display: inline-block;
-    line-height: $daptiv-nav-menuitem-height;
-    font-size: $font-size-base;
     font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $daptiv-nav-menuitem-height;
 
     .daptiv-nav-menuitem-base {
         color: $color-black;
@@ -86,10 +88,12 @@ $daptiv-subnav-tab-h-pad: 14px;
             background: $color-light-blue;
             color: $color-black;
         }
+
         &.selected {
             color: $color-medium-dark-blue;
         }
     }
+
     .daptiv-nav-menuitem {
         @extend .daptiv-nav-menuitem-base;
         background: $color-white;
@@ -98,6 +102,7 @@ $daptiv-subnav-tab-h-pad: 14px;
             background: $color-white;
         }
     }
+
     .daptiv-nav-menuitem-alternate {
         @extend .daptiv-nav-menuitem-base;
         background: $color-light-medium-gray;
@@ -113,10 +118,10 @@ $daptiv-subnav-tab-h-pad: 14px;
 */
 .daptiv-subnav {
     background: $daptiv-subnav-bg;
+    font-family: $font-family-base;
+    font-size: $daptiv-subnav-font-size;
     height: $daptiv-subnav-height;
     line-height: $daptiv-subnav-height;
-    font-size: $daptiv-subnav-font-size;
-    font-family: $font-family-base;
     width: 100%;
 
     .daptiv-subnav-tab {
@@ -124,6 +129,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         display: inline-block;
         padding: 0 $daptiv-subnav-tab-h-pad;
         text-decoration: none;
+
         & > * {
             vertical-align: middle;
         }
@@ -131,6 +137,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         &:not(.selected):hover {
             color: $daptiv-subnav-font-color-hover;
         }
+
         &.selected {
             color: $daptiv-subnav-tab-selected;
         }
@@ -153,6 +160,6 @@ $daptiv-subnav-tab-h-pad: 14px;
     @extend .daptiv-nav-menu-dropdown;
 
     .daptiv-subnav-menuitem {
-        @extend .daptiv-nav-menuitem ;
+        @extend .daptiv-nav-menuitem;
     }
 }

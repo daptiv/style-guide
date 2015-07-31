@@ -1,5 +1,5 @@
-@import "typography.scss";
-@import "colors.scss";
+@import 'typography';
+@import 'colors';
 
 * {
     box-sizing: border-box;
@@ -10,19 +10,19 @@ a {
 }
 
 body {
-    min-height: 100%;
+    border: 0;
+    color: $color-black;
     font-family: $font-family-base;
     font-size: $font-size-base;
-    color: $color-black;
-    margin:0;
+    margin: 0;
+    min-height: 100%;
     padding: 0;
-    border: 0;
 }
 
 form {
-  margin: 0;
+    margin: 0;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
