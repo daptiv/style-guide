@@ -73,6 +73,8 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-subnav-tab" href="#">About</a>
     <a class="daptiv-subnav-tab" href="#">Contact</a>
     <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
+    <a class="daptiv-subnav-prev-tab" href="#">Previous</a>
+    <a class="daptiv-subnav-next-tab" href="#">Next</a>
 </nav>
 {% highlight html %}
 <nav class="daptiv-subnav">
@@ -80,6 +82,8 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-subnav-tab" href="#">About</a>
     <a class="daptiv-subnav-tab" href="#">Contact</a>
     <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
+    <a class="daptiv-subnav-prev-tab" href="#">Previous</a>
+    <a class="daptiv-subnav-next-tab" href="#">Next</a>
 </nav>
 {% endhighlight %}
 

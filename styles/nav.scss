@@ -143,13 +143,39 @@ $daptiv-subnav-tab-h-pad: 14px;
             color: $daptiv-subnav-tab-selected;
         }
     }
-    
+
     .daptiv-subnav-tab.disabled {
         color: $daptiv-subnav-font-color;
         cursor: default;
 
         &:hover {
             color: $daptiv-subnav-font-color;
+        }
+    }
+
+    .daptiv-subnav-prev-tab {
+        @extend .daptiv-subnav-tab;
+
+        &::before {
+            @extend .fa;
+            content: $fa-var-angle-double-left;
+            font-size: $icon-size-small;
+            margin-right: 3px;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    .daptiv-subnav-next-tab {
+        @extend .daptiv-subnav-tab;
+
+        &::after {
+            @extend .fa;
+            content: $fa-var-angle-double-right;
+            font-size: $icon-size-small;
+            margin-left: 3px;
+            position: relative;
+            top: 1px;
         }
     }
 
