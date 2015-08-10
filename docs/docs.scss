@@ -21,6 +21,7 @@ $snippet-border: 2px solid #CCC;
     padding: $snippet-padding;
 }
 .snippet-content {
+    display: none;
     background-color: $snippet-content-background;
     border-bottom-left-radius: $snippet-border-radius;
     border-bottom-right-radius: $snippet-border-radius;
@@ -29,6 +30,20 @@ $snippet-border: 2px solid #CCC;
     margin-bottom: $snippet-border-radius/2;
     overflow: scroll;
     padding: $snippet-padding;
+}
+.snippet-src-button-container {
+    height: 24px;
+}
+.snippet-src-button {
+    float: right;
+    border: 1px solid #BBB;
+    background-color: #FAFAFA;
+    height: 22px;
+    line-height: normal;
+    cursor: pointer;
+    &:focus{
+        outline: 0;
+    }
 }
 .swatch-with-label {
     display: inline-block;

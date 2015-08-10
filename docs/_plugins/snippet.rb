@@ -14,7 +14,13 @@ module Jekyll
 
            
            "<div class=\"snippet\">\n" +
-           "<div class=\"snippet-header\">" +
+           "<div class=\"snippet-src-button-container\">\n" +
+           "<button type=\"button\" class=\"snippet-src-button\" title=\"Show Source\"" +
+           " onclick=\"var s = this.parentElement.parentElement.querySelector('.snippet-content').style;" +
+           " var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';\"" +
+           ">Show Source</button>\n" +
+           "</div>\n" +
+           "<div class=\"snippet-header\">\n" +
            "#{code}\n" +
            "</div>\n" +
            "<div class=\"snippet-content\">\n" +
