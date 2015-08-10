@@ -1,0 +1,12 @@
+branches:
+  only:
+    - master
+
+install:
+  - bundle install
+  - npm install
+
+script:
+  - bundle exec grunt
+
+
