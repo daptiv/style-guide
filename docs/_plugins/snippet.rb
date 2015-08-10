@@ -6,7 +6,6 @@ module Jekyll
         def initialize(tag_name, lang, tokens)
             super
             @lang = lang.strip
-            puts "generating snippet block for language: '#{@lang}'"
         end
         
         def render(context)
@@ -15,11 +14,9 @@ module Jekyll
 
            
            "<div class=\"snippet\">\n" +
-           "<div class=\"snippet-header\">Rendered</div>\n" +
-           "<div class=\"snippet-content\">\n" +
+           "<div class=\"snippet-header\">" +
            "#{code}\n" +
            "</div>\n" +
-           "<div class=\"snippet-header\">Code</div>\n" +
            "<div class=\"snippet-content\">\n" +
            "#{highlighted}\n" +
            "</div>\n" +
