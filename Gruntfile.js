@@ -112,6 +112,14 @@ module.exports = function(grunt) {
             }
         },
 
+        scsslint: {
+            allFiles: ['styles/**/*.scss'],
+            options: {
+                config: '.scss-lint.yml',
+                colorizeOutput: true
+            }
+        },
+
         watch: {
             options: {
                 livereload: true
@@ -137,11 +145,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-parker');
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['sass', 'cssmin', 'copy:fonts']);
+    grunt.registerTask('styles', ['scsslint', 'sass', 'cssmin', 'copy:fonts']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
