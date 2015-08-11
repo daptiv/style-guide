@@ -112,6 +112,10 @@ $daptiv-subnav-tab-h-pad: 14px;
             background: $color-light-medium-gray;
         }
     }
+
+    .daptiv-nav-menuitem-alternate + .daptiv-nav-menuitem {
+        margin-top: 3px;
+	}
 }
 
 /*
