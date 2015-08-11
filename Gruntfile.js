@@ -129,7 +129,7 @@ module.exports = function(grunt) {
                 tasks: ['styles', 'jekyll:dev']
             },
             jekyll: {
-                files: ['docs/**/*.md', 'docs/**/*.html', 'docs/**/*.scss'],
+                files: ['docs/**/*.md', 'docs/**/*.html', 'docs/**/*.scss', 'docs/**/*.rb'],
                 tasks: ['styles', 'jekyll:dev'],
                 options: {
                     spawn: false
