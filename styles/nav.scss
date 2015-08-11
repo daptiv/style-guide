@@ -127,7 +127,6 @@ $daptiv-subnav-tab-h-pad: 14px;
 
     .daptiv-subnav-tab {
         color: $daptiv-subnav-font-color;
-        cursor: pointer;
         padding: 0 $daptiv-subnav-tab-h-pad;
         text-decoration: none;
 
@@ -142,6 +141,9 @@ $daptiv-subnav-tab-h-pad: 14px;
         &.selected {
             color: $daptiv-subnav-tab-selected;
         }
+<<<<<<< HEAD
+        &.disabled {
+=======
     }
 
     .daptiv-subnav-tab.disabled {
@@ -149,7 +151,13 @@ $daptiv-subnav-tab-h-pad: 14px;
         cursor: default;
 
         &:hover {
+>>>>>>> master
             color: $daptiv-subnav-font-color;
+            cursor: default;
+
+            &:hover {
+                color: $daptiv-subnav-font-color;
+            }
         }
     }
 
