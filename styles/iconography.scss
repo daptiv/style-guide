@@ -1,0 +1,27 @@
+@import 'variables';
+
+@mixin icon-small($position, $margin-position, $content) {
+    &:#{$position} {
+        content: $content;
+        font-size: $icon-size-small;
+        #{$margin-position}: 3px;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.icon {
+    @extend .fa;
+
+    &.previous {
+        @include icon-small(before, right, $fa-var-angle-double-left);
+    }
+
+    &.next {
+        @include icon-small(after, left, $fa-var-angle-double-right);
+    }
+
+    &.menu {
+        @include icon-small(after, left, $fa-var-caret-down);
+    }
+}
