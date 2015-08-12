@@ -19,14 +19,14 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-nav-tab selected" href="#">Home</a>
     <a class="daptiv-nav-tab" href="#">About</a>
     <a class="daptiv-nav-tab" href="#">Contact</a>
-    <a class="daptiv-nav-tab icon menu" href="#">Menu</a>
+    <a class="daptiv-nav-menu-tab" href="#">Menu</a>
 </nav>
 {% highlight html %}
 <nav class="daptiv-nav">
     <a class="daptiv-nav-tab selected" href="#">Home</a>
     <a class="daptiv-nav-tab" href="#">About</a>
     <a class="daptiv-nav-tab" href="#">Contact</a>
-    <a class="daptiv-nav-tab icon menu" href="#">Menu</a>
+    <a class="daptiv-nav-menu-tab" href="#">Menu</a>
 </nav>
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-subnav-tab selected" href="#">Home</a>
     <a class="daptiv-subnav-tab" href="#">About</a>
     <a class="daptiv-subnav-tab" href="#">Contact</a>
-    <a class="daptiv-subnav-tab icon menu" href="#">Menu</a>
+    <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
     <a class="daptiv-subnav-tab icon previous" href="#">Previous</a>
     <a class="daptiv-subnav-tab icon next" href="#">Next</a>
 </nav>
@@ -81,7 +81,7 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-subnav-tab selected" href="#">Home</a>
     <a class="daptiv-subnav-tab" href="#">About</a>
     <a class="daptiv-subnav-tab" href="#">Contact</a>
-    <a class="daptiv-subnav-tab icon menu" href="#">Menu</a>
+    <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
     <a class="daptiv-subnav-tab icon previous" href="#">Previous</a>
     <a class="daptiv-subnav-tab icon next" href="#">Next</a>
 </nav>

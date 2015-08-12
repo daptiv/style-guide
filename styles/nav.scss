@@ -53,6 +53,18 @@ $daptiv-subnav-tab-h-pad: 14px;
             background: $daptiv-nav-tab-selected-bg;
         }
     }
+
+    .daptiv-nav-menu-tab {
+        @extend .daptiv-nav-tab;
+
+        &::after {
+            @extend .fa;
+
+            content: $fa-var-caret-down;
+            font-size: $icon-size-small;
+            margin-left: $half-whitespace-unit;
+        }
+    }
 }
 
 .daptiv-nav-menu-dropdown {
@@ -139,6 +151,18 @@ $daptiv-subnav-tab-h-pad: 14px;
 
         &:hover {
             color: $daptiv-subnav-font-color;
+        }
+    }
+
+    .daptiv-subnav-menu-tab {
+        @extend .daptiv-subnav-tab;
+
+        &::after {
+            @extend .fa;
+
+            content: $fa-var-caret-down;
+            font-size: $icon-size-small;
+            margin-left: $half-whitespace-unit;
         }
     }
 }
