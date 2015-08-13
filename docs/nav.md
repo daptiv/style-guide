@@ -23,30 +23,30 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-nav-menu-tab" href="#">Menu</a>
 </nav>
 {% endsnippet %}
+<br />
 
 ## Tab Navigation Menu Dropdown
 
 {% snippet html %}
-
 <div class="daptiv-nav-menu-dropdown">
     <a class="daptiv-nav-menuitem" href="#">Item 1</a>
     <a class="daptiv-nav-menuitem" href="#">Item 2</a>
-    <a class="daptiv-nav-menuitem selected" href="#">Selected Item 3</a>
+    <a class="daptiv-nav-menuitem disabled" href="#">Disabled Item 3</a>
+    <a class="daptiv-nav-menuitem selected" href="#">Selected Item 4</a>
 </div>
-
 {% endsnippet %}
+<br />
 
 ## Alternate Tab-Navigation Menu Dropdown
 
 {% snippet html %}
-
 <div class="daptiv-nav-menu-dropdown">
     <a class="daptiv-nav-menuitem-alternate" href="#">Item 1</a>
     <a class="daptiv-nav-menuitem-alternate" href="#">Item 2</a>
     <a class="daptiv-nav-menuitem-alternate selected" href="#">Selected Item 3</a>
 </div>
-
 {% endsnippet %}
+<br />
 
 ## Tab Sub-Navigation
 
@@ -55,11 +55,13 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="daptiv-subnav-tab selected" href="#">Home</a>
     <a class="daptiv-subnav-tab" href="#">About</a>
     <a class="daptiv-subnav-tab" href="#">Contact</a>
+    <a class="daptiv-subnav-tab disabled" href="#">Disabled</a>
     <a class="daptiv-subnav-menu-tab" href="#">Menu</a>
     <a class="daptiv-subnav-tab daptiv-icon previous" href="#">Previous</a>
     <a class="daptiv-subnav-tab daptiv-icon next" href="#">Next</a>
 </nav>
 {% endsnippet %}
+<br />
 
 ## Tab Sub-Navigation Menu Dropdown
 
@@ -67,7 +69,8 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 <div class="daptiv-subnav-menu-dropdown">
     <a class="daptiv-subnav-menuitem" href="#">Item 1</a>
     <a class="daptiv-subnav-menuitem" href="#">Item 2</a>
-    <a class="daptiv-subnav-menuitem selected" href="#">Selected Item 3</a>
+    <a class="daptiv-subnav-menuitem disabled" href="#">Disabled Item 3</a>
+    <a class="daptiv-subnav-menuitem selected" href="#">Selected Item 4</a>
 </div>
 {% endsnippet %}
 <br />
