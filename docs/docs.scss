@@ -8,6 +8,43 @@ $swatch-width-height: 90px;
 $swatch-label-height: 30px;
 $swatch-margin: 4px;
 
+$snippet-border-radius: 3px;
+$snippet-padding: 12px;
+$snippet-content-background: #f2f0eb;
+$snippet-border: 2px solid #CCC;
+
+.snippet-header {
+    border-top-left-radius: $snippet-border-radius;
+    border-top-right-radius: $snippet-border-radius;
+    border: $snippet-border;
+    margin-top: $snippet-border-radius/2;
+    padding: $snippet-padding;
+}
+.snippet-content {
+    display: none;
+    background-color: $snippet-content-background;
+    border-bottom-left-radius: $snippet-border-radius;
+    border-bottom-right-radius: $snippet-border-radius;
+    border: $snippet-border;
+    border-top: 0;
+    margin-bottom: $snippet-border-radius/2;
+    overflow: scroll;
+    padding: $snippet-padding;
+}
+.snippet-src-button-container {
+    height: 24px;
+}
+.snippet-src-button {
+    float: right;
+    border: 1px solid #BBB;
+    background-color: #FAFAFA;
+    height: 22px;
+    line-height: normal;
+    cursor: pointer;
+    &:focus{
+        outline: 0;
+    }
+}
 .swatch-with-label {
     display: inline-block;
     height: $swatch-width-height + $swatch-label-height + 2px;
