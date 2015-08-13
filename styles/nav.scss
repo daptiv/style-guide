@@ -119,7 +119,7 @@ $daptiv-subnav-tab-h-pad: 14px;
         }
     }
 
-    .daptiv-nav-menuitem-alternate {
+    .daptiv-nav-menuitem.alternate {
         @extend .daptiv-nav-menuitem-base;
         background: $color-light-medium-gray;
 
