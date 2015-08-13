@@ -2,6 +2,7 @@
 
 @mixin icon-small($position, $margin-position, $content) {
     &:#{$position} {
+        @extend .fa;
         content: $content;
         font-size: $icon-size-small;
         #{$margin-position}: 3px;
@@ -10,9 +11,7 @@
     }
 }
 
-.icon {
-    @extend .fa;
-
+.daptiv-icon {
     &.previous {
         @include icon-small(before, right, $fa-var-angle-double-left);
     }
