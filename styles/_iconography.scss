@@ -1,4 +1,6 @@
-@import 'variables';
+//== Iconography
+//
+//## Icons and graphics
 
 @mixin icon-small($position, $margin-position, $content) {
     &:#{$position} {

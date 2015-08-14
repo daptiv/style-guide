@@ -1,8 +1,6 @@
-@import 'font-awesome/scss/font-awesome';
-@import 'colors';
-@import 'iconography';
-@import 'typography';
-@import 'variables';
+//== Nav
+//
+//## Navigation
 
 $daptiv-nav-bg: $color-dark-blue;
 $daptiv-nav-tab-selected-bg: $color-medium-dark-blue;
@@ -120,7 +118,6 @@ $daptiv-subnav-tab-h-pad: 14px;
     }
 
     .daptiv-nav-menuitem.alternate {
-        @extend .daptiv-nav-menuitem-base;
         background: $color-light-medium-gray;
 
         &.selected {
