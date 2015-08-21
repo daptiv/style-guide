@@ -2,7 +2,8 @@
 //
 //## Classes for grid layout
 
-$grid-gutter-width: 10px;
+$gutter-width: 10px;
+$panel-title-height: 38px;
 
 .daptiv-container {
     margin-left: auto;
@@ -12,8 +13,8 @@ $grid-gutter-width: 10px;
 .daptiv-column {
     display: inline-block;
     margin: 0 -0.125em;
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
+    padding-left: $gutter-width;
+    padding-right: $gutter-width;
     vertical-align: top;
 }
 
@@ -23,4 +24,23 @@ $grid-gutter-width: 10px;
 
 .daptiv-three-fourths {
     width: 75%;
+}
+
+.daptiv-panel {
+    background-color: $color-white;
+    border: 1px solid $color-medium-dark-gray;
+    display: block;
+
+    .title {
+        border-bottom: 1px solid $color-medium-dark-blue;
+        font-size: $font-size-larger;
+        height: $panel-title-height;
+        line-height: $panel-title-height;
+        padding: 0 $gutter-width;
+        vertical-align: middle;
+    }
+
+    .content {
+        padding: 0 $gutter-width;
+    }
 }
