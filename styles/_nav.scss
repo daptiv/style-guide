@@ -131,7 +131,6 @@ $daptiv-subnav-tab-h-pad: 14px;
 */
 .daptiv-subnav {
     background: $daptiv-subnav-bg;
-    cursor: pointer;
     font-family: $font-family-base;
     font-size: $daptiv-subnav-font-size;
     height: $daptiv-subnav-height;
@@ -140,6 +139,7 @@ $daptiv-subnav-tab-h-pad: 14px;
 
     .daptiv-subnav-tab {
         color: $daptiv-subnav-font-color;
+        cursor: pointer;
         padding: 0 $daptiv-subnav-tab-h-pad;
         text-decoration: none;
 
