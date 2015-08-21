@@ -1,8 +1,6 @@
-@import 'font-awesome/scss/font-awesome';
-@import 'colors';
-@import 'iconography';
-@import 'typography';
-@import 'variables';
+//== Nav
+//
+//## Navigation
 
 $daptiv-nav-bg: $color-dark-blue;
 $daptiv-nav-tab-selected-bg: $color-medium-dark-blue;
@@ -25,7 +23,7 @@ $daptiv-subnav-font-color-hover: $color-text-medium-blue;
 $daptiv-subnav-tab-h-pad: 14px;
 
 /*
-    Main Navigation tab
+    Main Navigation tab / Main & Sub-navigation drop-down menu
 */
 .daptiv-nav {
     background: $daptiv-nav-bg;
@@ -67,7 +65,8 @@ $daptiv-subnav-tab-h-pad: 14px;
     }
 }
 
-.daptiv-nav-menu-dropdown {
+.daptiv-nav-menu-dropdown,
+.daptiv-subnav-menu-dropdown {
     background: $color-medium-light-gray;
     display: inline-block;
     font-family: $font-family-base;
@@ -96,7 +95,8 @@ $daptiv-subnav-tab-h-pad: 14px;
         }
     }
 
-    .daptiv-nav-menuitem {
+    .daptiv-nav-menuitem,
+    .daptiv-subnav-menuitem {
         @extend .daptiv-nav-menuitem-base;
         background: $color-white;
 
@@ -105,8 +105,19 @@ $daptiv-subnav-tab-h-pad: 14px;
         }
     }
 
-    .daptiv-nav-menuitem-alternate {
-        @extend .daptiv-nav-menuitem-base;
+    .daptiv-nav-menuitem.disabled,
+    .daptiv-subnav-menuitem.disabled {
+        background: $color-white;
+        color: $color-medium-dark-gray;
+        cursor: default;
+
+        &:hover {
+            background: $color-white;
+            color: $color-medium-dark-gray;
+        }
+    }
+
+    .daptiv-nav-menuitem.alternate {
         background: $color-light-medium-gray;
 
         &.selected {
@@ -146,11 +157,11 @@ $daptiv-subnav-tab-h-pad: 14px;
     }
 
     .daptiv-subnav-tab.disabled {
-        color: $daptiv-subnav-font-color;
+        color: $color-medium-dark-gray;
         cursor: default;
 
         &:hover {
-            color: $daptiv-subnav-font-color;
+            color: $color-medium-dark-gray;
         }
     }
 
@@ -164,13 +175,5 @@ $daptiv-subnav-tab-h-pad: 14px;
             font-size: $icon-size-small;
             margin-left: $half-whitespace-unit;
         }
-    }
-}
-
-.daptiv-subnav-menu-dropdown {
-    @extend .daptiv-nav-menu-dropdown;
-
-    .daptiv-subnav-menuitem {
-        @extend .daptiv-nav-menuitem;
     }
 }
