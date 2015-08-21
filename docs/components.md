@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: Layout
+title: Components
 section: Guide
 ---
 

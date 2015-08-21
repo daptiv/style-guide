@@ -2,9 +2,6 @@
 //
 //## Classes for grid layout
 
-$gutter-width: 10px;
-$panel-title-height: 38px;
-
 .daptiv-container {
     margin-left: auto;
     margin-right: auto;
@@ -26,21 +23,3 @@ $panel-title-height: 38px;
     width: 75%;
 }
 
-.daptiv-panel {
-    background-color: $color-white;
-    border: 1px solid $color-medium-dark-gray;
-    display: block;
-
-    .title {
-        border-bottom: 1px solid $color-medium-dark-blue;
-        font-size: $font-size-larger;
-        height: $panel-title-height;
-        line-height: $panel-title-height;
-        padding: 0 $gutter-width;
-        vertical-align: middle;
-    }
-
-    .content {
-        padding: 0 $gutter-width;
-    }
-}
