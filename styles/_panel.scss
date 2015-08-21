@@ -1,4 +1,5 @@
 $panel-title-height: 38px;
+$panel-gutter-width: $standard-gutter-width;
 
 .daptiv-panel {
     background-color: $color-white;
@@ -10,12 +11,12 @@ $panel-title-height: 38px;
         font-size: $font-size-large;
         height: $panel-title-height;
         line-height: $panel-title-height;
-        padding: 0 $gutter-width;
+        padding: 0 $panel-gutter-width;
         vertical-align: middle;
     }
 
     .content {
-        padding: 0 $gutter-width;
+        padding: 0 $panel-gutter-width;
     }
 }
 

@@ -17,14 +17,17 @@ Panel is a quick, easy way to display content with a title.
 
 {% snippet html %}
 <div class="daptiv-panel">
-    <div class="title">Info Panel</div>
+    <div class="title">Title of Panel</div>
     <div class="content">
         This is the content section.
-        <ul>Things to consider:
-            <li>When to use a panel</li>
-            <li>Why you need a panel</li>
-            <li>When not to use a panel</li>
-        </ul>
+        <div>
+            Things to consider:
+            <ul>
+                <li>When to use a panel</li>
+                <li>Why you need a panel</li>
+                <li>When not to use a panel</li>
+            </ul>
+        </div>
     </div>
 </div>
 {% endsnippet %}
