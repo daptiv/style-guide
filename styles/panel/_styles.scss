@@ -1,0 +1,23 @@
+//== Panel
+//
+//## styles for Panel
+
+.daptiv-panel {
+    background-color: $color-white;
+    border: 1px solid $color-medium-dark-gray;
+    display: block;
+
+    .title {
+        border-bottom: 1px solid $color-medium-dark-blue;
+        font-size: $font-size-large;
+        height: $panel-title-height;
+        line-height: $panel-title-height;
+        padding: 0 $panel-gutter-width;
+        vertical-align: middle;
+    }
+
+    .content {
+        padding: 0 $panel-gutter-width;
+    }
+}
+

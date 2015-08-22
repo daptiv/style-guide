@@ -1,28 +1,5 @@
 //== Iconography
 //
 //## Icons and graphics
-
-@mixin icon-small($position, $margin-position, $content) {
-    &:#{$position} {
-        @extend .fa;
-        content: $content;
-        font-size: $icon-size-small;
-        #{$margin-position}: 3px;
-        position: relative;
-        top: 1px;
-    }
-}
-
-.daptiv-icon {
-    &.previous {
-        @include icon-small(before, right, $fa-var-angle-double-left);
-    }
-
-    &.next {
-        @include icon-small(after, left, $fa-var-angle-double-right);
-    }
-
-    &.menu {
-        @include icon-small(after, left, $fa-var-caret-down);
-    }
-}
+@import 'iconography/mixins';
+@import 'iconography/styles';

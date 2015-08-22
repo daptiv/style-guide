@@ -16,6 +16,11 @@ $side-menu-item-horizontal-padding: 10px;
     padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
 
     &:hover {
+        text-decoration: underline;
+    }
+
+    &.selected {
         background-color: $color-medium-blue;
     }
 }
+

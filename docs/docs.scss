@@ -13,6 +13,16 @@ $snippet-padding: 12px;
 $snippet-content-background: #f2f0eb;
 $snippet-border: 2px solid #CCC;
 
+.icon-block {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    background-color: #eee;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 3px;
+}
+
 .snippet-header {
     border-top-left-radius: $snippet-border-radius;
     border-top-right-radius: $snippet-border-radius;

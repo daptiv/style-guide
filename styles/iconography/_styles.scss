@@ -1,0 +1,14 @@
+.icon {
+    &.previous {
+        @include icon-small(before, right, $fa-var-angle-double-left);
+    }
+
+    &.next {
+        @include icon-small(after, left, $fa-var-angle-double-right);
+    }
+
+    &.menu {
+        @include icon-small(after, left, $fa-var-caret-down);
+    }
+}
+
