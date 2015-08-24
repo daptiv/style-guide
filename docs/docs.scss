@@ -13,23 +13,27 @@ $snippet-padding: 12px;
 $snippet-content-background: #f2f0eb;
 $snippet-border: 2px solid #CCC;
 
+$icon-block-bg: #eee;
+$icon-block-size: 75px;
+
 .icon-block {
-    width: 75px;
-    height: 75px;
-    display: inline-block;
-    background-color: #eee;
-    line-height: 75px;
-    text-align: center;
+    background-color: $icon-block-bg;
     border-radius: 3px;
+    display: inline-block;
+    height: $icon-block-size;
+    line-height: $icon-block-size;
+    text-align: center;
+    width: $icon-block-size;
 }
 
 .snippet-header {
+    border: $snippet-border;
     border-top-left-radius: $snippet-border-radius;
     border-top-right-radius: $snippet-border-radius;
-    border: $snippet-border;
     margin-top: $snippet-border-radius/2;
     padding: $snippet-padding;
 }
+
 .snippet-content {
     display: none;
     background-color: $snippet-content-background;
@@ -41,9 +45,11 @@ $snippet-border: 2px solid #CCC;
     overflow: scroll;
     padding: $snippet-padding;
 }
+
 .snippet-src-button-container {
     height: 24px;
 }
+
 .snippet-src-button {
     float: right;
     border: 1px solid #BBB;
@@ -55,6 +61,7 @@ $snippet-border: 2px solid #CCC;
         outline: 0;
     }
 }
+
 .swatch-with-label {
     display: inline-block;
     height: $swatch-width-height + $swatch-label-height + 2px;
@@ -86,23 +93,23 @@ $snippet-border: 2px solid #CCC;
 
 .swatch-dark-blue {
     background-color: $color-dark-blue;
-};
+}
 
 .swatch-medium-dark-blue {
     background-color: $color-medium-dark-blue;
-};
+}
 
 .swatch-medium-blue {
     background-color: $color-medium-blue;
-};
+}
 
 .swatch-medium-light-blue {
     background-color: $color-medium-light-blue;
-};
+}
 
 .swatch-light-blue {
     background-color: $color-light-blue;
-};
+}
 
 .swatch-text-medium-blue {
     background-color: $color-text-medium-blue;
@@ -155,3 +162,4 @@ $snippet-border: 2px solid #CCC;
 .swatch-white {
     background-color: $color-white;
 }
+
