@@ -17,10 +17,10 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <nav class="daptiv-nav">
-    <a class="selected tab" href="javascript:void(0);">Home</a>
-    <a class="tab" href="javascript:void(0);">About</a>
-    <a class="tab" href="javascript:void(0);">Contact</a>
-    <a class="menu tab" href="javascript:void(0);">Menu</a>
+    <a class="selected tab" href="#" onclick="return false;">Home</a>
+    <a class="tab" href="#" onclick="return false;">About</a>
+    <a class="tab" href="#" onclick="return false;">Contact</a>
+    <a class="menu tab" href="#" onclick="return false;">Menu</a>
 </nav>
 {% endsnippet %}
 <br />
@@ -29,10 +29,10 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <div class="daptiv-dropdown">
-    <a class="item" href="javascript:void(0);">Item 1</a>
-    <a class="item" href="javascript:void(0);">Item 2</a>
-    <a class="disabled item" href="javascript:void(0);">Disabled Item 3</a>
-    <a class="selected item" href="javascript:void(0);">Selected Item 4</a>
+    <a class="item" href="#" onclick="return false;">Item 1</a>
+    <a class="item" href="#" onclick="return false;">Item 2</a>
+    <a class="disabled item" href="#" onclick="return false;">Disabled Item 3</a>
+    <a class="selected item" href="#" onclick="return false;">Selected Item 4</a>
 </div>
 {% endsnippet %}
 <br />
@@ -41,9 +41,9 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <div class="daptiv-dropdown">
-    <a class="alternate item" href="javascript:void(0);">Item 1</a>
-    <a class="alternate item" href="javascript:void(0);">Item 2</a>
-    <a class="alternate selected item" href="javascript:void(0);">Selected Item 3</a>
+    <a class="alternate item" href="#" onclick="return false;">Item 1</a>
+    <a class="alternate item" href="#" onclick="return false;">Item 2</a>
+    <a class="alternate selected item" href="#" onclick="return false;">Selected Item 3</a>
 </div>
 {% endsnippet %}
 <br />
@@ -52,11 +52,11 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <nav class="daptiv-subnav">
-    <a class="selected tab" href="javascript:void(0);">Home</a>
-    <a class="tab" href="javascript:void(0);">About</a>
-    <a class="tab" href="javascript:void(0);">Contact</a>
-    <a class="disabled tab" href="javascript:void(0);">Disabled</a>
-    <a class="menu tab" href="javascript:void(0);">Menu</a>
+    <a class="selected tab" href="#" onclick="return false;">Home</a>
+    <a class="tab" href="#" onclick="return false;">About</a>
+    <a class="tab" href="#" onclick="return false;">Contact</a>
+    <a class="disabled tab" href="#" onclick="return false;">Disabled</a>
+    <a class="menu tab" href="#" onclick="return false;">Menu</a>
 </nav>
 {% endsnippet %}
 <br />
