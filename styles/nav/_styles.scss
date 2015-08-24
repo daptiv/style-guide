@@ -27,13 +27,6 @@
             background: $nav-tab-selected-bg;
         }
 
-        &.menu::after {
-            @extend .fa;
-
-            content: $fa-var-caret-down;
-            font-size: $icon-size-small;
-            margin-left: $half-whitespace-unit;
-        }
     }
 }
 
