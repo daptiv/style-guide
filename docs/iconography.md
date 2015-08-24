@@ -16,4 +16,7 @@ These are the different types of navigation components.
 {% iconblock previous %}
 {% iconblock next %}
 
+## Utility
+
+{% iconblock menu %}
 

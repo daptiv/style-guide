@@ -17,10 +17,10 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <nav class="daptiv-nav">
-    <a class="selected tab" href="#" onclick="return false;">Home</a>
+    <a class="tab" href="#" onclick="return false;">Home</a>
+    <a class="selected tab" href="#" onclick="return false;">Selected</a>
     <a class="tab" href="#" onclick="return false;">About</a>
     <a class="tab" href="#" onclick="return false;">Contact</a>
-    <a class="menu tab" href="#" onclick="return false;">Menu</a>
 </nav>
 {% endsnippet %}
 <br />
@@ -31,8 +31,8 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 <div class="daptiv-dropdown">
     <a class="item" href="#" onclick="return false;">Item 1</a>
     <a class="item" href="#" onclick="return false;">Item 2</a>
-    <a class="disabled item" href="#" onclick="return false;">Disabled Item 3</a>
-    <a class="selected item" href="#" onclick="return false;">Selected Item 4</a>
+    <a class="selected item" href="#" onclick="return false;">Selected Item 3</a>
+    <a class="disabled item" href="#" onclick="return false;">Disabled Item 4</a>
 </div>
 {% endsnippet %}
 <br />
@@ -44,6 +44,7 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="alternate item" href="#" onclick="return false;">Item 1</a>
     <a class="alternate item" href="#" onclick="return false;">Item 2</a>
     <a class="alternate selected item" href="#" onclick="return false;">Selected Item 3</a>
+    <a class="alternate disabled item" href="#" onclick="return false;">Disabled Item 4</a>
 </div>
 {% endsnippet %}
 <br />
@@ -52,11 +53,11 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <nav class="daptiv-subnav">
-    <a class="selected tab" href="#" onclick="return false;">Home</a>
+    <a class="tab" href="#" onclick="return false;">Home</a>
+    <a class="selected tab" href="#" onclick="return false;">Selected</a>
     <a class="tab" href="#" onclick="return false;">About</a>
     <a class="tab" href="#" onclick="return false;">Contact</a>
     <a class="disabled tab" href="#" onclick="return false;">Disabled</a>
-    <a class="menu tab" href="#" onclick="return false;">Menu</a>
 </nav>
 {% endsnippet %}
 <br />
