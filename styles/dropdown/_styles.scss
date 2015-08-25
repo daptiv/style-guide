@@ -1,0 +1,49 @@
+.daptiv-dropdown {
+    background: $dropdown-bg;
+    display: inline-block;
+    font: $dropdown-font;
+    line-height: $dropdown-item-height;
+
+    .item {
+        background: $color-white;
+        color: $color-black;
+        display: block;
+        height: $dropdown-item-height;
+        margin: $dropdown-item-border-size;
+        max-width: $dropdown-item-max-width;
+        min-width: $dropdown-item-min-width;
+        overflow: hidden;
+        padding: 0 $dropdown-item-padding;
+        text-decoration: none;
+        text-overflow: ellipsis;
+
+        &:not(.selected):hover {
+            background: $color-light-blue;
+            color: $color-black;
+        }
+
+        &.selected {
+            color: $color-medium-dark-blue;
+        }
+
+        &.disabled {
+            background: $color-white;
+            color: $color-medium-dark-gray;
+            cursor: default;
+
+            &:hover {
+                background: $color-white;
+                color: $color-medium-dark-gray;
+            }
+        }
+
+        &.alternate {
+            background: $color-light-medium-gray;
+
+            &.selected {
+                background: $color-light-medium-gray;
+            }
+        }
+    }
+}
+

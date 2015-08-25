@@ -1,0 +1,81 @@
+//== Nav/Subnav
+//
+//## Styles for Tab Navigation and Sub-Navigation
+
+.daptiv-nav {
+    background: $nav-bg;
+    font: $nav-font;
+    height: $nav-height;
+    line-height: $nav-height;
+    width: 100%;
+
+    .tab {
+        color: $nav-font-color;
+        display: inline-block;
+        padding: 0 $nav-tab-h-pad;
+        text-decoration: none;
+
+        & > * {
+            vertical-align: middle;
+        }
+
+        &:not(.selected):hover {
+            color: $nav-font-color-hover;
+        }
+
+        &.selected {
+            background: $nav-tab-selected-bg;
+        }
+
+    }
+}
+
+/*
+    Sub Navigation tab
+*/
+.daptiv-subnav {
+    background: $subnav-bg;
+    font: $subnav-font;
+    height: $subnav-height;
+    line-height: $subnav-height;
+    width: 100%;
+
+    .tab {
+        color: $subnav-font-color;
+        padding: 0 $subnav-tab-h-pad;
+        text-decoration: none;
+
+        & > * {
+            vertical-align: middle;
+        }
+
+        &:not(.selected):hover {
+            color: $subnav-font-color-hover;
+        }
+
+        &.selected {
+            color: $subnav-tab-selected-color;
+        }
+
+        &.disabled {
+            color: $color-medium-dark-gray;
+            cursor: default;
+
+            &:hover {
+                color: $color-medium-dark-gray;
+            }
+        }
+
+        &.menu {
+
+            &::after {
+                @extend .fa;
+
+                content: $fa-var-caret-down;
+                font-size: $icon-size-small;
+                margin-left: $half-whitespace-unit;
+            }
+        }
+    }
+}
+

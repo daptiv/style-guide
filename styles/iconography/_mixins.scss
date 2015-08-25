@@ -1,0 +1,11 @@
+@mixin icon-small($position, $margin-position, $content) {
+    &:#{$position} {
+        @extend .fa;
+        content: $content;
+        font-size: $icon-size-small;
+        #{$margin-position}: 3px;
+        position: relative;
+        top: 1px;
+    }
+}
+

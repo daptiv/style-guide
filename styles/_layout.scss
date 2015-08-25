@@ -1,26 +1,6 @@
 //== Layout
 //
-//## Classes for grid layout
+//## Layout mixins, variables and styles
+@import 'layout/variables';
+@import 'layout/styles';
 
-$grid-gutter-width: 10px;
-
-.daptiv-container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.daptiv-column {
-    display: inline-block;
-    margin: 0 -0.125em;
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
-    vertical-align: top;
-}
-
-.daptiv-one-fourth {
-    width: 25%;
-}
-
-.daptiv-three-fourths {
-    width: 75%;
-}
