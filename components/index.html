@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+        <title>
+            Components &middot; Style Guide
+        </title>
+
+        <link rel="stylesheet" href="/style-guide/docs.min.css">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" href="/style-guide/img/apple-touch-icon-precomposed.png">
+        <link rel="icon" href="/style-guide/favicon.ico">
+    </head>
+    <body>
+
+    <header>
+        <nav class="daptiv-nav">
+            <a class="tab " href="/style-guide/">Home</a>
+            <a class="tab selected" href="/style-guide/scaffolding">Guide</a>
+            <a class="tab " href="/style-guide/stats">Stats</a>
+            <a class="tab" href="https://github.com/daptiv/style-guide" target="_blank">GitHub</a>
+            <a class="tab" href="https://github.com/daptiv/style-guide/blob/master/README.md#install" target="_blank">Install</a>
+        </nav>
+    </header>
+
+
+    <div class="daptiv-container">
+        <div class="content-area">
+    
+    <div class="daptiv-column daptiv-one-fourth">
+      <nav class="daptiv-side-menu">
+  <a class="daptiv-side-menu-item " href="/style-guide/scaffolding/">Scaffolding</a>
+  <a class="daptiv-side-menu-item " href="/style-guide/colors/">Colors</a>
+  <a class="daptiv-side-menu-item " href="/style-guide/nav/">Navigation</a>
+  <a class="daptiv-side-menu-item selected" href="/style-guide/components/">Components</a>
+  <a class="daptiv-side-menu-item " href="/style-guide/iconography/">Iconography</a>
+</nav>
+
+    </div>
+    
+    <div  class="daptiv-column daptiv-three-fourths" >
+        <h1 class="page-title">
+            Components
+        </h1>
+        <div class="markdown-body">
+            <p>This section provides styles for different types of layouts.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#panel" id="markdown-toc-panel">Panel</a></li>
+</ul>
+
+<h2 id="panel">Panel</h2>
+
+<p>Panel is a quick, easy way to display content with a title.</p>
+
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="daptiv-panel">
+    <div class="title">Title of Panel</div>
+    <div class="content">
+        This is the content section.
+        <div>
+            Things to consider:
+            <ul>
+                <li>When to use a panel</li>
+                <li>Why you need a panel</li>
+                <li>When not to use a panel</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-panel&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;title&quot;</span><span class="nt">&gt;</span>Title of Panel<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+        This is the content section.
+        <span class="nt">&lt;div&gt;</span>
+            Things to consider:
+            <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>When to use a panel<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Why you need a panel<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>When not to use a panel<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+        <footer class="footer">
+            Copyright Changepoint 2015.<br>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.9.38</strong>
+        </footer>
+    </div>
+
+    </body>
+</html>
