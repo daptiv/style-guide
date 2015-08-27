@@ -5,8 +5,8 @@
     line-height: $dropdown-item-height;
 
     .item {
-        background: $color-white;
-        color: $color-black;
+        background: $color-base-0;
+        color: $color-text-dark;
         display: block;
         height: $dropdown-item-height;
         margin: $dropdown-item-border-size;
@@ -18,32 +18,35 @@
         text-overflow: ellipsis;
 
         &:not(.selected):hover {
-            background: $color-light-blue;
-            color: $color-black;
+            background: $color-secondary-light;
+            color: $color-base-100;
         }
 
         &.selected {
-            color: $color-medium-dark-blue;
+            color: $color-primary-medium;
         }
 
         &.disabled {
-            background: $color-white;
-            color: $color-medium-dark-gray;
+            background: $color-base-0;
+            color: $color-base-60;
             cursor: default;
 
             &:hover {
-                background: $color-white;
-                color: $color-medium-dark-gray;
+                background: $color-base-0;
+                color: $color-base-60;
             }
         }
 
         &.alternate {
-            background: $color-light-medium-gray;
+            background: $color-base-30;
 
             &.selected {
-                background: $color-light-medium-gray;
+                background: $color-base-30;
+            }
+
+            &.disabled:hover {
+                background: $color-base-30;
             }
         }
     }
 }
-

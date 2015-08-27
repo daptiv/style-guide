@@ -3,12 +3,13 @@
 //## styles for Panel
 
 .daptiv-panel {
-    background-color: $color-white;
-    border: 1px solid $color-medium-dark-gray;
+    background-color: $color-base-0;
+    border: 1px solid $color-base-60;
     display: block;
 
     .title {
-        border-bottom: 1px solid $color-medium-dark-blue;
+        border-bottom: 1px solid $color-secondary-medium;
+        color: $color-text-dark;
         font-size: $font-size-large;
         height: $panel-title-height;
         line-height: $panel-title-height;
@@ -17,7 +18,7 @@
     }
 
     .content {
-        padding: 0 $panel-gutter-width;
+        padding: $panel-gutter-width;
     }
 }
 

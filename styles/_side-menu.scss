@@ -10,8 +10,8 @@ $side-menu-item-horizontal-padding: 10px;
 }
 
 .daptiv-side-menu-item {
-    background-color: $color-light-gray;
-    color: $color-black;
+    background-color: $color-base-20;
+    color: $color-text-dark;
     display: block;
     padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
 
@@ -20,7 +20,9 @@ $side-menu-item-horizontal-padding: 10px;
     }
 
     &.selected {
-        background-color: $color-medium-blue;
+        background-color: $color-primary-medium;
+        color: $color-base-0;
+        cursor: default;
+        text-decoration: none;
     }
 }
-

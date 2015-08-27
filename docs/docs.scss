@@ -70,7 +70,7 @@ $icon-block-size: 75px;
     width: $swatch-width-height;
 
     label {
-        background-color: $color-white;
+        background-color: $color-base-0;
         display: block;
         font-size: 1.2em;
         font-weight: bold;
@@ -82,7 +82,7 @@ $icon-block-size: 75px;
 
     .swatch {
         border-radius: 0.25rem;
-        box-shadow: 2px 2px 2px $color-medium-gray;
+        box-shadow: 2px 2px 2px $color-base-50;
         display: block;
         height: $swatch-width-height;
         padding: $swatch-padding;
@@ -91,75 +91,63 @@ $icon-block-size: 75px;
     }
 }
 
-.swatch-dark-blue {
-    background-color: $color-dark-blue;
+.swatch-primary-dark {
+    background-color: $color-primary-dark;
+}
+.swatch-primary-medium {
+    background-color: $color-primary-medium;
+}
+.swatch-primary-medium-light {
+    background-color: $color-primary-medium-light;
+}
+.swatch-primary-light {
+    background-color: $color-primary-light;
 }
 
-.swatch-medium-dark-blue {
-    background-color: $color-medium-dark-blue;
+.swatch-secondary-medium {
+    background-color: $color-secondary-medium;
+}
+.swatch-secondary-light {
+    background-color: $color-secondary-light;
 }
 
-.swatch-medium-blue {
-    background-color: $color-medium-blue;
+.swatch-base-100 {
+    background-color: $color-base-100;
+}
+.swatch-base-90 {
+    background-color: $color-base-90;
+}
+.swatch-base-80 {
+    background-color: $color-base-80;
+}
+.swatch-base-60 {
+    background-color: $color-base-60;
+}
+.swatch-base-50 {
+    background-color: $color-base-50;
+}
+.swatch-base-40 {
+    background-color: $color-base-40;
+}
+.swatch-base-30 {
+    background-color: $color-base-30;
+}
+.swatch-base-20 {
+    background-color: $color-base-20;
+}
+.swatch-base-0 {
+    background-color: $color-base-0;
 }
 
-.swatch-medium-light-blue {
-    background-color: $color-medium-light-blue;
+.swatch-text-dark {
+    background-color: $color-text-dark;
 }
-
-.swatch-light-blue {
-    background-color: $color-light-blue;
+.swatch-text-medium {
+    background-color: $color-text-medium;
 }
-
-.swatch-text-medium-blue {
-    background-color: $color-text-medium-blue;
+.swatch-text-medium-light {
+    background-color: $color-text-medium-light;
 }
-
-.swatch-text-medium-dark-blue {
-    background-color: $color-text-medium-dark-blue;
+.swatch-text-light {
+    background-color: $color-text-light;
 }
-
-.swatch-text-black {
-    background-color: $color-text-black;
-}
-
-.swatch-text-white {
-    background-color: $color-text-white;
-}
-
-.swatch-black {
-    background-color: $color-black;
-}
-
-.swatch-dark-dark-gray {
-    background-color: $color-dark-dark-gray;
-}
-
-.swatch-dark-gray {
-    background-color: $color-dark-gray;
-}
-
-.swatch-medium-dark-gray {
-    background-color: $color-medium-dark-gray;
-}
-
-.swatch-medium-gray {
-    background-color: $color-medium-gray;
-}
-
-.swatch-medium-light-gray {
-    background-color: $color-medium-light-gray;
-}
-
-.swatch-light-medium-gray {
-    background-color: $color-light-medium-gray;
-}
-
-.swatch-light-gray {
-    background-color: $color-light-gray;
-}
-
-.swatch-white {
-    background-color: $color-white;
-}
-
