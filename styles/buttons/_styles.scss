@@ -13,7 +13,7 @@
         cursor: pointer;
     }
 
-    &.click {
-        background-color: $button-color-click;
+    &:active {
+        background-color: $button-color-active;
     }
 }

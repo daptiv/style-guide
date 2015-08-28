@@ -38,8 +38,6 @@ Panel is a quick, easy way to display content with a title.
 
 {% snippet html %}
 <div>
-<input type='button' class='daptiv-button' value='Default button' /> 
-&nbsp;&nbsp;
-<input type='button' class='daptiv-button click' value='Default button clicked' /> 
+<input type='button' class='daptiv-button' value='Default button' />  
 </div>
 {% endsnippet %}
