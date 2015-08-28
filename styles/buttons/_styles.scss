@@ -1,0 +1,19 @@
+
+.daptiv-button {
+    background-color: $button-bg;
+    border: $button-border;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    font: $button-font;
+    height: $button-height;
+    padding: 0 $button-pad-h;
+
+    &:hover {
+        background-color: $button-color-hover;
+        cursor: pointer;
+    }
+
+    &.click {
+        background-color: $button-color-click;
+    }
+}
