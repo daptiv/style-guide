@@ -58,11 +58,11 @@
         }
 
         &.disabled {
-            color: $color-medium-dark-gray;
+            color: $subnav-tab-disabled-color;
             cursor: default;
 
             &:hover {
-                color: $color-medium-dark-gray;
+                color: $subnav-tab-disabled-color;
             }
         }
 
@@ -78,4 +78,3 @@
         }
     }
 }
-

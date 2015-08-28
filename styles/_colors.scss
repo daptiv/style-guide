@@ -2,26 +2,29 @@
 //
 //## Primary colors, gray colors, typography colors
 
-//Primary Colors
-$color-dark-blue: #027dd1;
-$color-medium-dark-blue: #00b4ff;
-$color-medium-blue: #9adbf8;
-$color-medium-light-blue: #ccebfb;
-$color-light-blue: #e9f6fd;
+// Primary palette
+$color-primary-dark: #1c427b;
+$color-primary-medium: #2e6fb1;
+$color-primary-medium-light: #0085cf;
+$color-primary-light: #86b5e1;
 
-//Black and grayscale colors
-$color-black: #333;
-$color-dark-dark-gray: #666;
-$color-dark-gray: #999;
-$color-medium-dark-gray: #b2b2b2;
-$color-medium-gray: #ccc;
-$color-medium-light-gray: #ddd;
-$color-light-medium-gray: #efefef;
-$color-light-gray: #f5f5f5;
-$color-white: #fff;
+// Secondary palette
+$color-secondary-medium: #dfa13c;
+$color-secondary-light: #f3d8a2;
 
-//Typography colors
-$color-text-white: $color-white;
-$color-text-medium-blue: $color-medium-blue;
-$color-text-medium-dark-blue: $color-medium-dark-blue;
-$color-text-black: $color-black;
+// Base palette
+$color-base-100: #000;
+$color-base-90: #333;
+$color-base-80: #666;
+$color-base-60: #b3b3b3;
+$color-base-50: #ccc;
+$color-base-40: #ddd;
+$color-base-30: #eee;
+$color-base-20: #f5f5f5;
+$color-base-0: #fff;
+
+// Typography palette
+$color-text-dark: $color-base-90;
+$color-text-medium: $color-primary-medium;
+$color-text-medium-light: $color-primary-light;
+$color-text-light: $color-base-0;
