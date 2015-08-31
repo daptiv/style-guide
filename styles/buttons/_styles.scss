@@ -16,4 +16,10 @@
     &:active {
         background-color: $button-color-active;
     }
+
+    &:disabled {
+        background: $button-bg-disabled;
+        color: $button-color-disabled;
+        cursor: default;
+    }
 }
