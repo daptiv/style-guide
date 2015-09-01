@@ -21,11 +21,6 @@
             vertical-align: middle;
         }
 
-        &:focus {
-            border: dotted $nav-border-width $nav-border-color-focus;
-            outline: none;
-        }
-
         &:not(.selected):hover {
             color: $nav-font-color-hover;
         }
@@ -33,6 +28,12 @@
         &.selected {
             background: $nav-tab-selected-bg;
             border: solid $nav-border-width $nav-tab-selected-bg;
+        }
+
+        // Keep this after .selected
+        &:focus {
+            border: dotted $nav-border-width $nav-border-color-focus;
+            outline: none;
         }
     }
 }
