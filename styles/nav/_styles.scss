@@ -10,13 +10,20 @@
     width: 100%;
 
     .tab {
+        border: solid $nav-border-width $nav-bg;
         color: $nav-font-color;
         display: inline-block;
+        line-height: $nav-height - $nav-border-width - $nav-border-width;
         padding: 0 $nav-tab-h-pad;
         text-decoration: none;
 
         & > * {
             vertical-align: middle;
+        }
+
+        &:focus {
+            border: dotted $nav-border-width $nav-border-color-focus;
+            outline: none;
         }
 
         &:not(.selected):hover {
@@ -25,8 +32,8 @@
 
         &.selected {
             background: $nav-tab-selected-bg;
+            border: solid $nav-border-width $nav-tab-selected-bg;
         }
-
     }
 }
 
@@ -47,6 +54,10 @@
 
         & > * {
             vertical-align: middle;
+        }
+
+        &:focus {
+            outline: dotted 2px $nav-border-color-focus;
         }
 
         &:not(.selected):hover {

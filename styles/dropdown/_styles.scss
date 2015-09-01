@@ -17,6 +17,10 @@
         text-decoration: none;
         text-overflow: ellipsis;
 
+        &:focus {
+            outline: dotted 2px $dropdown-item-border-color-focus;
+        }
+
         &:not(.selected):hover {
             background: $color-secondary-light;
             color: $color-base-100;
