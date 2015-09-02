@@ -19,7 +19,7 @@
 
         &:not(.selected):hover {
             background: $color-secondary-light;
-            color: $color-base-100;
+            color: $color-text-dark;
         }
 
         &.selected {
