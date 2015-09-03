@@ -16,11 +16,11 @@ These are the different types of navigation components.
 Navigation for switching views. Results in a collection of left aligned, horizontal tabs. The example below shows a selected, regular and menu tab; the later causes display of the [Tab Navigation Menu Dropdown](#tab-navigation-menu-dropdown).
 
 {% snippet html %}
+<!-- Empty comments used to remove line breaks. -->
 <nav class="daptiv-nav">
-    <a class="tab" href="#" onclick="return false;">Home</a>
-    <a class="selected tab" href="#" onclick="return false;">Selected</a>
-    <a class="tab" href="#" onclick="return false;">About</a>
-    <a class="tab" href="#" onclick="return false;">Contact</a>
+    <a class="tab" href="#" onclick="return false;">Home</a><!--
+    --><a class="selected tab" href="#" onclick="return false;">Selected</a><!--
+    --><a class="tab" href="#" onclick="return false;">About</a><a class="tab" href="#" onclick="return false;">Contact</a>
 </nav>
 {% endsnippet %}
 <br />
@@ -57,7 +57,7 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="selected tab" href="#" onclick="return false;">Selected</a>
     <a class="tab" href="#" onclick="return false;">About</a>
     <a class="tab" href="#" onclick="return false;">Contact</a>
-    <a class="disabled tab" href="#" onclick="return false;">Disabled</a>
+    <a class="disabled tab" href="#" onclick="return false;" tabIndex="-1">Disabled</a>
 </nav>
 {% endsnippet %}
 <br />

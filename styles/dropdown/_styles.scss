@@ -6,6 +6,7 @@
 
     .item {
         background: $color-base-0;
+        border: 0;
         color: $color-text-dark;
         display: block;
         height: $dropdown-item-height;
@@ -16,6 +17,10 @@
         padding: 0 $dropdown-item-padding;
         text-decoration: none;
         text-overflow: ellipsis;
+
+        &:focus {
+            outline: dotted 2px $dropdown-item-border-color-focus;
+        }
 
         &:not(.selected):hover {
             background: $color-secondary-light;
