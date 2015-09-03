@@ -23,11 +23,11 @@
 
     <header>
         <nav class="daptiv-nav">
-            <a class="tab " href="/style-guide/">Home</a>
-            <a class="tab selected" href="/style-guide/scaffolding">Guide</a>
-            <a class="tab " href="/style-guide/stats">Stats</a>
-            <a class="tab" href="https://github.com/daptiv/style-guide" target="_blank">GitHub</a>
-            <a class="tab" href="https://github.com/daptiv/style-guide/blob/master/README.md#install" target="_blank">Install</a>
+            <a class="tab " href="/style-guide/">Home</a><!--
+            --><a class="tab selected" href="/style-guide/scaffolding">Guide</a><!--
+            --><a class="tab " href="/style-guide/stats">Stats</a><!--
+            --><a class="tab" href="https://github.com/daptiv/style-guide" target="_blank">GitHub</a><!--
+            --><a class="tab" href="https://github.com/daptiv/style-guide/blob/master/README.md#install" target="_blank">Install</a>
         </nav>
     </header>
 
@@ -72,19 +72,19 @@
 <button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
 </div>
 <div class="snippet-header">
+<!-- Empty comments used to remove line breaks. -->
 <nav class="daptiv-nav">
-    <a class="tab" href="#" onclick="return false;">Home</a>
-    <a class="selected tab" href="#" onclick="return false;">Selected</a>
-    <a class="tab" href="#" onclick="return false;">About</a>
-    <a class="tab" href="#" onclick="return false;">Contact</a>
+    <a class="tab" href="#" onclick="return false;">Home</a><!--
+    --><a class="selected tab" href="#" onclick="return false;">Selected</a><!--
+    --><a class="tab" href="#" onclick="return false;">About</a><a class="tab" href="#" onclick="return false;">Contact</a>
 </nav>
 </div>
 <div class="snippet-content">
-<div class="highlight"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;daptiv-nav&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+<div class="highlight"><pre><span class="c">&lt;!-- Empty comments used to remove line breaks. --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;daptiv-nav&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span><span class="c">&lt;!--</span>
+<span class="c">    --&gt;</span><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span><span class="c">&lt;!--</span>
+<span class="c">    --&gt;</span><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/nav&gt;</span>
 </pre></div>
 </div>
@@ -155,7 +155,7 @@
     <a class="selected tab" href="#" onclick="return false;">Selected</a>
     <a class="tab" href="#" onclick="return false;">About</a>
     <a class="tab" href="#" onclick="return false;">Contact</a>
-    <a class="disabled tab" href="#" onclick="return false;">Disabled</a>
+    <a class="disabled tab" href="#" onclick="return false;" tabindex="-1">Disabled</a>
 </nav>
 </div>
 <div class="snippet-content">
@@ -164,7 +164,7 @@
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;disabled tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;disabled tab&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span> <span class="na">tabIndex=</span><span class="s">&quot;-1&quot;</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/nav&gt;</span>
 </pre></div>
 </div>
@@ -181,7 +181,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2015.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.9.40</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.9.43</strong>
         </footer>
     </div>
 
