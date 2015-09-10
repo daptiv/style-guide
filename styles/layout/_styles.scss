@@ -6,12 +6,13 @@
     margin-right: auto;
 }
 
-.daptiv-column {
-    display: inline-block;
-    margin: 0 -0.125em;
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
-    vertical-align: top;
+.daptiv-grid {
+    .column {
+        display: inline-block;
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+        vertical-align: top;
+    }
 }
 
 .daptiv-one-fourth {
@@ -21,5 +22,3 @@
 .daptiv-three-fourths {
     width: 75%;
 }
-
-
