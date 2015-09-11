@@ -4,7 +4,10 @@ $fa-font-path: 'fonts';
 @import "../bower_components/pygments/css/default.css";
 
 $swatch-padding: 5px;
-$swatch-width-height: 90px;
+$swatch-height: 60px;
+$swatch-line-height: 50px;
+$swatch-text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
+$swatch-width: 150px;
 $swatch-label-height: 30px;
 $swatch-margin: 4px;
 
@@ -62,94 +65,115 @@ $icon-block-size: 75px;
     }
 }
 
-.swatch-with-label {
+.swatch {
+    text-shadow: $swatch-text-shadow;
+    font-size: $font-size-larger;
+    text-align: center;
+    line-height: $swatch-line-height;
+}
+
+@mixin swatch-with-label($swatch-color) {
     display: inline-block;
-    height: $swatch-width-height + $swatch-label-height + 2px;
+    height: $swatch-height + $swatch-label-height + 2px;
     margin: $swatch-margin;
     vertical-align: top;
-    width: $swatch-width-height;
+    width: $swatch-width;
 
     label {
         background-color: $color-base-0;
         display: block;
-        font-size: 1.2em;
         font-weight: bold;
         height: $swatch-label-height;
         margin: $swatch-margin;
         text-align: center;
-        width: $swatch-width-height;
+        width: $swatch-width;
     }
 
     .swatch {
+        &:before {
+            content: "#{$swatch-color}";
+        }
+        background-color: $swatch-color;
         border-radius: 0.25rem;
         box-shadow: 2px 2px 2px $color-base-50;
         display: block;
-        height: $swatch-width-height;
+        height: $swatch-height;
         padding: $swatch-padding;
         vertical-align: top;
-        width: $swatch-width-height;
+        width: $swatch-width;
     }
 }
-
-.swatch-primary-dark {
-    background-color: $color-primary-dark;
-}
-.swatch-primary-medium {
-    background-color: $color-primary-medium;
-}
-.swatch-primary-medium-light {
-    background-color: $color-primary-medium-light;
-}
-.swatch-primary-light {
-    background-color: $color-primary-light;
+.labeled-swatch-color-primary-dark {
+    @include swatch-with-label($color-primary-dark);
 }
 
-.swatch-secondary-medium {
-    background-color: $color-secondary-medium;
-}
-.swatch-secondary-light {
-    background-color: $color-secondary-light;
+.labeled-swatch-color-primary-medium {
+    @include swatch-with-label($color-primary-medium);
 }
 
-.swatch-base-100 {
-    background-color: $color-base-100;
-}
-.swatch-base-90 {
-    background-color: $color-base-90;
-}
-.swatch-base-80 {
-    background-color: $color-base-80;
-}
-.swatch-base-60 {
-    background-color: $color-base-60;
-}
-.swatch-base-50 {
-    background-color: $color-base-50;
-}
-.swatch-base-40 {
-    background-color: $color-base-40;
-}
-.swatch-base-30 {
-    background-color: $color-base-30;
-}
-.swatch-base-20 {
-    background-color: $color-base-20;
-}
-.swatch-base-0 {
-    background-color: $color-base-0;
+.labeled-swatch-color-primary-medium-light {
+    @include swatch-with-label($color-primary-medium-light);
 }
 
-.swatch-text-dark {
-    background-color: $color-text-dark;
+.labeled-swatch-color-primary-light {
+    @include swatch-with-label($color-primary-light);
 }
-.swatch-text-medium {
-    background-color: $color-text-medium;
+
+.labeled-swatch-color-secondary-medium {
+    @include swatch-with-label($color-secondary-medium);
 }
-.swatch-text-medium-light {
-    background-color: $color-text-medium-light;
+
+.labeled-swatch-color-secondary-light {
+    @include swatch-with-label($color-secondary-light);
 }
-.swatch-text-light {
-    background-color: $color-text-light;
+
+.labeled-swatch-color-base-0 {
+    @include swatch-with-label($color-base-0);
+}
+
+.labeled-swatch-color-base-20 {
+    @include swatch-with-label($color-base-20);
+}
+
+.labeled-swatch-color-base-30 {
+    @include swatch-with-label($color-base-30);
+}
+
+.labeled-swatch-color-base-40 {
+    @include swatch-with-label($color-base-40);
+}
+
+.labeled-swatch-color-base-50 {
+    @include swatch-with-label($color-base-50);
+}
+
+.labeled-swatch-color-base-60 {
+    @include swatch-with-label($color-base-60);
+}
+
+.labeled-swatch-color-base-80 {
+    @include swatch-with-label($color-base-80);
+}
+
+.labeled-swatch-color-base-90 {
+    @include swatch-with-label($color-base-90);
+}
+
+.labeled-swatch-color-base-100 {
+    @include swatch-with-label($color-base-100);
+}
+
+.labeled-swatch-color-text-dark {
+    @include swatch-with-label($color-text-dark);
+}
+.labeled-swatch-color-text-medium {
+    @include swatch-with-label($color-text-medium);
+}
+.labeled-swatch-color-text-medium-light {
+    @include swatch-with-label($color-text-medium-light);
+}
+.labeled-swatch-color-text-light {
+    @include swatch-with-label($color-text-light);
 }
 
 .footer {
