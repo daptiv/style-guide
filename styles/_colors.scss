@@ -25,6 +25,11 @@ $color-base-0: #fff;
 
 // Typography palette
 $color-text-dark: $color-base-90;
-$color-text-medium: $color-primary-medium;
-$color-text-medium-light: $color-primary-light;
-$color-text-light: $color-base-0;
+$color-text-medium: $color-base-80;
+$color-text-light: $color-base-60;
+$color-text-white: $color-base-0;
+$color-text-default: $color-text-dark;
+$color-text-disabled: $color-text-light;
+
+$color-text-accent-dark: $color-primary-medium;
+$color-text-accent-light: $color-primary-light;
