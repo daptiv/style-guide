@@ -28,6 +28,11 @@ section: Guide
 ### Typography Color Palette
 {% colorswatch color-text-dark %}
 {% colorswatch color-text-medium %}
-{% colorswatch color-text-medium-light %}
 {% colorswatch color-text-light %}
+{% colorswatch color-text-white %}
+{% colorswatch color-text-accent-dark %}
+{% colorswatch color-text-accent-light %}
 
+### Typography Aliases
+{% colorswatch color-text-default %}
+{% colorswatch color-text-disabled %}

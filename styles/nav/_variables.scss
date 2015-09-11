@@ -4,7 +4,7 @@
 
 $nav-bg: $color-primary-dark;
 $nav-font: $font-size-large $font-family-base;
-$nav-font-color: $color-text-light;
+$nav-font-color: $color-text-white;
 $nav-font-color-hover: $color-primary-light;
 $nav-border-width: 2px;
 $nav-border-color-focus: $color-primary-light;
@@ -19,4 +19,4 @@ $subnav-font-color-hover: $color-primary-medium-light;
 $subnav-height: $nav-height;
 $subnav-tab-h-pad: $nav-tab-h-pad;
 $subnav-tab-selected-color: $nav-tab-selected-bg;
-$subnav-tab-disabled-color: $color-base-60;
+$subnav-tab-disabled-color: $color-text-disabled;
