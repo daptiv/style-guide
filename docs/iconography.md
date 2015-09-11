@@ -19,3 +19,4 @@ These are the different types of navigation components.
 ## Utility
 
 {% iconblock menu %}
+{% iconblock search %}
