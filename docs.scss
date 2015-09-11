@@ -163,17 +163,29 @@ $icon-block-size: 75px;
     @include swatch-with-label($color-base-100);
 }
 
+.labeled-swatch-color-text-default {
+    @include swatch-with-label($color-text-default);
+}
+.labeled-swatch-color-text-disabled {
+    @include swatch-with-label($color-text-disabled);
+}
 .labeled-swatch-color-text-dark {
     @include swatch-with-label($color-text-dark);
 }
 .labeled-swatch-color-text-medium {
     @include swatch-with-label($color-text-medium);
 }
-.labeled-swatch-color-text-medium-light {
-    @include swatch-with-label($color-text-medium-light);
-}
 .labeled-swatch-color-text-light {
     @include swatch-with-label($color-text-light);
+}
+.labeled-swatch-color-text-white {
+    @include swatch-with-label($color-text-white);
+}
+.labeled-swatch-color-text-accent-light {
+    @include swatch-with-label($color-text-accent-light);
+}
+.labeled-swatch-color-text-accent-dark {
+    @include swatch-with-label($color-text-accent-dark);
 }
 
 .footer {
