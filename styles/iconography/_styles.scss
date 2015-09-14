@@ -10,5 +10,9 @@
     &.menu {
         @include icon-small(after, left, $fa-var-caret-down);
     }
+
+    &.search {
+        @include icon-small(before, right, $fa-var-search);
+    }
 }
 
