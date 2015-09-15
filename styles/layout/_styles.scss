@@ -12,6 +12,10 @@
         padding-left: $grid-gutter-width;
         padding-right: $grid-gutter-width;
         vertical-align: top;
+
+        &.no-wrap {
+            white-space: nowrap;
+        }
     }
 }
 
