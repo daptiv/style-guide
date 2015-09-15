@@ -6,8 +6,6 @@ section: Guide
 
 This section provides styles for different types of layouts.
 
-## Contents
-
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
@@ -34,9 +32,9 @@ Panel is a quick, easy way to display content with a title.
 
 <br />
 
-## Buttons 
+## Buttons
 
-### Primary 
+### Primary
 
 {% snippet html %}
 <div>
