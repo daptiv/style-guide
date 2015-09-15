@@ -7,6 +7,10 @@
 }
 
 .daptiv-grid {
+    .full-width {
+        width: 100%;
+    }
+
     .column {
         display: inline-block;
         padding-left: $grid-gutter-width;
@@ -16,15 +20,15 @@
         &.no-wrap {
             white-space: nowrap;
         }
+
+        &.one-fourth {
+            width: 25%;
+        }
+
+        &.three-fourths {
+            width: 75%;
+        }
     }
-}
-
-.daptiv-one-fourth {
-    width: 25%;
-}
-
-.daptiv-three-fourths {
-    width: 75%;
 }
 
 .right-justify {
