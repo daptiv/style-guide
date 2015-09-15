@@ -12,8 +12,8 @@ Grid is composed of columns. Columns are vertically align on the top as a defaul
 
 {% snippet html %}
 <div class="grid full-width">
-    <div class="column box-column">Column 1</div><!--
---><div class="column box-column">Column 2</div><!--
+    <div class="column outline">Column 1</div><!--
+--><div class="column outline">Column 2</div><!--
 --></div>
 {% endsnippet %}
 
@@ -21,7 +21,7 @@ Grid is composed of columns. Columns are vertically align on the top as a defaul
 Set a width on the column in order to restrict its size.
 {% snippet html %}
 <div class="grid full-width">
-    <div class="column one-fourth box-column">Column 1 </div><!--
---><div class="column three-fourths box-column">Column 2</div><!--
+    <div class="column one-fourth outline">Column 1 </div><!--
+--><div class="column three-fourths outline">Column 2</div><!--
 --></div>
 {% endsnippet %}
