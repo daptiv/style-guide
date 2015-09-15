@@ -49,6 +49,6 @@
     width: 100%;
 
     .tab {
-        @include link-tab;
+        @include nav-link;
     }
 }
