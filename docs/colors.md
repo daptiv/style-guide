@@ -31,6 +31,7 @@ section: Guide
 {% colorswatch color-text-light %}
 {% colorswatch color-text-white %}
 {% colorswatch color-text-accent-dark %}
+{% colorswatch color-text-accent-medium %}
 {% colorswatch color-text-accent-light %}
 
 ### Typography Aliases

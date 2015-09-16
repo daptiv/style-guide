@@ -190,6 +190,9 @@ $icon-block-size: 75px;
 .labeled-swatch-color-text-accent-light {
     @include swatch-with-label($color-text-accent-light);
 }
+.labeled-swatch-color-text-accent-medium {
+    @include swatch-with-label($color-text-accent-medium);
+}
 .labeled-swatch-color-text-accent-dark {
     @include swatch-with-label($color-text-accent-dark);
 }
