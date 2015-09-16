@@ -6,8 +6,6 @@ section: Guide
 
 These are the different types of navigation components.
 
-## Contents
-
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
@@ -61,4 +59,3 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 </nav>
 {% endsnippet %}
 <br />
-

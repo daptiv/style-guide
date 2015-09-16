@@ -1,0 +1,41 @@
+@mixin nav-link() {
+    color: $subnav-font-color;
+    padding: 0 $subnav-tab-h-pad;
+    text-decoration: none;
+
+    & > * {
+        vertical-align: middle;
+    }
+
+    &:focus {
+        outline: dotted 2px $nav-border-color-focus;
+    }
+
+    &:not(.selected):hover {
+        color: $subnav-font-color-hover;
+    }
+
+    &.selected {
+        color: $subnav-tab-selected-color;
+    }
+
+    &.disabled {
+        color: $subnav-tab-disabled-color;
+        cursor: default;
+
+        &:hover {
+            color: $subnav-tab-disabled-color;
+        }
+    }
+
+    &.menu {
+
+        &::after {
+            @extend .fa;
+
+            content: $fa-var-caret-down;
+            font-size: $icon-size-small;
+            margin-left: $half-whitespace-unit;
+        }
+    }
+}

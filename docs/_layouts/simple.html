@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="content-area">
+<div class="content-area daptiv-grid">
     {% if page.section == "Guide" %}
-    <div class="daptiv-column daptiv-one-fourth">
+    <div class="column one-fourth">
       {% include guidemenu.html %}
-    </div>
+  </div><!--
     {% endif %}
-    <div {% if page.section == "Guide" %} class="daptiv-column daptiv-three-fourths" {% endif %}>
+--><div {% if page.section == "Guide" %} class="column three-fourths" {% endif %}>
         <h1 class="page-title">
             {{ page.title }}
         </h1>

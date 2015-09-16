@@ -6,20 +6,31 @@
     margin-right: auto;
 }
 
-.daptiv-column {
-    display: inline-block;
-    margin: 0 -0.125em;
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
-    vertical-align: top;
+.daptiv-grid {
+    .full-width {
+        width: 100%;
+    }
+
+    .column {
+        display: inline-block;
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+        vertical-align: top;
+
+        &.no-wrap {
+            white-space: nowrap;
+        }
+
+        &.one-fourth {
+            width: 25%;
+        }
+
+        &.three-fourths {
+            width: 75%;
+        }
+    }
 }
 
-.daptiv-one-fourth {
-    width: 25%;
+.right-justify {
+    text-align: right;
 }
-
-.daptiv-three-fourths {
-    width: 75%;
-}
-
-
