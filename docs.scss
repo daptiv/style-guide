@@ -19,6 +19,12 @@ $snippet-border: 2px solid #CCC;
 $icon-block-bg: #eee;
 $icon-block-size: 75px;
 
+.daptiv-grid{
+    .column .outline {
+        border: 1px solid $color-base-80;
+    }
+}
+
 .icon-block {
     background-color: $icon-block-bg;
     border-radius: 3px;
