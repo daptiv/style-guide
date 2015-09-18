@@ -9,7 +9,7 @@
     }
 }
 
-@mixin icon-small-centered-block($content) {
+@mixin icon-small-block($content) {
     &:after {
         @extend .fa;
         content: $content;

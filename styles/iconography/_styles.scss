@@ -16,6 +16,6 @@
     }
 
     &.settings {
-        @include icon-small-centered-block($fa-var-cog);
+        @include icon-small-block($fa-var-cog);
     }
 }

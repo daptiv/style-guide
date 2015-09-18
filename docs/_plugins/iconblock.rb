@@ -8,7 +8,7 @@ module Jekyll
         end
 
         def render(context)
-            @icon_text = super.to_s.strip
+            icon_text = super.to_s.strip
            "<div class=\"icon-block\">\n" +
                "<label class=\"icon #{@icon_name}\">#{@icon_text}</label>\n" +
                "</div>"
