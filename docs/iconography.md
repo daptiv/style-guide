@@ -11,10 +11,11 @@ These are the different types of navigation components.
 
 ## Movement
 
-{% iconblock previous %}
-{% iconblock next %}
+{% iconblock previous %}previous{% endiconblock %}
+{% iconblock next %}next{% endiconblock %}
 
 ## Utility
 
-{% iconblock menu %}
-{% iconblock search %}
+{% iconblock menu %}menu{% endiconblock %}
+{% iconblock search %}search{% endiconblock %}
+{% iconblock settings %}{% endiconblock %}

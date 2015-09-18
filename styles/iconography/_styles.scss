@@ -14,5 +14,8 @@
     &.search {
         @include icon-small(before, right, $fa-var-search);
     }
-}
 
+    &.settings {
+        @include icon-small-centered-block($fa-var-cog);
+    }
+}
