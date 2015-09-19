@@ -159,6 +159,10 @@ $icon-between-spacing: 5px;
     @include swatch-with-label($color-base-60);
 }
 
+.labeled-swatch-color-base-70 {
+    @include swatch-with-label($color-base-70);
+}
+
 .labeled-swatch-color-base-80 {
     @include swatch-with-label($color-base-80);
 }

@@ -18,6 +18,7 @@ section: Guide
 {% colorswatch color-base-100 %}
 {% colorswatch color-base-90 %}
 {% colorswatch color-base-80 %}
+{% colorswatch color-base-70 %}
 {% colorswatch color-base-60 %}
 {% colorswatch color-base-50 %}
 {% colorswatch color-base-40 %}
