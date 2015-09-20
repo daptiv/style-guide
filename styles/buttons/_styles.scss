@@ -9,15 +9,28 @@
     padding: 0 $button-pad-h;
 
     &:hover {
-        background-color: $button-color-hover;
+        background-color: $button-bg-hover;
         cursor: pointer;
     }
 
     &:active {
-        background-color: $button-color-active;
+        background-color: $button-bg-active;
     }
 
-    &:disabled {
+    &.alternate {
+        background-color: $button-bg-alternate;
+
+        &:hover {
+            background-color: $button-bg-alternate-hover;
+        }
+
+        &:active {
+            background-color: $button-bg-alternate-active;
+        }
+    }
+
+    &:disabled,
+    &.alternate:disabled {
         background: $button-bg-disabled;
         color: $button-color-disabled;
         cursor: default;
