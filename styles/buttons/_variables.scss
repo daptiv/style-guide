@@ -1,12 +1,15 @@
 
 $button-bg: $color-primary-dark;
+$button-bg-hover: $color-primary-medium;
+$button-bg-active: $color-primary-medium-light;
+$button-bg-alternate: $color-base-80;
+$button-bg-alternate-hover: $color-base-70;
+$button-bg-alternate-active: $color-base-60;
 $button-bg-disabled: $color-base-40;
 $button-border: 1px solid $color-base-40;
 $button-border-radius: 1px;
 
 $button-color: $color-base-20;
-$button-color-hover: $color-primary-medium;
-$button-color-active: $color-primary-medium-light;
 $button-color-disabled: $color-base-80;
 
 $button-font: $font-size-normal $font-family-base;
