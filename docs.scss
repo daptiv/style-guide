@@ -18,6 +18,7 @@ $snippet-border: 2px solid #CCC;
 
 $icon-block-bg: #eee;
 $icon-block-size: 75px;
+$icon-between-spacing: 5px;
 
 .daptiv-grid{
     .column .outline {
@@ -26,11 +27,12 @@ $icon-block-size: 75px;
 }
 
 .icon-block {
-    background-color: $icon-block-bg;
+    border: 1px solid $color-primary-medium;
     border-radius: 3px;
     display: inline-block;
     height: $icon-block-size;
     line-height: $icon-block-size;
+    margin-right: $icon-between-spacing;    
     text-align: center;
     width: $icon-block-size;
 }
@@ -155,6 +157,10 @@ $icon-block-size: 75px;
 
 .labeled-swatch-color-base-60 {
     @include swatch-with-label($color-base-60);
+}
+
+.labeled-swatch-color-base-70 {
+    @include swatch-with-label($color-base-70);
 }
 
 .labeled-swatch-color-base-80 {

@@ -56,10 +56,7 @@
 
 <ul id="markdown-toc">
   <li><a href="#panel" id="markdown-toc-panel">Panel</a></li>
-  <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a>    <ul>
-      <li><a href="#primary" id="markdown-toc-primary">Primary</a></li>
-    </ul>
-  </li>
+  <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a></li>
 </ul>
 
 <h2 id="panel">Panel</h2>
@@ -109,26 +106,27 @@
 
 <h2 id="buttons">Buttons</h2>
 
-<h3 id="primary">Primary</h3>
-
 <div class="snippet">
 <div class="snippet-src-button-container">
 <button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
 </div>
 <div class="snippet-header">
 <div>
-    <input type="button" class="daptiv-button" value="Default" />&nbsp;&nbsp;
-    <input type="button" class="daptiv-button" disabled="disabled" value="Default Disabled" />  
+    <button class="daptiv-button">Default</button>&nbsp;&nbsp;
+    <button class="daptiv-button alternate">Alternate</button>&nbsp;&nbsp;
+    <button class="daptiv-button" disabled="disabled">Disabled</button>
 </div>
 </div>
 <div class="snippet-content">
 <div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;daptiv-button&quot;</span> <span class="na">value=</span><span class="s">&quot;Default&quot;</span> <span class="nt">/&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;daptiv-button&quot;</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span> <span class="na">value=</span><span class="s">&quot;Default Disabled&quot;</span> <span class="nt">/&gt;</span>  
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;daptiv-button&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;daptiv-button alternate&quot;</span><span class="nt">&gt;</span>Alternate<span class="nt">&lt;/button&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;daptiv-button&quot;</span> <span class="na">disabled=</span><span class="s">&quot;disabled&quot;</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 </div>
+
 
         </div>
     </div>
@@ -139,7 +137,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2015.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.9.49</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.9.52</strong>
         </footer>
     </div>
 
