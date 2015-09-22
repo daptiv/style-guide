@@ -1,6 +1,6 @@
 
 module Jekyll
-    class IconBlockTag < Liquid::Block
+    class IconBlockTag < Liquid::Tag
 
         def initialize(tag_name, icon_name, tokens)
             super
@@ -8,9 +8,8 @@ module Jekyll
         end
 
         def render(context)
-            icon_text = super.to_s.strip
            "<div class=\"icon-block\">\n" +
-               "<label class=\"icon #{@icon_name}\">#{icon_text}</label>\n" +
+               "<i class=\"icon #{@icon_name}\"></i><label class=\"icon-name\">#{@icon_name}</label>\n" +
                "</div>"
         end
     end

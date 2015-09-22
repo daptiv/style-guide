@@ -4,18 +4,23 @@ title: Iconography
 section: Guide
 ---
 
-These are the different types of navigation components.
+These are the different icons available.
 
-* Will be replaced with the ToC, excluding the "Contents" header
+* table of contents
 {:toc}
 
-## Movement
+## Usage
 
-{% iconblock previous %}previous{% endiconblock %}
-{% iconblock next %}next{% endiconblock %}
+{% snippet html %}
+The help icon: <i class="icon help"></i>
+{% endsnippet %}
 
-## Utility
+## Icons
 
-{% iconblock menu %}menu{% endiconblock %}
-{% iconblock search %}search{% endiconblock %}
-{% iconblock settings %}{% endiconblock %}
+{% iconblock previous %}
+{% iconblock next %}
+{% iconblock menu %}
+{% iconblock search %}
+{% iconblock settings %}
+{% iconblock user %}
+{% iconblock help %}

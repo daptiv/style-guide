@@ -17,8 +17,10 @@ $snippet-content-background: #f2f0eb;
 $snippet-border: 2px solid #CCC;
 
 $icon-block-bg: #eee;
-$icon-block-size: 75px;
-$icon-between-spacing: 5px;
+$icon-block-height: 30px;
+$icon-block-margin: 10px;
+$icon-block-padding: 5px;
+$icon-block-width: 100px;
 
 .daptiv-grid{
     .column .outline {
@@ -30,11 +32,22 @@ $icon-between-spacing: 5px;
     border: 1px solid $color-primary-medium;
     border-radius: 3px;
     display: inline-block;
-    height: $icon-block-size;
-    line-height: $icon-block-size;
-    margin-right: $icon-between-spacing;    
-    text-align: center;
-    width: $icon-block-size;
+    height: $icon-block-height;
+    margin: $icon-block-margin;
+    padding: $icon-block-padding;
+    width: $icon-block-width;
+
+    &:hover {
+        background-color: $color-secondary-light;
+    }
+    
+    .icon {
+        margin-right: 5px;
+    }
+
+    .icon-name {
+        margin-left: 5px;
+    }
 }
 
 .snippet-header {
