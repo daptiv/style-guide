@@ -181,6 +181,10 @@ $icon-between-spacing: 5px;
 .labeled-swatch-color-text-disabled {
     @include swatch-with-label($color-text-disabled);
 }
+.labeled-swatch-color-text-link {
+    @include swatch-with-label($color-text-link);
+}
+
 .labeled-swatch-color-text-dark {
     @include swatch-with-label($color-text-dark);
 }

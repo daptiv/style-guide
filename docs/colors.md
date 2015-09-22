@@ -38,3 +38,4 @@ section: Guide
 ### Typography Aliases
 {% colorswatch color-text-default %}
 {% colorswatch color-text-disabled %}
+{% colorswatch color-text-link %}
