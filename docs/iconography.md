@@ -22,3 +22,5 @@ The help icon: <i class="icon help"></i>
 {% iconblock menu %}
 {% iconblock search %}
 {% iconblock settings %}
+{% iconblock user %}
+{% iconblock help %}

@@ -18,4 +18,12 @@
     &.settings {
         @include icon-small-block($fa-var-cog);
     }
+
+    &.help {
+        @include icon-small-block($fa-var-question);
+    }
+
+    &.user {
+        @include icon-small-block($fa-var-user);
+    }
 }
