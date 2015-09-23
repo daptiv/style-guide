@@ -15,5 +15,6 @@ We use [hound](https://houndci.com) to run linting on our scss files.
 
 #Running Locally
 
+* First run `npm install`
 * Run `grunt serve` to deploy changes to the local web server. (This also adds a 'watch' so that subsequent changes are deployed automatically.)
 * Go to: `http//localhost:8888/style-guide`
