@@ -7,5 +7,18 @@
 
 ### After Merge
 
-- [ ] [site](https://daptiv.github.io/style-guide) is updated
+
+run:
+
+```
+git checkout master
+git pull
+npm version patch
+```
+
+### note
+
+If npm version is `2.13` or later npm version will likely fail to run postversion script, leaving you with pending commits in your repo.
+
+If this is the case, run `npm run-script postversion` to finish the process.
 
