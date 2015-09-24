@@ -5,7 +5,7 @@ Common styles and pattern library for daptiv. You can view the style guide [here
 
 ## Install
 
-This project can be included using [bower](http://bower.io/) by creating an entry in your bower.json file with the url `https://github.com/daptiv/style-guide.git#VERSION` where VERSION is the version you care to use.
+Style-guide is available as [bower](http://bower.io/) package. This can be included by creating an entry in your bower.json file with the url `https://github.com/daptiv/style-guide.git#VERSION` where VERSION is the version you care to use.
 
 ## Running Locally
 
