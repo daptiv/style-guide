@@ -3,14 +3,14 @@
   "version": "0.9.55",
   "description": "Common styles and pattern library for Daptiv",
   "author": "Changepoint",
-  "homepage": "https://daptiv.github.com/style-guide",
+  "homepage": "https://daptiv.github.io/style-guide",
   "repository": {
     "type": "git",
     "url": "git://github.com/daptiv/style-guide.git"
   },
   "scripts": {
     "postinstall": "bower install",
-    "update-version": "node ./util/update-version.js"
+    "postversion": "git push && git push --tags && grunt publish"
   },
   "devDependencies": {
     "bower": "^1.4.1",
