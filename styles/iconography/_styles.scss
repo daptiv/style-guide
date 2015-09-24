@@ -12,7 +12,7 @@
     }
 
     &.search {
-        @include icon-small(before, right, $fa-var-search);
+        @include icon-small-block($fa-var-search);
     }
 
     &.settings {
