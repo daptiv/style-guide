@@ -55,4 +55,22 @@
             }
         }
     }
+
+    .item-fixed {
+        background: $color-base-30;
+        border: 0;
+        color: $color-text-dark;
+        cursor: default;
+        display: block;
+        height: $dropdown-item-height;
+        margin: $dropdown-item-border-size;
+        max-width: $dropdown-item-max-width;
+        min-width: $dropdown-item-min-width;
+        outline: none;
+        overflow: hidden;
+        padding: 0 $dropdown-item-padding;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }
