@@ -24,6 +24,8 @@ To publish the site:
 1. Pull latest master: `git checkout master && git pull`
 2. Run `npm version patch`
 
+### More Information 
+
 Some versions of npm do not correctly call the `postversion` script. If you run npm version and all it outputs to the command line is a version number, you are running one of the affected versions of npm.
 
 In the event that the `postversion` script is not run, simply run `npm run-script postversion`
