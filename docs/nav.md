@@ -31,7 +31,7 @@ Navigation for switching views. Results in a collection of left aligned, horizon
     <a class="item" href="#" onclick="return false;">Item 2</a>
     <a class="selected item" href="#" onclick="return false;">Selected Item 3</a>
     <a class="disabled item" href="#" onclick="return false;">Disabled Item 4</a>
-    <a class="item-fixed" href="#" onclick="return false;" tabindex="-1">Fixed Item 5</a>
+    <span class="label" tabindex="-1">Label Item 5</span>
 </div>
 {% endsnippet %}
 <br />
