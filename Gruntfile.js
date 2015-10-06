@@ -34,6 +34,13 @@ module.exports = function(grunt) {
                 dest: 'docs/fonts/',
                 flatten: true,
                 filter: 'isFile'
+            },
+            bowerPackageFonts: {
+                expand: true,
+                src: 'bower_components/font-awesome/fonts/*',
+                dest: 'fonts/',
+                flatten: true,
+                filter: 'isFile'
             }
         },
 
@@ -41,6 +48,10 @@ module.exports = function(grunt) {
             css: {
                 src: ['_css/style-guide.css'],
                 dest: 'docs/style-guide.min.css'
+            },
+            bowerPackage: {
+                src: ['css/style-guide.css'],
+                dest: 'css/style-guide.min.css'
             },
             jekyll: {
                 src: ['_css/docs.css'],
@@ -98,11 +109,16 @@ module.exports = function(grunt) {
             options: {
                 precision: 6,
                 sourceComments: false,
-                loadPath: ['./styles/', './bower_components/']
+                loadPath: ['./scss/', './bower_components/']
             },
             dist: {
                 files: {
-                    '_css/style-guide.css': 'styles/style-guide.scss'
+                    '_css/style-guide.css': 'scss/style-guide.scss'
+                }
+            },
+            bowerPackage: {
+                files: {
+                    'css/style-guide.css': 'scss/style-guide.scss'
                 }
             },
             jekyll: {
@@ -113,7 +129,7 @@ module.exports = function(grunt) {
         },
 
         scsslint: {
-            allFiles: ['styles/**/*.scss'],
+            allFiles: ['scss/**/*.scss'],
             options: {
                 config: '.scss-lint.yml',
                 colorizeOutput: true
@@ -125,7 +141,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             sass: {
-                files: ['styles/**/*.scss'],
+                files: ['scss/**/*.scss'],
                 tasks: ['styles', 'jekyll:dev']
             },
             jekyll: {
@@ -151,6 +167,7 @@ module.exports = function(grunt) {
 
     // Generate and format the CSS
     grunt.registerTask('styles', ['scsslint', 'sass', 'cssmin', 'copy:fonts']);
+    grunt.registerTask('bowerPackage', [ 'scsslint', 'sass:bowerPackage', 'cssmin:bowerPackage', 'copy:bowerPackageFonts']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);

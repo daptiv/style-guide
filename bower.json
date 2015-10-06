@@ -1,14 +1,24 @@
 {
-  "name": "style-guide",
+  "name": "daptiv-style-guide",
   "homepage": "https://daptiv.github.io/style-guide",
   "authors": [
     "Changepoint Corporation"
   ],
+  "keywords": [
+    "style", "guide","daptiv"
+  ],
   "description": "Daptiv product common styles",
-  "main": "less/style-guide.less",
-  "private": true,
+  "main": [
+    "styles/style-guide.scss",
+    "css/style-guide.css",
+    "css/style-guide.css.map"
+  ],
+  "private": false,
   "ignore": [
     "docs/",
+    "config/",
+    "util/",
+    "_site/",
     ".gitignore",
     "_config.yml",
     "Gruntfile.js",
