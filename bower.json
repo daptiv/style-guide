@@ -23,6 +23,6 @@
     "pygments": "~2.0.2"
   },
   "dependencies": {
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.4.0"
   }
 }
