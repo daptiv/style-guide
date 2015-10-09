@@ -12,6 +12,11 @@
     .tab {
         @include nav-tab;
     }
+
+    &.empty {
+        height: $nav-height-empty;
+        line-height: $nav-height-empty;
+    }
 }
 
 /*
