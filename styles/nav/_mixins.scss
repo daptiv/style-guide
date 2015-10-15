@@ -15,12 +15,17 @@
     }
 
     &:not(.selected):active {
+        background: $nav-bg;
         color: $nav-font-color-active;
     }
 
     &.selected {
         background: $nav-tab-selected-bg;
         border: solid $nav-border-width $nav-tab-selected-bg;
+    }
+
+    &.selected:active {
+        background: $nav-tab-selected-bg;
     }
 
     // Keep this after .selected
