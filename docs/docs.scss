@@ -128,6 +128,10 @@ $icon-block-width: 100px;
     @include swatch-with-label($color-primary-dark);
 }
 
+.labeled-swatch-color-primary-dark-shadow {
+    @include swatch-with-label($color-primary-dark-shadow);
+}
+
 .labeled-swatch-color-primary-medium {
     @include swatch-with-label($color-primary-medium);
 }
