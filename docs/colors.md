@@ -6,6 +6,7 @@ section: Guide
 
 ### Primary Color Palette
 {% colorswatch color-primary-dark %}
+{% colorswatch color-primary-dark-shadow %}
 {% colorswatch color-primary-medium %}
 {% colorswatch color-primary-medium-light %}
 {% colorswatch color-primary-light %}
