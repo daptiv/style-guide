@@ -9,7 +9,6 @@
     "url": "git://github.com/daptiv/style-guide.git"
   },
   "scripts": {
-    "postinstall": "bower install",
     "postversion": "git push && git push --tags && grunt publish"
   },
   "devDependencies": {
@@ -27,5 +26,9 @@
     "grunt-sass": "^1.0.0",
     "grunt-scss-lint": "^0.3.8",
     "jekyll": "^3.0.0-beta1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.4.0",
+    "pygments": "^0.2.0"
   }
 }

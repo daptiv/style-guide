@@ -1,7 +1,7 @@
 $fa-font-path: 'fonts';
-@import "../bower_components/font-awesome/scss/font-awesome.scss";
-@import "../styles/style-guide";
-@import "../bower_components/pygments/css/default.css";
+@import "font-awesome/scss/font-awesome.scss";
+@import "style-guide";
+@import "pygments-default-theme.css";
 
 $swatch-padding: 5px;
 $swatch-height: 60px;
@@ -40,7 +40,7 @@ $icon-block-width: 100px;
     &:hover {
         background-color: $color-secondary-light;
     }
-    
+
     .icon {
         margin-right: 5px;
     }
