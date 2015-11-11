@@ -34,6 +34,10 @@ module.exports = function(grunt) {
                 dest: 'docs/fonts/',
                 flatten: true,
                 filter: 'isFile'
+            },
+            css: {
+                src: 'docs/pygments-default-theme.css',
+                dest: '_css/pygments-default-theme.css'
             }
         },
 
@@ -150,7 +154,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['scsslint', 'sass', 'cssmin', 'copy:fonts']);
+    grunt.registerTask('styles', ['scsslint', 'sass', 'copy:css', 'cssmin', 'copy:fonts']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
