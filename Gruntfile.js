@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         copy: {
             fonts: {
                 expand: true,
-                src: 'bower_components/font-awesome/fonts/*',
+                src: 'node_modules/font-awesome/fonts/*',
                 dest: 'docs/fonts/',
                 flatten: true,
                 filter: 'isFile'
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
             options: {
                 precision: 6,
                 sourceComments: false,
-                loadPath: ['./styles/', './bower_components/']
+                loadPath: ['./styles/', './bower_components/', './node_modules/']
             },
             dist: {
                 files: {
