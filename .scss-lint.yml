@@ -2,6 +2,9 @@
 
 linters:
 
+  PseudoElement:
+    enabled: false
+
   BangFormat:
     enabled: true
     space_before_bang: true
