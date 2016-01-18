@@ -7,6 +7,7 @@ _site/
 _config.yml
 docs/style-guide.min.css
 docs/docs.min.css
+docs/themes/*.css
 docs/fonts/
 .sass-cache/
 Gemfile.lock

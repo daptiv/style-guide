@@ -1,9 +1,23 @@
 ---
 layout: default
 ---
+<script>
+    var changeTheme = function(theme) {
+        var theme_url = !theme ? "{{ site.baseurl }}/docs.min.css"
+                                : "{{ site.baseurl }}/themes/docs-" + theme + "-theme.min.css";
+        var link = document.getElementById('site-theme');
+        link.href = theme_url;
+    }
+</script>
 
 <div class="content-area daptiv-grid">
     {% if page.section == "Guide" %}
+    <div class="column full-width theme-selector">
+        <select name="theme-selector" onChange="changeTheme(this.value)">
+            <option value=""> Default theme </option>
+            <option value="teammember" onClick="changeTheme({{ site.baseurl }}/themes/docs-teammember-theme.css)">Teammember theme</option>
+        </select>
+    </div>
     <div class="column one-fourth">
       {% include guidemenu.html %}
   </div><!--
