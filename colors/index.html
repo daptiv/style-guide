@@ -13,7 +13,8 @@
             Colors &middot; Style Guide
         </title>
 
-        <link rel="stylesheet" href="/style-guide/docs.min.css">
+
+        <link rel="stylesheet" id="site-theme" href="/style-guide/docs.min.css">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon-precomposed" href="/style-guide/img/apple-touch-icon-precomposed.png">
@@ -31,10 +32,24 @@
         </nav>
     </header>
 
-
     <div class="daptiv-container">
-        <div class="content-area daptiv-grid">
+        <script>
+    var changeTheme = function(theme) {
+        var theme_url = !theme ? "/style-guide/docs.min.css"
+                                : "/style-guide/themes/docs-" + theme + "-theme.min.css";
+        var link = document.getElementById('site-theme');
+        link.href = theme_url;
+    }
+</script>
+
+<div class="content-area daptiv-grid">
     
+    <div class="column full-width theme-selector">
+        <select name="theme-selector" onChange="changeTheme(this.value)">
+            <option value=""> Default theme </option>
+            <option value="teammember" onClick="changeTheme(/style-guide/themes/docs-teammember-theme.css)">Teammember theme</option>
+        </select>
+    </div>
     <div class="column one-fourth">
       <nav class="daptiv-side-menu">
   <a class="daptiv-side-menu-item " href="/style-guide/scaffolding/">Scaffolding</a>
@@ -179,7 +194,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.6</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.7</strong>
         </footer>
     </div>
 

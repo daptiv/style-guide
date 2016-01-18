@@ -13,7 +13,8 @@
             Home &middot; Style Guide
         </title>
 
-        <link rel="stylesheet" href="/style-guide/docs.min.css">
+
+        <link rel="stylesheet" id="site-theme" href="/style-guide/docs.min.css">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon-precomposed" href="/style-guide/img/apple-touch-icon-precomposed.png">
@@ -31,9 +32,17 @@
         </nav>
     </header>
 
-
     <div class="daptiv-container">
-        <div class="content-area daptiv-grid">
+        <script>
+    var changeTheme = function(theme) {
+        var theme_url = !theme ? "/style-guide/docs.min.css"
+                                : "/style-guide/themes/docs-" + theme + "-theme.min.css";
+        var link = document.getElementById('site-theme');
+        link.href = theme_url;
+    }
+</script>
+
+<div class="content-area daptiv-grid">
     <!--
 --><div >
         <h1 class="page-title">
@@ -53,7 +62,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.6</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.7</strong>
         </footer>
     </div>
 
