@@ -1,0 +1,34 @@
+@import 'mixins';
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-face {
+    @include font-face('museo-sans-100', '../fonts/museosans/museosans_100_macroman/MuseoSans_100-webfont');
+}
+
+@font-face {
+    @include font-face('museo-sans-300', '../fonts/museosans/museosans_300_macroman/MuseoSans_300-webfont');
+}
+
+@font-face {
+    @include font-face('museo-sans-500', '../fonts/museosans/museosans_500_macroman/MuseoSans_500-webfont');
+}
+
+@font-face {
+    @include font-face('museo-sans-700', '../fonts/museosans/museosans_700_macroman/MuseoSans_700-webfont');
+}
+
+$font-fallback: Arial, Helvetica, sans-serif;
+$font-family-museo-sans-english-100:  "museo-sans-100", $font-fallback;
+$font-family-museo-sans-english-300:  "museo-sans-300", $font-fallback;
+$font-family-museo-sans-english-500:  "museo-sans-500", $font-fallback;
+$font-family-museo-sans-english-300:  "museo-sans-700", $font-fallback;
+
+$font-family-base:        $font-family-museo-sans-english-500;
+
+$font-size-base:   12px;
+$font-size-normal: $font-size-base;
+$font-size-large:  14px;
+$font-size-larger: 16px;

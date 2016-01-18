@@ -29,11 +29,18 @@ module.exports = function(grunt) {
 
         copy: {
             fonts: {
-                expand: true,
-                src: 'node_modules/font-awesome/fonts/*',
-                dest: 'docs/fonts/',
-                flatten: true,
-                filter: 'isFile'
+                files: [{
+                        expand: true,
+                        src: 'node_modules/font-awesome/fonts/*',
+                        dest: 'docs/fonts/',
+                        flatten: true,
+                        filter: 'isFile'
+                    },
+                    {
+                            expand: true,
+                            src: 'fonts/**/*',
+                            dest: 'docs/',
+                    }],
             },
             css: {
                 src: 'docs/pygments-default-theme.css',
@@ -49,6 +56,15 @@ module.exports = function(grunt) {
             jekyll: {
                 src: ['_css/docs.css'],
                 dest: 'docs/docs.min.css'
+            },
+            themes: {
+                expand: true,
+                flatten: true,
+                src: ['_css/themes/*.css'],
+                dest: 'docs/themes/',
+                rename: function(dest, src) {
+                    return dest + src.replace(/\.css$/, ".min.css");
+                }
             }
         },
 
@@ -109,11 +125,18 @@ module.exports = function(grunt) {
                     '_css/style-guide.css': 'styles/style-guide.scss'
                 }
             },
-            jekyll: {
-                files: {
-                    '_css/docs.css': 'docs/docs.scss'
-                }
-            }
+            docs: {
+                files: [{
+                    expand: true,
+                    cwd: 'docs/themes',
+                    src: ['*.scss'],
+                    dest: '_css/themes',
+                    ext: '.css'
+                },
+                {
+                    '_css/docs.css': 'docs/docs.scss',
+                }]
+            },
         },
 
         scsslint: {
