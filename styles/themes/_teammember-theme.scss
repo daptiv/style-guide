@@ -1,4 +1,4 @@
-@import 'mixins';
+@import '../mixins';
 
 //== Typography
 //
@@ -21,12 +21,16 @@
 }
 
 $font-fallback: Arial, Helvetica, sans-serif;
-$font-family-museo-sans-english-100:  "museo-sans-100", $font-fallback;
-$font-family-museo-sans-english-300:  "museo-sans-300", $font-fallback;
-$font-family-museo-sans-english-500:  "museo-sans-500", $font-fallback;
-$font-family-museo-sans-english-300:  "museo-sans-700", $font-fallback;
+$font-family-museo-sans-100:  "museo-sans-100", $font-fallback;
+$font-family-museo-sans-300:  "museo-sans-300", $font-fallback;
+$font-family-museo-sans-500:  "museo-sans-500", $font-fallback;
+$font-family-museo-sans-700:  "museo-sans-700", $font-fallback;
 
-$font-family-base:        $font-family-museo-sans-english-500;
+$font-family-base: $font-family-museo-sans-500;
+$font-family-700: $font-family-museo-sans-700;
+$font-family-100: $font-family-museo-sans-100;
+$font-family-300: $font-family-museo-sans-300;
+
 
 $font-size-base:   12px;
 $font-size-normal: $font-size-base;
