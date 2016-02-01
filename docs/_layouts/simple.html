@@ -1,15 +1,6 @@
 ---
 layout: default
 ---
-<script>
-    var changeTheme = function(theme) {
-        var theme_url = !theme ? "{{ site.baseurl }}/docs.min.css"
-                                : "{{ site.baseurl }}/themes/docs-" + theme + "-theme.min.css";
-        var link = document.getElementById('site-theme');
-        link.href = theme_url;
-    }
-</script>
-
 <div class="content-area daptiv-grid">
     {% if page.section == "Guide" %}
     <div class="column full-width theme-selector">
@@ -32,3 +23,17 @@ layout: default
     </div>
 
 </div>
+
+<script>
+    var changeTheme = function(theme) {
+        var theme_url = !theme ? "{{ site.baseurl }}/docs.min.css"
+                                : "{{ site.baseurl }}/themes/docs-" + theme + "-theme.min.css";
+        var link = document.getElementById('site-theme');
+        link.href = theme_url;
+        localStorage.theme = theme;
+    }
+    if (localStorage.theme) {
+        document.querySelector('[name=theme-selector]').value = 'teammember';
+        changeTheme(localStorage.theme);
+    }
+</script>
