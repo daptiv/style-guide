@@ -9,7 +9,7 @@ module Jekyll
 
         def render(context)
            "<div class=\"icon-block\">\n" +
-               "<i class=\"icon #{@icon_name}\"></i><label class=\"icon-name\">#{@icon_name}</label>\n" +
+               "<i class=\"icon #{@icon_name}\"></i> <label class=\"icon-name\">#{@icon_name}</label>\n" +
                "</div>"
         end
     end

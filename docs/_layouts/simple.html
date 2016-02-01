@@ -3,17 +3,15 @@ layout: default
 ---
 <div class="content-area daptiv-grid">
     {% if page.section == "Guide" %}
-    <div class="column full-width theme-selector">
-        <select name="theme-selector" onChange="changeTheme(this.value)">
+    <div class="docs-side-menu column one-fourth">
+        <select name="theme-selector" class="theme-selector" onChange="changeTheme(this.value)">
             <option value=""> Default theme </option>
             <option value="teammember" onClick="changeTheme({{ site.baseurl }}/themes/docs-teammember-theme.css)">Teammember theme</option>
         </select>
-    </div>
-    <div class="column one-fourth">
       {% include guidemenu.html %}
   </div><!--
   -->{% endif %}<!--
---><div {% if page.section == "Guide" %} class="column three-fourths" {% endif %}>
+--><div {% if page.section == "Guide" %} class="column one-fourth-in three-fourths" {% endif %}>
         <h1 class="page-title">
             {{ page.title }}
         </h1>

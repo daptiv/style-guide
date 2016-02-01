@@ -19,6 +19,7 @@ The help icon: <i class="icon help"></i>
 
 {% iconblock previous %}
 {% iconblock next %}
+{% iconblock hamburger %}
 {% iconblock menu %}
 {% iconblock search %}
 {% iconblock settings %}

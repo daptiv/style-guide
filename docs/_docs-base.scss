@@ -23,9 +23,23 @@ $icon-block-width: 100px;
     }
 }
 
-.theme-selector {
-    margin-top: 15px;
+.docs-header {
+
 }
+
+.theme-selector {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    height: 30px;
+    font-size: 14px;
+}
+
+.docs-side-menu {
+    position: fixed;
+}
+
 .icon-block {
     border: 1px solid $color-primary-medium;
     border-radius: 3px;
@@ -37,14 +51,6 @@ $icon-block-width: 100px;
 
     &:hover {
         background-color: $color-secondary-light;
-    }
-
-    .icon {
-        margin-right: 5px;
-    }
-
-    .icon-name {
-        margin-left: 5px;
     }
 }
 
