@@ -33,16 +33,7 @@
     </header>
 
     <div class="daptiv-container">
-        <script>
-    var changeTheme = function(theme) {
-        var theme_url = !theme ? "/style-guide/docs.min.css"
-                                : "/style-guide/themes/docs-" + theme + "-theme.min.css";
-        var link = document.getElementById('site-theme');
-        link.href = theme_url;
-    }
-</script>
-
-<div class="content-area daptiv-grid">
+        <div class="content-area daptiv-grid">
     <!--
 --><div >
         <h1 class="page-title">
@@ -82,6 +73,20 @@
     </div>
 
 </div>
+
+<script>
+    var changeTheme = function(theme) {
+        var theme_url = !theme ? "/style-guide/docs.min.css"
+                                : "/style-guide/themes/docs-" + theme + "-theme.min.css";
+        var link = document.getElementById('site-theme');
+        link.href = theme_url;
+        localStorage.theme = theme;
+    }
+    if (localStorage.theme) {
+        document.querySelector('[name=theme-selector]').value = 'teammember';
+        changeTheme(localStorage.theme);
+    }
+</script>
 
 
 

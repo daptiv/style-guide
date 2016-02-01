@@ -33,16 +33,7 @@
     </header>
 
     <div class="daptiv-container">
-        <script>
-    var changeTheme = function(theme) {
-        var theme_url = !theme ? "/style-guide/docs.min.css"
-                                : "/style-guide/themes/docs-" + theme + "-theme.min.css";
-        var link = document.getElementById('site-theme');
-        link.href = theme_url;
-    }
-</script>
-
-<div class="content-area daptiv-grid">
+        <div class="content-area daptiv-grid">
     
     <div class="column full-width theme-selector">
         <select name="theme-selector" onChange="changeTheme(this.value)">
@@ -77,16 +68,30 @@
 
 <p>We use certain HTML elements and CSS properties that <strong>require</strong> the use of the HTML5 doctype. Include it at the beginning of all your pages.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
   ...
-<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
 
 
         </div>
     </div>
 
 </div>
+
+<script>
+    var changeTheme = function(theme) {
+        var theme_url = !theme ? "/style-guide/docs.min.css"
+                                : "/style-guide/themes/docs-" + theme + "-theme.min.css";
+        var link = document.getElementById('site-theme');
+        link.href = theme_url;
+        localStorage.theme = theme;
+    }
+    if (localStorage.theme) {
+        document.querySelector('[name=theme-selector]').value = 'teammember';
+        changeTheme(localStorage.theme);
+    }
+</script>
 
 
 
