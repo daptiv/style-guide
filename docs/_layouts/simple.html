@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="content-area daptiv-grid">
     {% if page.section == "Guide" %}
-    <div class="docs-side-menu column one-fourth">
+    <div class="docs-side-menu daptiv-side-bar column one-fourth">
         <select name="theme-selector" class="theme-selector" onChange="changeTheme(this.value)">
             <option value=""> Default theme </option>
             <option value="teammember" onClick="changeTheme({{ site.baseurl }}/themes/docs-teammember-theme.css)">Teammember theme</option>

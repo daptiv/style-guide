@@ -1,28 +1,40 @@
 //== Side Menu
 //
-$side-menu-top-margin: 15px;
-$side-menu-item-vertical-padding: 8px;
-$side-menu-item-horizontal-padding: 10px;
+$side-menu-item-vertical-padding: 0;
+$side-menu-item-horizontal-padding: 12px;
 
 .daptiv-side-menu {
-    font-size: 14px;
-    margin-top: $side-menu-top-margin;
+    @include font-size-larger();
+    overflow: hidden;
+}
+
+.daptiv-side-menu-divider {
+    border: 0;
+    border-bottom: 1px solid rgba($color-primary-medium, 0.32);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.daptiv-side-menu-readonly {
+    @include font-size-medium();
+    color: $color-text-white;
+    display: block;
+    line-height: 48px;
+    padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
+    z-index: 1;
 }
 
 .daptiv-side-menu-item {
-    background-color: $color-base-20;
-    color: $color-text-dark;
+    color: $color-text-white;
     display: block;
+    line-height: 48px;
     padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
 
+    &.selected,
     &:hover {
-        text-decoration: underline;
-    }
-
-    &.selected {
-        background-color: $color-primary-medium;
-        color: $color-base-0;
-        cursor: default;
-        text-decoration: none;
+        background-color: $color-primary-dark;
+        box-shadow: 4px 0 5px 0 rgba($color-primary-dark-shadow, 0.72);
+        width: 100%;
     }
 }

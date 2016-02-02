@@ -5,7 +5,52 @@
 $font-family-sans-serif:  "Arial", Arial, Helvetica, sans-serif;
 $font-family-base:        $font-family-sans-serif;
 
+// Font Sizes
+//
+// Font sizes are paired with their standard and bold font weight
+// Define mixins for font sizes
 $font-size-base:   12px;
+$font-size-base-weight: 500;
+$font-size-base-weight-bold: 700;
 $font-size-normal: $font-size-base;
-$font-size-large:  14px;
+
+@mixin font-size-base() {
+    font-size: $font-size-base;
+    font-weight: $font-size-base-weight;
+}
+
+@mixin font-size-base-bold() {
+    font-size: $font-size-base;
+    font-weight: $font-size-base-weight-bold;
+}
+
+$font-size-medium:  14px;
+$font-size-medium-weight: 500;
+$font-size-larger-weight-bold: 700;
+
+@mixin font-size-medium() {
+    font-size: $font-size-medium;
+    font-weight: $font-size-medium-weight;
+}
+
+@mixin font-size-medium-bold() {
+    font-size: $font-size-medium;
+    font-weight: $font-size-medium-weight-bold;
+}
+
+$font-weight-base: $font-family-base;
+$font-size-large: 14px;
+
 $font-size-larger: 16px;
+$font-size-larger-weight: 300;
+$font-size-larger-weight-bold: 500;
+
+@mixin font-size-larger() {
+    font-size: $font-size-larger;
+    font-weight: $font-size-larger-weight;
+}
+
+@mixin font-size-larger-bold() {
+    font-size: $font-size-larger;
+    font-weight: $font-size-larger-weight-bold;
+}
