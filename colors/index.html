@@ -24,28 +24,25 @@
 
     <header>
         <nav class="daptiv-nav">
-            <a class="tab " href="/style-guide/">Home</a><!--
-            --><a class="tab selected" href="/style-guide/scaffolding">Guide</a><!--
+            <a class="tab selected" href="/style-guide">Guide</a><!--
             --><a class="tab " href="/style-guide/stats">Stats</a><!--
-            --><a class="tab" href="https://github.com/daptiv/style-guide" target="_blank">GitHub</a><!--
-            --><a class="tab" href="https://github.com/daptiv/style-guide/blob/master/README.md#install" target="_blank">Install</a>
+            --><a class="tab" href="https://github.com/daptiv/style-guide" target="_blank"><i class="fa fa-github-alt"></i> GitHub</a><!--
+            --><a class="tab" href="https://github.com/daptiv/style-guide/blob/master/README.md#install" target="_blank"><i class=" fa fa-external-link"></i> Install</a>
         </nav>
     </header>
 
     <div class="daptiv-container">
         <div class="content-area daptiv-grid">
     
-    <div class="column full-width theme-selector">
-        <select name="theme-selector" onChange="changeTheme(this.value)">
+    <div class="docs-side-menu daptiv-side-bar column one-fourth">
+        <select name="theme-selector" class="theme-selector" onChange="changeTheme(this.value)">
             <option value=""> Default theme </option>
             <option value="teammember" onClick="changeTheme(/style-guide/themes/docs-teammember-theme.css)">Teammember theme</option>
         </select>
-    </div>
-    <div class="column one-fourth">
       <nav class="daptiv-side-menu">
-  <a class="daptiv-side-menu-item " href="/style-guide/scaffolding/">Scaffolding</a>
+  <a class="daptiv-side-menu-item " href="/style-guide">Scaffolding</a>
   <a class="daptiv-side-menu-item selected" href="/style-guide/colors/">Colors</a>
-  <a class="daptiv-side-menu-item " href="/style-guide/layout/">Layout</a>    
+  <a class="daptiv-side-menu-item " href="/style-guide/layout/">Layout</a>
   <a class="daptiv-side-menu-item " href="/style-guide/nav/">Navigation</a>
   <a class="daptiv-side-menu-item " href="/style-guide/components/">Components</a>
   <a class="daptiv-side-menu-item " href="/style-guide/iconography/">Iconography</a>
@@ -53,7 +50,7 @@
 
   </div><!--
   --><!--
---><div  class="column three-fourths" >
+--><div  class="column one-fourth-in three-fourths" >
         <h1 class="page-title">
             Colors
         </h1>
@@ -199,7 +196,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.8</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.10</strong>
         </footer>
     </div>
 
