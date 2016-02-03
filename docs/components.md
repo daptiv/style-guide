@@ -34,7 +34,6 @@ Panel is a quick, easy way to display content with a title.
 
 ## Buttons
 
-
 {% snippet html %}
 <div>
     <button class="daptiv-button">Default</button>&nbsp;&nbsp;
@@ -43,3 +42,36 @@ Panel is a quick, easy way to display content with a title.
 </div>
 {% endsnippet %}
 
+## Side-Bar
+Used for side bars
+{% snippet html %}
+<div class="example-flex-column-container">
+    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.querySelector('.daptiv-side-bar'); sidebar.classList.toggle('slide-out-ltr', !sidebar.classList.toggle('slide-in-rtl'))">Toggle Side-Bar</button>
+    <br/>
+    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
+    </div>
+    <div class="daptiv-side-bar hide-initial">
+        <nav class="daptiv-side-menu">
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
+            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+        </nav>
+    </div>
+</div>
+{% endsnippet %}
+<br />
+
+## Side-Menu
+Used for right side menu
+{% snippet html %}
+<nav class="daptiv-side-bar daptiv-side-menu">
+    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
+    <hr class="daptiv-side-menu-divider" />
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
+    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+</nav>
+{% endsnippet %}
+<br />

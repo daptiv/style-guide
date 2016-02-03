@@ -1,0 +1,66 @@
+@import '../node_modules/font-awesome/scss/font-awesome';
+@import '../../mixins';
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+
+@font-face {
+    @include font-face(
+        'museo-sans',
+        '../fonts/museosans/museosans_100_macroman/MuseoSans_100-webfont',
+        100);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    '../fonts/museosans/museosans_300_macroman/MuseoSans_300-webfont',
+    300);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    '../fonts/museosans/museosans_500_macroman/MuseoSans_500-webfont',
+    500);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    '../fonts/museosans/museosans_500_macroman/MuseoSans_500-webfont',
+    normal);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    '../fonts/museosans/museosans_700_macroman/MuseoSans_700-webfont',
+    700);
+}
+
+$font-fallback: Arial, Helvetica, sans-serif;
+$font-family-base: "museo-sans", $font-fallback;
+
+// Font Sizes
+//
+// Font sizes are paired with their standard and bold font weight
+// Define mixins for font sizes
+$font-size-base:   12px;
+$font-size-base-weight: 500;
+$font-size-base-weight-bold: 700;
+$font-size-normal: $font-size-base;
+
+$font-size-medium:  14px;
+$font-weight-base: $font-family-base;
+$font-size-large: 16px;
+
+$font-size-larger: 18px;
+$font-size-larger-weight: 300;
+$font-size-larger-weight-bold: 500;
+
+$icon-size-small: 14px;
+$icon-size-medium: 21px;
+$icon-size-large: 28px;

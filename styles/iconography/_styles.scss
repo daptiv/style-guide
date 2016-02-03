@@ -7,6 +7,10 @@
         @include icon-small(after, left, $fa-var-angle-double-right);
     }
 
+    &.hamburger {
+        @include icon-small-block($fa-var-bars);
+    }
+
     &.menu {
         @include icon-small(after, left, $fa-var-caret-down);
     }
@@ -25,5 +29,18 @@
 
     &.user {
         @include icon-small-block($fa-var-user);
+    }
+
+    // sizing of icons
+    &.small:after {
+        font-size: $icon-size-small;
+    }
+
+    &.medium:after {
+        font-size: $icon-size-medium;
+    }
+
+    &.large:after {
+        font-size: $icon-size-large;
     }
 }
