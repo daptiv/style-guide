@@ -7,8 +7,20 @@
         @include icon-small(after, left, $fa-var-angle-double-right);
     }
 
+    &.calendar {
+        @include icon-small-block($fa-var-calendar);
+    }
+
+    &.flag {
+        @include icon-small-block($fa-var-flag-o);
+    }
+
     &.hamburger {
         @include icon-small-block($fa-var-bars);
+    }
+
+    &.list {
+        @include icon-small-block($fa-var-list-ul);
     }
 
     &.menu {
