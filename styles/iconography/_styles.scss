@@ -30,4 +30,17 @@
     &.user {
         @include icon-small-block($fa-var-user);
     }
+
+    // sizing of icons
+    &.small:after {
+        font-size: $icon-size-small;
+    }
+
+    &.medium:after {
+        font-size: $icon-size-medium;
+    }
+
+    &.large:after {
+        font-size: $icon-size-large;
+    }
 }

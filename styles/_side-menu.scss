@@ -30,6 +30,7 @@ $side-menu-item-horizontal-padding: 12px;
     display: block;
     line-height: 48px;
     padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
+    text-decoration: none;
 
     &.selected,
     &:hover {
