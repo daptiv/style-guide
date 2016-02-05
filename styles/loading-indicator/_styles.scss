@@ -5,7 +5,10 @@
 .daptiv-loading {
     height: $loading-height;
     margin: auto;
+    position: relative;
     text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
     width: $loading-width;
 
     & > span {
