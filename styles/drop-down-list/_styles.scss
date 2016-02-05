@@ -3,8 +3,8 @@
 //## styles for drop-down-list
 
 .daptiv-drop-down-list {
+    @include font-size-medium();
     display: inline-block;
-    font: $dropdownlist-font;
     line-height: $dropdownlist-item-height;
     max-width: $dropdownlist-item-max-width;
     min-width: $dropdownlist-item-min-width;
@@ -16,6 +16,11 @@
         position: absolute;
         top: $dropdownlist-item-height + 2px;
         width: 100%;
+
+        > :hover {
+            background: $color-secondary-light;
+            color: $color-text-dark;
+        }
     }
 
     .item {
@@ -29,11 +34,6 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 100%;
-
-        &:not(.current):hover {
-            background: $color-secondary-light;
-            color: $color-text-dark;
-        }
 
         &.current {
             background: transparent;
