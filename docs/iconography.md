@@ -25,3 +25,6 @@ The help icon: <i class="icon help"></i>
 {% iconblock settings %}
 {% iconblock user %}
 {% iconblock help %}
+{% iconblock list %}
+{% iconblock calendar %}
+{% iconblock flag %}

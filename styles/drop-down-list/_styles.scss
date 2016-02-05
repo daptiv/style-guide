@@ -1,0 +1,60 @@
+//== drop-down-list
+//
+//## styles for drop-down-list
+
+.daptiv-drop-down-list {
+    @include font-size-medium();
+    display: inline-block;
+    line-height: $dropdownlist-item-height;
+    max-width: $dropdownlist-item-max-width;
+    min-width: $dropdownlist-item-min-width;
+    position: relative;
+
+    .content {
+        border: solid $dropdownlist-border-size $dropdownlist-border-color;
+        border-top: 0;
+        position: absolute;
+        top: $dropdownlist-item-height + 2px;
+        width: 100%;
+
+        > :hover {
+            background: $color-secondary-light;
+            color: $color-text-dark;
+        }
+    }
+
+    .item {
+        background: $color-base-0;
+        color: $color-text-dark;
+        display: block;
+        margin: $dropdownlist-item-border-size;
+        overflow: hidden;
+        padding: 0 $dropdownlist-item-padding;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+
+        &.current {
+            background: transparent;
+            border: solid $dropdownlist-border-size transparent;
+            width: 100%;
+
+            &:hover,
+            &.open {
+                background-color: $dropdownlist-bg;
+                border-color: $dropdownlist-border-color;
+            }
+        }
+    }
+
+    .item .icon {
+        color: $color-base-70;
+        padding-right: $dropdownlist-item-padding-right;
+
+        &.menu {
+            color: $color-base-90;
+            float: right;
+        }
+    }
+}
