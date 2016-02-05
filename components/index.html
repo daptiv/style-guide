@@ -62,6 +62,11 @@
   <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a></li>
   <li><a href="#side-bar" id="markdown-toc-side-bar">Side-Bar</a></li>
   <li><a href="#side-menu" id="markdown-toc-side-menu">Side-Menu</a></li>
+  <li><a href="#drop-down-list" id="markdown-toc-drop-down-list">Drop-down list</a>    <ul>
+      <li><a href="#closed" id="markdown-toc-closed">Closed</a></li>
+      <li><a href="#open" id="markdown-toc-open">Open</a></li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="panel">Panel</h2>
@@ -204,6 +209,60 @@
 </div>
 <p><br /></p>
 
+<h2 id="drop-down-list">Drop-down list</h2>
+<p>Used for drop-down lists<br /></p>
+
+<h3 id="closed">Closed</h3>
+
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="daptiv-drop-down-list">
+    <a class="item current" href="#" onclick="return false;"><i class="icon list"></i>Item 1<i class="icon menu"></i></a>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-drop-down-list&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;item current&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon list&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>Item 1<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon menu&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<h3 id="open">Open</h3>
+
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="daptiv-drop-down-list">
+    <a class="item current open" href="#" onclick="return false;"><i class="icon list"></i>Item 1<i class="icon menu"></i></a>
+    <div class="content">
+        <a class="item" href="#" onclick="return false;"><i class="icon calendar"></i>Item 2</a>
+        <a class="item" href="#" onclick="return false;"><i class="icon flag"></i>Item 3</a>
+    </div>
+    <br />
+    <br />
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-drop-down-list&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;item current open&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon list&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>Item 1<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon menu&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon calendar&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>Item 2<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon flag&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>Item 3<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+<p><br /></p>
+
         </div>
     </div>
 
@@ -227,7 +286,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.10</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.11</strong>
         </footer>
     </div>
 
