@@ -3,25 +3,32 @@
 //## styles for drop-down-list
 
 .daptiv-drop-down-list {
-    background: $dropdownlist-bg;
-    border: solid $dropdownlist-border-size $dropdownlist-border-color;
     display: inline-block;
     font: $dropdownlist-font;
     line-height: $dropdownlist-item-height;
+    max-width: $dropdownlist-item-max-width;
+    min-width: $dropdownlist-item-min-width;
+    position: relative;
+
+    .content {
+        border: solid $dropdownlist-border-size $dropdownlist-border-color;
+        border-top: 0;
+        position: absolute;
+        top: $dropdownlist-item-height + 2px;
+        width: 100%;
+    }
 
     .item {
         background: $color-base-0;
         color: $color-text-dark;
         display: block;
-        height: $dropdownlist-item-height;
         margin: $dropdownlist-item-border-size;
-        max-width: $dropdownlist-item-max-width;
-        min-width: $dropdownlist-item-min-width;
         overflow: hidden;
         padding: 0 $dropdownlist-item-padding;
         text-decoration: none;
         text-overflow: ellipsis;
         white-space: nowrap;
+        width: 100%;
 
         &:not(.current):hover {
             background: $color-secondary-light;
@@ -29,19 +36,24 @@
         }
 
         &.current {
-            background: $color-base-30;
+            background: transparent;
+            border: solid $dropdownlist-border-size transparent;
             width: 100%;
-        }
 
-        &:not(.current):nth-of-type(1) {
-            border-top: solid $dropdownlist-border-size $dropdownlist-border-color;
+            &:hover,
+            &.open {
+                background-color: $dropdownlist-bg;
+                border-color: $dropdownlist-border-color;
+            }
         }
     }
 
-    .item i {
-        padding-right: 10px;
+    .item .icon {
+        color: $color-base-70;
+        padding-right: $dropdownlist-item-padding-right;
 
         &.menu {
+            color: $color-base-90;
             float: right;
         }
     }

@@ -2,14 +2,15 @@
 //
 //## variables for drop-down-list
 
-$dropdownlist-font: $font-size-normal $font-family-base;
+$dropdownlist-font: $font-size-medium $font-family-base;
 $dropdownlist-bg: $color-base-40;
 $dropdownlist-border-size: $border-width-base;
 $dropdownlist-border-color: $color-base-60;
 
 $dropdownlist-item-border-size: 0;
 $dropdownlist-item-border-color-focus: $color-primary-light;
-$dropdownlist-item-height: 32px;
+$dropdownlist-item-height: 48px;
 $dropdownlist-item-max-width: 300px;
 $dropdownlist-item-min-width: 150px;
 $dropdownlist-item-padding: $standard-whitespace-unit;
+$dropdownlist-item-padding-right: 16px;

@@ -13,6 +13,10 @@
 
     &.flag {
         @include icon-small-block($fa-var-flag-o);
+
+        &:after {
+            transform: scale(-1, 1);
+        }
     }
 
     &.hamburger {
