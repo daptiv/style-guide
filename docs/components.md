@@ -75,3 +75,29 @@ Used for right side menu
 </nav>
 {% endsnippet %}
 <br />
+
+## Drop-down list
+Used for drop-down lists<br />
+
+### Closed
+
+{% snippet html %}
+<div class="daptiv-drop-down-list">
+    <a class="item current" href="#" onclick="return false;"><i class="icon list"></i>Item 1<i class="icon menu"></i></a>
+</div>
+{% endsnippet %}
+
+### Open
+
+{% snippet html %}
+<div class="daptiv-drop-down-list">
+    <a class="item current open" href="#" onclick="return false;"><i class="icon list"></i>Item 1<i class="icon menu"></i></a>
+    <div class="content">
+        <a class="item" href="#" onclick="return false;"><i class="icon calendar"></i>Item 2</a>
+        <a class="item" href="#" onclick="return false;"><i class="icon flag"></i>Item 3</a>
+    </div>
+    <br />
+    <br />
+</div>
+{% endsnippet %}
+<br />
