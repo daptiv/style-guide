@@ -9,7 +9,7 @@ $swatch-margin: 4px;
 $snippet-border-radius: 3px;
 $snippet-padding: 12px;
 $snippet-content-background: #f2f0eb;
-$snippet-border: 2px solid #CCC;
+$snippet-border: 2px solid #ccc;
 
 $icon-block-bg: #eee;
 $icon-block-height: 30px;
@@ -17,23 +17,28 @@ $icon-block-margin: 10px;
 $icon-block-padding: 5px;
 $icon-block-width: 100px;
 
-.daptiv-grid{
+.daptiv-grid {
     .column .outline {
         border: 1px solid $color-base-80;
     }
 }
 
-.docs-header {
-
+.theme-selector {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-size: 14px;
+    height: 30px;
+    margin-top: 15px;
+    width: 100%;
 }
 
-.theme-selector {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 0px;
-    border: 1px solid #ddd;
-    height: 30px;
-    font-size: 14px;
+.docs-header.daptiv-header {
+    height: 48px;
+
+    .daptiv-nav {
+        vertical-align: bottom;
+        width: calc(100% - 126px);
+    }
 }
 
 .docs-side-menu {
@@ -63,12 +68,12 @@ $icon-block-width: 100px;
 }
 
 .snippet-content {
-    display: none;
     background-color: $snippet-content-background;
+    border: $snippet-border;
     border-bottom-left-radius: $snippet-border-radius;
     border-bottom-right-radius: $snippet-border-radius;
-    border: $snippet-border;
     border-top: 0;
+    display: none;
     margin-bottom: $snippet-border-radius/2;
     overflow: scroll;
     padding: $snippet-padding;
@@ -79,22 +84,22 @@ $icon-block-width: 100px;
 }
 
 .snippet-src-button {
+    background-color: #fafafa;
+    border: 1px solid #bbb;
+    cursor: pointer;
     float: right;
-    border: 1px solid #BBB;
-    background-color: #FAFAFA;
     height: 22px;
     line-height: normal;
-    cursor: pointer;
-    &:focus{
+    &:focus {
         outline: 0;
     }
 }
 
 .swatch {
-    text-shadow: $swatch-text-shadow;
     font-size: $font-size-larger;
-    text-align: center;
     line-height: $swatch-line-height;
+    text-align: center;
+    text-shadow: $swatch-text-shadow;
 }
 
 @mixin swatch-with-label($swatch-color) {
@@ -115,17 +120,17 @@ $icon-block-width: 100px;
     }
 
     .swatch {
-        &:before {
-            content: "#{$swatch-color}";
-        }
         background-color: $swatch-color;
-        border-radius: 0.25rem;
+        border-radius: .25rem;
         box-shadow: 2px 2px 2px $color-base-50;
         display: block;
         height: $swatch-height;
         padding: $swatch-padding;
         vertical-align: top;
         width: $swatch-width;
+        &:before {
+            content: '#{$swatch-color}';
+        }
     }
 }
 .labeled-swatch-color-primary-dark {
@@ -234,11 +239,11 @@ $icon-block-width: 100px;
 
 .example-flex-column-container {
     display: flex;
-    margin: -14px;
     height: 400px;
+    margin: -14px;
 
     .example-left-column {
+        flex-shrink: 20;
         padding: 15px;
-        flex-shrink:20;
     }
 }

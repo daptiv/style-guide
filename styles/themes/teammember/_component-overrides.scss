@@ -1,7 +1,6 @@
 .daptiv-nav {
     @include font-size-larger();
-    background-image: radial-gradient(ellipse at 50% 2%, $color-primary-medium 4%, $color-primary-dark 99%);
-    box-shadow: inset 0 -1px 0 0 rgba($color-primary-dark, 0.48);
+    background: transparent;
 
     .tab {
         background-color: transparent;
@@ -12,7 +11,6 @@
             border: 0;
             border-bottom: 2px solid $color-base-0;
         }
-
 
         &:hover,
         &:active,
