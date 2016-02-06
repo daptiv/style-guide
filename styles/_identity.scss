@@ -22,11 +22,7 @@
         width: 109px;
     }
 
-    &.fill-height {
-        height: 100%;
-    }
-
-    &.fill-width {
-        width: 100%;
+    &.vertical-center {
+        vertical-align: middle;
     }
 }

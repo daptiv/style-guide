@@ -32,9 +32,9 @@ These are the different icons available.
 </div>
 {% endsnippet %}
 
-### fill-height/width
+### vertical center
 {% snippet html %}
-<div class="daptiv-header" style="height: 78px">
-    <em class="daptiv-logo size-default fill-height fill-width"></em>
+<div class="daptiv-header" style="line-height: 78px; text-align: center;">
+    <em class="daptiv-logo size-default vertical-center"></em>
 </div>
 {% endsnippet %}
