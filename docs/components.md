@@ -106,8 +106,8 @@ Used for drop-down lists<br />
 Used while waiting for system response<br />
 
 {% snippet html %}
+<br /><br /><br />
 <div class="daptiv-loading">
     <span></span><span></span><span></span>
 </div>
 {% endsnippet %}
-<br />
