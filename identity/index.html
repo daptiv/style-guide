@@ -10,7 +10,7 @@
         <meta name="author" content="">
 
         <title>
-            Layout &middot; Style Guide
+            Identity &middot; Style Guide
         </title>
 
 
@@ -44,7 +44,7 @@
   <a class="daptiv-side-menu-item " href="/style-guide">Scaffolding</a>
   <a class="daptiv-side-menu-item " href="/style-guide/identity/">Identity</a>
   <a class="daptiv-side-menu-item " href="/style-guide/colors/">Colors</a>
-  <a class="daptiv-side-menu-item selected" href="/style-guide/layout/">Layout</a>
+  <a class="daptiv-side-menu-item " href="/style-guide/layout/">Layout</a>
   <a class="daptiv-side-menu-item " href="/style-guide/nav/">Navigation</a>
   <a class="daptiv-side-menu-item " href="/style-guide/components/">Components</a>
   <a class="daptiv-side-menu-item " href="/style-guide/iconography/">Iconography</a>
@@ -54,55 +54,91 @@
   --><!--
 --><div  class="column one-fourth-in three-fourths" >
         <h1 class="page-title">
-            Layout
+            Identity
         </h1>
         <div class="markdown-body">
-            <ul id="markdown-toc">
-  <li><a href="#grid" id="markdown-toc-grid">Grid</a>    <ul>
-      <li><a href="#column-widths" id="markdown-toc-column-widths">Column widths</a></li>
+            <p>These are the different icons available.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#logos" id="markdown-toc-logos">Logos</a>    <ul>
+      <li><a href="#default" id="markdown-toc-default">Default</a></li>
+      <li><a href="#medium" id="markdown-toc-medium">Medium</a></li>
+      <li><a href="#custom" id="markdown-toc-custom">Custom</a></li>
+      <li><a href="#vertical-center" id="markdown-toc-vertical-center">vertical center</a></li>
     </ul>
   </li>
 </ul>
 
-<h2 id="grid">Grid</h2>
-<p>Grid is composed of columns. Columns are vertically align on the top as a default. Columns that don’t fit within the grid size will automatically wrap into new rows.</p>
+<h2 id="logos">Logos</h2>
 
+<h3 id="default">Default</h3>
 <div class="snippet">
 <div class="snippet-src-button-container">
 <button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
 </div>
 <div class="snippet-header">
-<div class="grid full-width">
-    <div class="column outline">Column 1</div><!--
---><div class="column outline">Column 2</div><!--
---></div>
+<div class="daptiv-header">
+    <em class="daptiv-logo size-default"></em>
+</div>
 </div>
 <div class="snippet-content">
-<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid full-width&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column outline&quot;</span><span class="nt">&gt;</span>Column 1<span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--</span>
-<span class="c">--&gt;</span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column outline&quot;</span><span class="nt">&gt;</span>Column 2<span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--</span>
-<span class="c">--&gt;</span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-header&quot;</span> <span class="nt">&gt;</span>
+    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;daptiv-logo size-default&quot;</span><span class="nt">&gt;&lt;/em&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 </div>
 
-<h3 id="column-widths">Column widths</h3>
-<p>Set a width on the column in order to restrict its size.</p>
+<h3 id="medium">Medium</h3>
 <div class="snippet">
 <div class="snippet-src-button-container">
 <button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
 </div>
 <div class="snippet-header">
-<div class="grid full-width">
-    <div class="column one-fourth outline">Column 1 </div><!--
---><div class="column three-fourths outline">Column 2</div><!--
---></div>
+<div class="daptiv-header">
+    <em class="daptiv-logo size-medium"></em>
+</div>
 </div>
 <div class="snippet-content">
-<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid full-width&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column one-fourth outline&quot;</span><span class="nt">&gt;</span>Column 1 <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--</span>
-<span class="c">--&gt;</span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column three-fourths outline&quot;</span><span class="nt">&gt;</span>Column 2<span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--</span>
-<span class="c">--&gt;</span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-header&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;daptiv-logo size-medium&quot;</span><span class="nt">&gt;&lt;/em&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<h3 id="custom">Custom</h3>
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="daptiv-header">
+    <em class="daptiv-logo" style="display: inline-block; width: 240px; height: 78px"></em>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-header&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;daptiv-logo&quot;</span> <span class="na">style=</span><span class="s">&quot;display: inline-block; width: 240px; height: 78px&quot;</span><span class="nt">&gt;&lt;/em&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<h3 id="vertical-center">vertical center</h3>
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="daptiv-header" style="line-height: 78px; text-align: center;">
+    <em class="daptiv-logo size-default vertical-center"></em>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-header&quot;</span> <span class="na">style=</span><span class="s">&quot;line-height: 78px; text-align: center;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">&quot;daptiv-logo size-default vertical-center&quot;</span><span class="nt">&gt;&lt;/em&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 </div>
