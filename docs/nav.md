@@ -15,11 +15,13 @@ Navigation for switching views. Results in a collection of left aligned, horizon
 
 {% snippet html %}
 <!-- Empty comments used to remove line breaks. -->
-<nav class="daptiv-nav">
-    <a class="tab" href="#" onclick="return false;">Home</a><!--
-    --><a class="selected tab" href="#" onclick="return false;">Selected</a><!--
-    --><a class="tab" href="#" onclick="return false;">About</a><a class="tab" href="#" onclick="return false;">Contact</a>
-</nav>
+<div class="daptiv-header">
+    <nav class="daptiv-nav ">
+        <a class="tab" href="#" onclick="return false;">Home</a><!--
+        --><a class="selected tab" href="#" onclick="return false;">Selected</a><!--
+        --><a class="tab" href="#" onclick="return false;">About</a><a class="tab" href="#" onclick="return false;">Contact</a>
+    </nav>
+</div>
 {% endsnippet %}
 <br />
 
