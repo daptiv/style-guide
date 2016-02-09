@@ -2,13 +2,13 @@
 //
 //## Classes for loading indicator
 
+@import '../mixins';
+
 .daptiv-loading {
+    @include center-vertical();
     height: $loading-height;
     margin: auto;
-    position: relative;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
     width: $loading-width;
 
     & > span {
