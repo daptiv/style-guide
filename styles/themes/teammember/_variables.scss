@@ -5,41 +5,8 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-
-@font-face {
-    @include font-face(
-        'museo-sans',
-        '../fonts/museosans/museosans_100_macroman/MuseoSans_100-webfont',
-        100);
-}
-
-@font-face {
-    @include font-face(
-    'museo-sans',
-    '../fonts/museosans/museosans_300_macroman/MuseoSans_300-webfont',
-    300);
-}
-
-@font-face {
-    @include font-face(
-    'museo-sans',
-    '../fonts/museosans/museosans_500_macroman/MuseoSans_500-webfont',
-    500);
-}
-
-@font-face {
-    @include font-face(
-    'museo-sans',
-    '../fonts/museosans/museosans_500_macroman/MuseoSans_500-webfont',
-    normal);
-}
-
-@font-face {
-    @include font-face(
-    'museo-sans',
-    '../fonts/museosans/museosans_700_macroman/MuseoSans_700-webfont',
-    700);
-}
+/* custom fonts path */
+$custom-fonts-path: '../fonts';
 
 $font-fallback: Arial, Helvetica, sans-serif;
 $font-family-base: "museo-sans", $font-fallback;
