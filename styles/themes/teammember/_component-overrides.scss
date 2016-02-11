@@ -1,3 +1,38 @@
+@font-face {
+    @include font-face(
+        'museo-sans',
+        $custom-fonts-path + '/museosans/museosans_100_macroman/MuseoSans_100-webfont',
+        100);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    $custom-fonts-path + '/museosans/museosans_300_macroman/MuseoSans_300-webfont',
+    300);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    $custom-fonts-path + '/museosans_500_macroman/MuseoSans_500-webfont',
+    500);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    $custom-fonts-path + '/museosans/museosans_500_macroman/MuseoSans_500-webfont',
+    normal);
+}
+
+@font-face {
+    @include font-face(
+    'museo-sans',
+    $custom-fonts-path + '/museosans/museosans_700_macroman/MuseoSans_700-webfont',
+    700);
+}
+
 .daptiv-nav {
     @include font-size-larger();
     background: transparent;
