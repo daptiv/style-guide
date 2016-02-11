@@ -1,0 +1,14 @@
+//== Loading Indicator
+//
+//## Variables for loading indicator
+
+$loading-height: 44px;
+$loading-width: 100px;
+
+$loading-item-radius: 56px;
+$loading-item-margin: 28px 1px;
+$loading-item-dimension: 11px;
+$loading-item-dimension-min: $loading-item-dimension;
+$loading-item-dimension-max: 20px;
+
+$loading-item-y-movement: -24px;

@@ -5,5 +5,10 @@
          url($font-family-url + '.ttf')  format('truetype');
     font-weight: $weight;
     font-style: normal;
+}
 
+@mixin center-vertical() {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
