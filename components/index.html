@@ -42,6 +42,7 @@
         </select>
       <nav class="daptiv-side-menu">
   <a class="daptiv-side-menu-item " href="/style-guide">Scaffolding</a>
+  <a class="daptiv-side-menu-item " href="/style-guide/animations/">Animations</a>
   <a class="daptiv-side-menu-item " href="/style-guide/identity/">Identity</a>
   <a class="daptiv-side-menu-item " href="/style-guide/colors/">Colors</a>
   <a class="daptiv-side-menu-item " href="/style-guide/layout/">Layout</a>
@@ -69,6 +70,7 @@
       <li><a href="#open" id="markdown-toc-open">Open</a></li>
     </ul>
   </li>
+  <li><a href="#loading-indicator" id="markdown-toc-loading-indicator">Loading Indicator</a></li>
 </ul>
 
 <h2 id="panel">Panel</h2>
@@ -265,6 +267,28 @@
 </div>
 <p><br /></p>
 
+<h2 id="loading-indicator">Loading Indicator</h2>
+<p>Used while waiting for system response<br /></p>
+
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<br /><br /><br />
+<div class="daptiv-loading">
+    <span></span><span></span><span></span>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;br</span> <span class="nt">/&gt;&lt;br</span> <span class="nt">/&gt;&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-loading&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
         </div>
     </div>
 
@@ -288,7 +312,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.18</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.20</strong>
         </footer>
     </div>
 
