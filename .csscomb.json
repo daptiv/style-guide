@@ -27,5 +27,5 @@
     "unitless-zero": true,
     "vendor-prefix-align": true,
     "sort-order-fallback": "abc",
-    "sort-order": ["..."]
+    "sort-order": ["@extend", "..."]
 }

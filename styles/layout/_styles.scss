@@ -1,6 +1,21 @@
 //== Layout
 //
 //## Classes for grid layout
+.block-component {
+    display: block;
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
 
 .daptiv-container {
     margin-left: auto;

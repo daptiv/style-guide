@@ -42,39 +42,50 @@ Panel is a quick, easy way to display content with a title.
 </div>
 {% endsnippet %}
 
-## Side-Bar
-Used for side bars
+## Card
+
+Card for use in card lists
+
 {% snippet html %}
-<div class="example-flex-column-container">
-    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.querySelector('.daptiv-side-bar'); sidebar.classList.toggle('slide-out-ltr', !sidebar.classList.toggle('slide-in-rtl'))">Toggle Side-Bar</button>
-    <br/>
-    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
-    </div>
-    <div class="daptiv-side-bar hide-initial">
-        <nav class="daptiv-side-menu">
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
-        </nav>
-    </div>
+<svg style="position: absolute" height="0" width="0">
+    <!-- apply one to page for flag svgs to have drop shadows -->
+    <defs>
+        <filter id="flag-dropshadow">
+            <feComponentTransfer xmlns="http://www.w3.org/2000/svg" in="SourceAlpha">
+                 <feFuncR type="discrete" tableValues=".267"/>
+                 <feFuncG type="discrete" tableValues=".267"/>
+                 <feFuncB type="discrete" tableValues=".267"/>
+             </feComponentTransfer>
+            <feGaussianBlur stdDeviation="1.5"/> <!-- stdDeviation is how much to blur -->
+            <feOffset dx="0" dy="1" result="offsetblur"/> <!-- how much to offset -->
+            <feMerge>
+                <feMergeNode /> <!-- this contains the offset blurred image -->
+                <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+            </feMerge>
+        </filter>
+    </defs>
+</svg>
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">Some Thing</span>
+            </div>
+
+            <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
+        </section>
+        <flag class="flag">
+            <span class="on" onclick="this.classList.toggle('on'); this.classList.toggle('off')">
+                <svg class="image" viewBox="0 0 46.5 32">
+                    <path style="filter:url(#flag-dropshadow)"  d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>
+                </svg>
+            </span>
+        </flag>
+    </section>
+    <footer class="small end block-component">CurrentStatus</footer>
 </div>
 {% endsnippet %}
-<br />
-
-## Side-Menu
-Used for right side menu
-{% snippet html %}
-<nav class="daptiv-side-bar daptiv-side-menu">
-    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
-    <hr class="daptiv-side-menu-divider" />
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
-</nav>
-{% endsnippet %}
-<br />
 
 ## Drop-down list
 Used for drop-down lists<br />
@@ -111,3 +122,38 @@ Used while waiting for system response<br />
     <span></span><span></span><span></span>
 </div>
 {% endsnippet %}
+
+
+## Side-Bar
+Used for side bars
+{% snippet html %}
+<div class="example-flex-column-container">
+    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.querySelector('.daptiv-side-bar'); sidebar.classList.toggle('slide-out-ltr', !sidebar.classList.toggle('slide-in-rtl'))">Toggle Side-Bar</button>
+    <br/>
+    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
+    </div>
+    <div class="daptiv-side-bar hide-initial">
+        <nav class="daptiv-side-menu">
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
+            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+        </nav>
+    </div>
+</div>
+{% endsnippet %}
+<br />
+
+## Side-Menu
+Used for right side menu
+{% snippet html %}
+<nav class="daptiv-side-bar daptiv-side-menu">
+    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
+    <hr class="daptiv-side-menu-divider" />
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
+    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+</nav>
+{% endsnippet %}
+<br />
