@@ -11,6 +11,7 @@
     position: relative;
 
     .content {
+        background: $color-base-0;
         border: solid $dropdownlist-border-size $dropdownlist-border-color;
         border-top: 0;
         position: absolute;
@@ -24,7 +25,6 @@
     }
 
     .item {
-        background: $color-base-0;
         color: $color-text-dark;
         display: block;
         margin: $dropdownlist-item-border-size;

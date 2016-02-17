@@ -8,7 +8,7 @@
     flex-direction: column;
     flex-grow: 1;
     flex-wrap: wrap;
-    margin: 0 1px 1px;
+    margin: 0 1px 3px;
     min-height: $card-height;
     padding: $card-v-padding $card-padding;
     text-align: left;
@@ -45,25 +45,29 @@
     .end {
         text-align: right;
     }
-}
 
-.flag {
-    @include tap-highlight-color(transparent);
-    align-self: flex-start;
-    flex-shrink: 0;
-    height: $flag-height;
-    margin-bottom: $flag-margin-bottom;
-    margin-right: $flag-margin-right;
-    margin-top: $flag-padding-top;
-    width: $flag-width;
+    .flag {
+        @include tap-highlight-color(transparent);
+        align-self: flex-start;
+        flex-shrink: 0;
+        height: $flag-height;
+        margin-bottom: $flag-margin-bottom;
+        margin-right: $flag-margin-right;
+        margin-top: $flag-padding-top;
+        width: $flag-width;
 
-    .off .image {
-        fill: $flag-off-fill-color;
-        stroke: $flag-off-outline-color;
-    }
+        &:hover {
+            cursor: pointer;
+        }
 
-    .on .image {
-        fill: $flag-on-fill-color;
-        stroke: $flag-on-outline-color;
+        .off .image {
+            fill: $flag-off-fill-color;
+            stroke: $flag-off-outline-color;
+        }
+
+        .on .image {
+            fill: $flag-on-fill-color;
+            stroke: $flag-on-outline-color;
+        }
     }
 }

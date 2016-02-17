@@ -15,7 +15,7 @@ $card-font-size-small: $font-size-normal - 1;
 $card-h-padding: $standard-whitespace-unit * 2;
 $card-v-padding: $standard-whitespace-unit;
 
-$flag-overhang-adjustment: 4px;
+$flag-overhang-adjustment: 3px;
 $flag-margin-right: -($card-h-padding + $flag-overhang-adjustment);
 $flag-margin-bottom: $card-v-padding;
 $flag-total-top-padding: 28px;
