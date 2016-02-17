@@ -63,14 +63,15 @@
 <ul id="markdown-toc">
   <li><a href="#panel" id="markdown-toc-panel">Panel</a></li>
   <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a></li>
-  <li><a href="#side-bar" id="markdown-toc-side-bar">Side-Bar</a></li>
-  <li><a href="#side-menu" id="markdown-toc-side-menu">Side-Menu</a></li>
+  <li><a href="#card" id="markdown-toc-card">Card</a></li>
   <li><a href="#drop-down-list" id="markdown-toc-drop-down-list">Drop-down list</a>    <ul>
       <li><a href="#closed" id="markdown-toc-closed">Closed</a></li>
       <li><a href="#open" id="markdown-toc-open">Open</a></li>
     </ul>
   </li>
   <li><a href="#loading-indicator" id="markdown-toc-loading-indicator">Loading Indicator</a></li>
+  <li><a href="#side-bar" id="markdown-toc-side-bar">Side-Bar</a></li>
+  <li><a href="#side-menu" id="markdown-toc-side-menu">Side-Menu</a></li>
 </ul>
 
 <h2 id="panel">Panel</h2>
@@ -141,77 +142,94 @@
 </div>
 </div>
 
-<h2 id="side-bar">Side-Bar</h2>
-<p>Used for side bars</p>
+<h2 id="card">Card</h2>
+
+<p>Card for use in card lists</p>
+
 <div class="snippet">
 <div class="snippet-src-button-container">
 <button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
 </div>
 <div class="snippet-header">
-<div class="example-flex-column-container">
-    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.querySelector('.daptiv-side-bar'); sidebar.classList.toggle('slide-out-ltr', !sidebar.classList.toggle('slide-in-rtl'))">Toggle Side-Bar</button>
-    <br />
-    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
-    </div>
-    <div class="daptiv-side-bar hide-initial">
-        <nav class="daptiv-side-menu">
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
-        </nav>
-    </div>
+<svg style="position: absolute" height="0" width="0">
+    <!-- apply one to page for flag svgs to have drop shadows -->
+    <defs>
+        <filter id="flag-dropshadow">
+            <fecomponenttransfer xmlns="http://www.w3.org/2000/svg" in="SourceAlpha" out="colorized">
+                 <fefuncr type="discrete" tablevalues=".267" />
+                 <fefuncg type="discrete" tablevalues=".267" />
+                 <fefuncb type="discrete" tablevalues=".267" />
+             </fecomponenttransfer>
+             <feoffset dx="0" dy="1" in="colorized" result="offsetOut" /> <!-- how much to offset -->
+            <fegaussianblur result="offsetBlur" in="offsetOut" stddeviation="1" /> <!-- stdDeviation is how much to blur -->
+            <feblend in="SourceGraphic" in2="offsetBlur" mode="normal" />
+        </filter>
+    </defs>
+</svg>
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">Some Thing</span>
+            </div>
+
+            <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
+        </section>
+        <flag class="flag">
+            <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
+                Operating on classes doesn't work with SVG elements in IE 11 #6327 -->
+            <span class="on" onclick="this.classList.toggle('on'); this.classList.toggle('off')">
+                <svg class="image" viewbox="0 0 46 32">
+                    <path d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>
+                </svg>
+            </span>
+        </flag>
+    </section>
+    <footer class="small end block-component">CurrentStatus</footer>
 </div>
 </div>
 <div class="snippet-content">
-<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;example-flex-column-container&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;example-left-column&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;var sidebar = this.parentNode.parentNode.querySelector(&#39;.daptiv-side-bar&#39;); sidebar.classList.toggle(&#39;slide-out-ltr&#39;, !sidebar.classList.toggle(&#39;slide-in-rtl&#39;))&quot;</span><span class="nt">&gt;</span>Toggle Side-Bar<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;br/&gt;</span>
-    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-bar hide-initial&quot;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/nav&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;svg</span> <span class="na">style=</span><span class="s">&quot;position: absolute&quot;</span> <span class="na">height=</span><span class="s">&quot;0&quot;</span> <span class="na">width=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- apply one to page for flag svgs to have drop shadows --&gt;</span>
+    <span class="nt">&lt;defs&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">id=</span><span class="s">&quot;flag-dropshadow&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;feComponentTransfer</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">in=</span><span class="s">&quot;SourceAlpha&quot;</span> <span class="na">out=</span><span class="s">&quot;colorized&quot;</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;feFuncR</span> <span class="na">type=</span><span class="s">&quot;discrete&quot;</span> <span class="na">tableValues=</span><span class="s">&quot;.267&quot;</span><span class="nt">/&gt;</span>
+                 <span class="nt">&lt;feFuncG</span> <span class="na">type=</span><span class="s">&quot;discrete&quot;</span> <span class="na">tableValues=</span><span class="s">&quot;.267&quot;</span><span class="nt">/&gt;</span>
+                 <span class="nt">&lt;feFuncB</span> <span class="na">type=</span><span class="s">&quot;discrete&quot;</span> <span class="na">tableValues=</span><span class="s">&quot;.267&quot;</span><span class="nt">/&gt;</span>
+             <span class="nt">&lt;/feComponentTransfer&gt;</span>
+             <span class="nt">&lt;feOffset</span> <span class="na">dx=</span><span class="s">&quot;0&quot;</span> <span class="na">dy=</span><span class="s">&quot;1&quot;</span> <span class="na">in=</span><span class="s">&quot;colorized&quot;</span> <span class="na">result=</span><span class="s">&quot;offsetOut&quot;</span><span class="nt">/&gt;</span> <span class="c">&lt;!-- how much to offset --&gt;</span>
+            <span class="nt">&lt;feGaussianBlur</span> <span class="na">result=</span><span class="s">&quot;offsetBlur&quot;</span> <span class="na">in=</span><span class="s">&quot;offsetOut&quot;</span> <span class="na">stdDeviation=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span> <span class="c">&lt;!-- stdDeviation is how much to blur --&gt;</span>
+            <span class="nt">&lt;feBlend</span> <span class="na">in=</span><span class="s">&quot;SourceGraphic&quot;</span> <span class="na">in2=</span><span class="s">&quot;offsetBlur&quot;</span> <span class="na">mode=</span><span class="s">&quot;normal&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/filter&gt;</span>
+    <span class="nt">&lt;/defs&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;card&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;flex-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;flex-column&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;item-title block-component&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;item-number&quot;</span><span class="nt">&gt;</span>1.2.3.4.5<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;name&quot;</span> <span class="na">onclick=</span><span class="s">&quot;this.innerHTML = &#39;A really long name is now on this card that will be really awesome&#39;&quot;</span><span class="nt">&gt;</span>Some Thing<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;related-title block-component&quot;</span> <span class="na">onclick=</span><span class="s">&quot;this.innerHTML = &#39;A really long name is now on this card that will be really awesome&#39;&quot;</span><span class="nt">&gt;</span>1; Related Thing<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+        <span class="nt">&lt;flag</span> <span class="na">class=</span><span class="s">&quot;flag&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327</span>
+<span class="c">                Operating on classes doesn&#39;t work with SVG elements in IE 11 #6327 --&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;on&quot;</span> <span class="na">onclick=</span><span class="s">&quot;this.classList.toggle(&#39;on&#39;); this.classList.toggle(&#39;off&#39;)&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;image&quot;</span> <span class="na">viewBox=</span><span class="s">&quot;0 0 46 32&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">&quot;M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32&quot;</span><span class="nt">&gt;&lt;/path&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/flag&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small end block-component&quot;</span><span class="nt">&gt;</span>CurrentStatus<span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 </div>
-<p><br /></p>
-
-<h2 id="side-menu">Side-Menu</h2>
-<p>Used for right side menu</p>
-<div class="snippet">
-<div class="snippet-src-button-container">
-<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
-</div>
-<div class="snippet-header">
-<nav class="daptiv-side-bar daptiv-side-menu">
-    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabindex="-1">Read Only</a>
-    <hr class="daptiv-side-menu-divider" />
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
-</nav>
-</div>
-<div class="snippet-content">
-<div class="highlight"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-bar daptiv-side-menu&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-readonly&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span> <span class="na">tabIndex=</span><span class="s">&quot;-1&quot;</span><span class="nt">&gt;</span>Read Only<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-divider&quot;</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
-</pre></div>
-</div>
-</div>
-<p><br /></p>
 
 <h2 id="drop-down-list">Drop-down list</h2>
 <p>Used for drop-down lists<br /></p>
@@ -291,6 +309,78 @@
 </div>
 </div>
 
+<h2 id="side-bar">Side-Bar</h2>
+<p>Used for side bars</p>
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="example-flex-column-container">
+    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.querySelector('.daptiv-side-bar'); sidebar.classList.toggle('slide-out-ltr', !sidebar.classList.toggle('slide-in-rtl'))">Toggle Side-Bar</button>
+    <br />
+    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
+    </div>
+    <div class="daptiv-side-bar hide-initial">
+        <nav class="daptiv-side-menu">
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
+            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
+            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+        </nav>
+    </div>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;example-flex-column-container&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;example-left-column&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">onclick=</span><span class="s">&quot;var sidebar = this.parentNode.parentNode.querySelector(&#39;.daptiv-side-bar&#39;); sidebar.classList.toggle(&#39;slide-out-ltr&#39;, !sidebar.classList.toggle(&#39;slide-in-rtl&#39;))&quot;</span><span class="nt">&gt;</span>Toggle Side-Bar<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;br/&gt;</span>
+    Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-bar hide-initial&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+<p><br /></p>
+
+<h2 id="side-menu">Side-Menu</h2>
+<p>Used for right side menu</p>
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<nav class="daptiv-side-bar daptiv-side-menu">
+    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabindex="-1">Read Only</a>
+    <hr class="daptiv-side-menu-divider" />
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
+    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
+    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+</nav>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-bar daptiv-side-menu&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-readonly&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span> <span class="na">tabIndex=</span><span class="s">&quot;-1&quot;</span><span class="nt">&gt;</span>Read Only<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-divider&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;selected daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Selected<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;daptiv-side-menu-item&quot;</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;return false;&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></div>
+</div>
+</div>
+<p><br /></p>
+
         </div>
     </div>
 
@@ -314,7 +404,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.24</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.25</strong>
         </footer>
     </div>
 
