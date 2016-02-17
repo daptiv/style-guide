@@ -76,6 +76,8 @@ Card for use in card lists
             <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
         </section>
         <flag class="flag">
+            <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
+                Operating on classes doesn't work with SVG elements in IE 11 #6327 -->
             <span class="on" onclick="this.classList.toggle('on'); this.classList.toggle('off')">
                 <svg class="image" viewBox="0 0 46.5 32">
                     <path style="filter:url(#flag-dropshadow)"  d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>

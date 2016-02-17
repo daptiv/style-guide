@@ -16,9 +16,9 @@
     .item-title {
         line-height: $card-text-height-larger;
         margin-bottom: 10px;
-        padding-left: 12px;
-        padding-right: 48px;
-        text-indent: -12px;
+        padding-left: $card-title-indent;
+        padding-right: $card-title-right-padding;
+        text-indent: -$card-title-indent;
 
         .item-number {
             @include font-size-base-light();
@@ -34,7 +34,7 @@
         @include font-size-base-light();
         font-style: italic;
         line-height: $card-text-height-larger;
-        padding-right: 48px;
+        padding-right: $card-title-right-padding;
     }
 
     .status {
