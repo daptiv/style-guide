@@ -26,7 +26,7 @@
     .item {
         background: $color-base-0;
         color: $color-text-dark;
-        display: block;
+        display: flex;
         margin: $dropdownlist-item-border-size;
         overflow: hidden;
         padding: 0 $dropdownlist-item-padding;
@@ -54,7 +54,10 @@
 
         &.menu {
             color: $color-base-90;
-            float: right;
         }
+    }
+
+    .item .title {
+        flex-grow: 1;
     }
 }

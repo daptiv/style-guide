@@ -83,7 +83,8 @@ Used for drop-down lists<br />
 
 {% snippet html %}
 <div class="daptiv-drop-down-list">
-    <a class="item current" href="#" onclick="return false;"><i class="icon list"></i>Item 1<i class="icon menu"></i></a>
+    <a class="item current" href="#" onclick="return false;"><i class="icon list"></i>
+    <span class="title">Item 1</span><i class="icon menu"></i></a>
 </div>
 {% endsnippet %}
 
@@ -91,10 +92,10 @@ Used for drop-down lists<br />
 
 {% snippet html %}
 <div class="daptiv-drop-down-list">
-    <a class="item current open" href="#" onclick="return false;"><i class="icon list"></i>Item 1<i class="icon menu"></i></a>
+    <a class="item current open" href="#" onclick="return false;"><i class="icon list"></i><span class="title">Item 1</span><i class="icon menu"></i></a>
     <div class="content">
-        <a class="item" href="#" onclick="return false;"><i class="icon calendar"></i>Item 2</a>
-        <a class="item" href="#" onclick="return false;"><i class="icon flag"></i>Item 3</a>
+        <a class="item" href="#" onclick="return false;"><i class="icon calendar"></i><span class="title">Item 2</span></a>
+        <a class="item" href="#" onclick="return false;"><i class="icon flag"></i><span class="title">Item 3</span></a>
     </div>
     <br />
     <br />
