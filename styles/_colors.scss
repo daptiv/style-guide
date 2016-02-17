@@ -37,3 +37,18 @@ $color-text-link: $color-primary-dark;
 $color-text-accent-dark: $color-primary-medium;
 $color-text-accent-medium: $color-primary-medium-light;
 $color-text-accent-light: $color-primary-light;
+
+
+/**
+    $color-xxx-nn: colors with opacity (i.e. backgrounds will show through).
+    $color-xxx-nn-over-white: colors (based on opacity colors) without opacity (not transparent).
+*/
+$color-primary-dark-05-over-white: #e1e6ee;
+$color-primary-dark-08-over-white: #edf0f5;
+$color-primary-dark-24-over-white: #d0e1f2;
+$color-primary-light-40-over-white: #a5bbd5;
+
+$color-primary-dark-05: rgba($color-primary-dark, 0.05);
+$color-primary-dark-08: rgba($color-primary-dark, 0.08);
+$color-primary-dark-24: rgba($color-primary-dark, 0.24);
+$color-primary-light-40: rgba($color-primary-light, 0.4);

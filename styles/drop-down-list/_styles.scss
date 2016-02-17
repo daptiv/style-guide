@@ -5,26 +5,30 @@
 .daptiv-drop-down-list {
     @include font-size-medium();
     display: inline-block;
-    line-height: $dropdownlist-item-height;
     max-width: $dropdownlist-item-max-width;
     min-width: $dropdownlist-item-min-width;
     position: relative;
 
     .content {
+        background: $color-base-0;
         border: solid $dropdownlist-border-size $dropdownlist-border-color;
         border-top: 0;
+        box-shadow: -1px 1px 8px 0 rgba($color-base-90, 0.24);
         position: absolute;
-        top: $dropdownlist-item-height + 2px;
+        top: 100%;
         width: 100%;
 
         > :hover {
             background: $color-secondary-light;
             color: $color-text-dark;
         }
+
+        .item {
+            line-height: $dropdownlist-item-height;
+        }
     }
 
     .item {
-        background: $color-base-0;
         color: $color-text-dark;
         display: flex;
         margin: $dropdownlist-item-border-size;

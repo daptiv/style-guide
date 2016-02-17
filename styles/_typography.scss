@@ -12,6 +12,7 @@ $font-family-base:        $font-family-sans-serif;
 $font-size-base:   12px;
 $font-size-base-weight: 500;
 $font-size-base-weight-bold: 700;
+$font-size-base-weight-light: 300;
 $font-size-normal: $font-size-base;
 
 @mixin font-size-base() {
@@ -22,6 +23,11 @@ $font-size-normal: $font-size-base;
 @mixin font-size-base-bold() {
     font-size: $font-size-base;
     font-weight: $font-size-base-weight-bold;
+}
+
+@mixin font-size-base-light() {
+    font-size: $font-size-base;
+    font-weight: $font-size-base-weight-light;
 }
 
 $font-size-medium:  14px;
@@ -40,6 +46,18 @@ $font-size-larger-weight-bold: 700;
 
 $font-weight-base: $font-family-base;
 $font-size-large: 14px;
+$font-size-large-weight: 300;
+$font-size-large-weight-bold: 500;
+
+@mixin font-size-large() {
+    font-size: $font-size-large;
+    font-weight: $font-size-large-weight;
+}
+
+@mixin font-size-large-bold() {
+    font-size: $font-size-large;
+    font-weight: $font-size-large-weight-bold;
+}
 
 $font-size-larger: 16px;
 $font-size-larger-weight: 300;

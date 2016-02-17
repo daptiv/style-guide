@@ -1,0 +1,82 @@
+.card {
+    background-color: $card-background-color;
+    border: 1px solid $card-border-color;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 0 0 1px $card-box-shadow-color;
+    color: $color-text-dark;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 1px 1px 3px; // extra 1px corrects for width of shadow border
+    min-height: $card-height;
+    padding: $card-v-padding $card-padding;
+    text-align: left;
+
+    .item-title {
+        line-height: $card-text-height-larger;
+        margin-bottom: 10px;
+        padding-left: $card-title-indent;
+        padding-right: $card-title-right-padding;
+        text-indent: -$card-title-indent;
+
+        .item-number {
+            @include font-size-base-light();
+            vertical-align: text-bottom;
+        }
+
+        .name {
+            @include font-size-large();
+        }
+    }
+
+    .related-title {
+        @include font-size-base-light();
+        font-style: italic;
+        line-height: $card-text-height-larger;
+        padding-right: $card-title-right-padding;
+    }
+
+    .status {
+        @include font-size-base();
+        line-height: $card-text-height-large;
+    }
+
+    .end {
+        text-align: right;
+    }
+
+    .flag {
+        @include tap-highlight-color(transparent);
+        align-self: flex-start;
+        flex-shrink: 0;
+        height: $flag-height;
+        margin-bottom: $flag-margin-bottom;
+        margin-right: $flag-margin-right;
+        margin-top: $flag-padding-top;
+        width: $flag-width;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active .image path {
+            filter: none;
+        }
+
+        .image path {
+            filter: url('#flag-dropshadow');
+
+        }
+
+        .off .image {
+            fill: $flag-off-fill-color;
+            stroke: $flag-off-outline-color;
+        }
+
+        .on .image {
+            fill: $flag-on-fill-color;
+            stroke: $flag-on-outline-color;
+        }
+    }
+}
