@@ -8,7 +8,7 @@
     flex-direction: column;
     flex-grow: 1;
     flex-wrap: wrap;
-    margin: 0 1px 3px;
+    margin: 1px 1px 3px; // extra 1px corrects for width of shadow border
     min-height: $card-height;
     padding: $card-v-padding $card-padding;
     text-align: left;
