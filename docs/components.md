@@ -51,17 +51,14 @@ Card for use in card lists
     <!-- apply one to page for flag svgs to have drop shadows -->
     <defs>
         <filter id="flag-dropshadow">
-            <feComponentTransfer xmlns="http://www.w3.org/2000/svg" in="SourceAlpha">
+            <feComponentTransfer xmlns="http://www.w3.org/2000/svg" in="SourceAlpha" out="colorized">
                  <feFuncR type="discrete" tableValues=".267"/>
                  <feFuncG type="discrete" tableValues=".267"/>
                  <feFuncB type="discrete" tableValues=".267"/>
              </feComponentTransfer>
-            <feGaussianBlur stdDeviation="1.5"/> <!-- stdDeviation is how much to blur -->
-            <feOffset dx="0" dy="1" result="offsetblur"/> <!-- how much to offset -->
-            <feMerge>
-                <feMergeNode /> <!-- this contains the offset blurred image -->
-                <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
-            </feMerge>
+             <feOffset dx="0" dy="1" in="colorized" result="offsetOut"/> <!-- how much to offset -->
+            <feGaussianBlur result="offsetBlur" in="offsetOut" stdDeviation="1"/> <!-- stdDeviation is how much to blur -->
+            <feBlend in="SourceGraphic" in2="offsetBlur" mode="normal" />
         </filter>
     </defs>
 </svg>
@@ -77,8 +74,8 @@ Card for use in card lists
         </section>
         <flag class="flag">
             <span class="on" onclick="this.classList.toggle('on'); this.classList.toggle('off')">
-                <svg class="image" viewBox="0 0 46.5 32">
-                    <path style="filter:url(#flag-dropshadow)"  d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>
+                <svg class="image" viewBox="0 0 46 32">
+                    <path d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>
                 </svg>
             </span>
         </flag>

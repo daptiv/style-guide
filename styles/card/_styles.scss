@@ -60,6 +60,15 @@
             cursor: pointer;
         }
 
+        &:active .image path {
+            filter: none;
+        }
+
+        .image path {
+            filter: url('#flag-dropshadow');
+
+        }
+
         .off .image {
             fill: $flag-off-fill-color;
             stroke: $flag-off-outline-color;
