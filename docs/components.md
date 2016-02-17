@@ -101,7 +101,7 @@ Used for drop-down lists<br />
 ### Open
 
 {% snippet html %}
-<div class="daptiv-drop-down-list">
+<div class="daptiv-drop-down-list docs-open-dropdown">
     <a class="item current open" href="#" onclick="return false;"><i class="icon list"></i><span class="title">Item 1</span><i class="icon menu"></i></a>
     <div class="content">
         <a class="item" href="#" onclick="return false;"><i class="icon calendar"></i><span class="title">Item 2</span></a>
