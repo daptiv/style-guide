@@ -14,6 +14,7 @@ run:
 git checkout master
 git pull
 npm version patch
+npm publish
 ```
 
 ### note
@@ -21,4 +22,3 @@ npm version patch
 If npm version is `2.13` or later npm version will likely fail to run postversion script, leaving you with pending commits in your repo.
 
 If this is the case, run `npm run-script postversion` to finish the process.
-
