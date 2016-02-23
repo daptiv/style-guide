@@ -68,6 +68,17 @@ module.exports = function(grunt) {
             }
         },
 
+        postcss: {
+            options: {
+                processors: [
+                    require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                ]
+            },
+            dist: {
+                src: 'docs/themes/**/*.css'
+            }
+        },
+
         jekyll: {
             options: {
                 src: 'docs',
@@ -170,6 +181,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-scss-lint');
@@ -177,7 +189,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['scsslint', 'sass', 'copy:css', 'cssmin', 'copy:fonts']);
+    grunt.registerTask('styles', ['scsslint', 'sass', 'copy:css', 'cssmin', 'postcss', 'copy:fonts']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);

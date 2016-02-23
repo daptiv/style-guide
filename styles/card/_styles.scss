@@ -60,13 +60,12 @@
             cursor: pointer;
         }
 
-        &:active .image path {
+        &:active .image {
             filter: none;
         }
 
-        .image path {
-            filter: url('#flag-dropshadow');
-
+        .image {
+            filter: drop-shadow(-2px 2px 1.5px rgba($color-base-70, 0.4));
         }
 
         .off .image {

@@ -47,21 +47,6 @@ Panel is a quick, easy way to display content with a title.
 Card for use in card lists
 
 {% snippet html %}
-<svg style="position: absolute" height="0" width="0">
-    <!-- apply one to page for flag svgs to have drop shadows -->
-    <defs>
-        <filter id="flag-dropshadow">
-            <feComponentTransfer xmlns="http://www.w3.org/2000/svg" in="SourceAlpha" out="colorized">
-                 <feFuncR type="discrete" tableValues=".267"/>
-                 <feFuncG type="discrete" tableValues=".267"/>
-                 <feFuncB type="discrete" tableValues=".267"/>
-             </feComponentTransfer>
-             <feOffset dx="0" dy="1" in="colorized" result="offsetOut"/> <!-- how much to offset -->
-            <feGaussianBlur result="offsetBlur" in="offsetOut" stdDeviation="1"/> <!-- stdDeviation is how much to blur -->
-            <feBlend in="SourceGraphic" in2="offsetBlur" mode="normal" />
-        </filter>
-    </defs>
-</svg>
 <div class="card">
     <section class="flex-row">
         <section class="flex-column">

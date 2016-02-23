@@ -28,7 +28,9 @@
     "jekyll": "^3.0.0-beta1"
   },
   "dependencies": {
+    "autoprefixer": "^6.3.3",
     "font-awesome": "^4.4.0",
+    "grunt-postcss": "^0.7.2",
     "pygments": "^0.2.0"
   }
 }
