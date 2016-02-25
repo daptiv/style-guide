@@ -3,29 +3,37 @@
 //
 //## styles for Panel
 
-.daptiv-side-bar {
-    background: linear-gradient(90deg, $color-primary-dark-shadow 0%, $color-primary-dark 100%);
-    border: 1px $color-primary-dark-shadow;
-    overflow: hidden;
-    width: $side-bar-width;
-
-    .daptiv-side-menu {
+.daptiv-slider {
+    .daptiv-side-bar {
+        background: linear-gradient(90deg, $color-primary-dark-shadow 0%, $color-primary-dark 100%);
+        border: 1px $color-primary-dark-shadow;
+        overflow: hidden;
         width: $side-bar-width;
+
+        .daptiv-side-menu {
+            width: $side-bar-width;
+        }
     }
 
-    &.hide-initial {
-        width: 0;
+    .initial {
+        .daptiv-side-bar {
+            width: 0;
+        }
     }
 
-    &.slide-in-rtl {
-        display: block;
-        transition: width ease-out $side-bar-toggle-speed;
-        width: $side-bar-width;
+    .open {
+        .daptiv-side-bar {
+            display: block;
+            transition: width ease-out $side-bar-toggle-speed;
+            width: $side-bar-width;
+        }
     }
 
-    &.slide-out-ltr {
-        display: block;
-        transition: width ease-out $side-bar-toggle-speed;
-        width: 0;
+    .closed {
+        .daptiv-side-bar {
+            display: block;
+            transition: width ease-out $side-bar-toggle-speed;
+            width: 0;
+        }
     }
 }

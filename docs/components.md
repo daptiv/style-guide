@@ -112,8 +112,8 @@ Used while waiting for system response<br />
 ## Side-Bar
 Used for side bars
 {% snippet html %}
-<div class="example-flex-column-container">
-    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.querySelector('.daptiv-side-bar'); sidebar.classList.toggle('slide-out-ltr', !sidebar.classList.toggle('slide-in-rtl'))">Toggle Side-Bar</button>
+<div class="example-flex-column-container daptiv-slider initial">
+    <div class="example-left-column"><button onclick="var sidebar = this.parentNode.parentNode.parentNode.querySelector('.daptiv-slider'); sidebar.classList.toggle('closed', !sidebar.classList.toggle('open'))">Toggle Side-Bar</button>
     <br/>
     Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
     </div>
