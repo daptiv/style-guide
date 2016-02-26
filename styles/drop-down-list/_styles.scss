@@ -69,7 +69,7 @@
                 height: 0;
                 left: 0;
                 position: absolute;
-                top: calc(50% - $half-triangle-base);
+                top: calc(50% - #{$half-triangle-base});
                 width: 0;
             }
         }
