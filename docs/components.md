@@ -89,6 +89,7 @@ Used for drop-down lists<br />
 <div class="daptiv-drop-down-list docs-open-dropdown open">
     <a class="item current" href="#" onclick="return false;"><i class="icon list"></i><span class="title">Item 1</span><i class="icon menu"></i></a>
     <div class="content">
+        <a class="item selected" href="#" onclick="return false;"><i class="icon list"></i><span class="title">Item 1</span></a>
         <a class="item" href="#" onclick="return false;"><i class="icon calendar"></i><span class="title">Item 2</span></a>
         <a class="item" href="#" onclick="return false;"><i class="icon flag"></i><span class="title">Item 3</span></a>
     </div>

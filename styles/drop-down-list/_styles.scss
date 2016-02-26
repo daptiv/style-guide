@@ -50,6 +50,24 @@
                 border-color: $dropdownlist-border-color;
             }
         }
+
+        &.selected {
+            border-left: 1px solid $color-primary-light;
+            position: relative;
+
+            &:before {
+                border-bottom: 5px solid transparent;
+                border-left: 3px solid $color-primary-light;
+                border-top: 5px solid transparent;
+                content: '.';
+                font-size: 0;
+                height: 0;
+                left: 0;
+                position: absolute;
+                top: calc(50% - 5px);
+                width: 0;
+            }
+        }
     }
 
     .item .icon {
