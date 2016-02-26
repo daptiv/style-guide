@@ -119,7 +119,7 @@ Used for side bars
     <br/>
     Aliqua stumptown accusamus trust fund swag kogi. Lomo artisan normcore shabby chic ugh irure sriracha. Whatever consequat cillum id 8-bit. Four dollar toast meh qui, meditation adipisicing occaecat deserunt elit gastropub messenger bag echo park twee exercitation roof party offal. Direct trade hammock mlkshk YOLO, asymmetrical iPhone tousled VHS swag normcore. Chicharrones gastropub waistcoat, elit disrupt heirloom magna. Occaecat four loko fashion axe non hoodie, qui elit chia microdosing roof party.
     </div>
-    <div class="daptiv-side-bar hide-initial">
+    <div class="daptiv-side-bar initial">
         <nav class="daptiv-side-menu">
             <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
             <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
