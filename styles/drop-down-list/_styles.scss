@@ -56,15 +56,20 @@
             position: relative;
 
             &:before {
-                border-bottom: 5px solid transparent;
-                border-left: 3px solid $color-primary-light;
-                border-top: 5px solid transparent;
+                /* create a triangle using borders with it's tip pointing right and it's base against the left border
+                https://css-tricks.com/snippets/css/css-triangle/
+                */
+                $half-triangle-base: 5px;
+                $triangle-to-tip: 3px;
+                border-bottom: $half-triangle-base solid transparent;
+                border-left: $triangle-to-tip solid $color-primary-light;
+                border-top: $half-triangle-base solid transparent;
                 content: '.';
                 font-size: 0;
                 height: 0;
                 left: 0;
                 position: absolute;
-                top: calc(50% - 5px);
+                top: calc(50% - $half-triangle-base);
                 width: 0;
             }
         }
