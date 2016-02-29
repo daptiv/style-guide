@@ -242,6 +242,10 @@ $icon-block-width: 100px;
     @include swatch-with-label($color-text-accent-dark);
 }
 
+.labeled-swatch-color-attention-error {
+    @include swatch-with-label($color-attention-error);
+}
+
 .footer {
     margin: 25px 10px 2px 10px;
 }
