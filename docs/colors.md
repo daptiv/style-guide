@@ -40,3 +40,7 @@ section: Guide
 {% colorswatch color-text-default %}
 {% colorswatch color-text-disabled %}
 {% colorswatch color-text-link %}
+
+
+### Attention Color Palette
+{% colorswatch color-attention-error %}

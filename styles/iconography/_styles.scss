@@ -59,4 +59,18 @@
     &.large:after {
         font-size: $icon-size-large;
     }
+
+    &.circle {
+        &:after {
+            background-color: $color-base-100;
+            border: 1px solid $color-base-100;
+            border-radius: 50%;
+            content: '';
+            display: inline-block;
+            height: $icon-size-xsmall;
+            line-height: $icon-size-xsmall;
+            vertical-align: middle;
+            width: $icon-size-xsmall;
+        }
+    }
 }

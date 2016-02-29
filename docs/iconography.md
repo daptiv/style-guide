@@ -28,3 +28,4 @@ The help icon: <i class="icon help"></i>
 {% iconblock list %}
 {% iconblock calendar %}
 {% iconblock flag %}
+{% iconblock circle %}
