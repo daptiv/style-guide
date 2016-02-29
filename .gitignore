@@ -30,3 +30,5 @@ Gemfile.lock
 .idea/watcherTasks.xml
 
 .idea/workspace.xml
+
+npm-debug.log
