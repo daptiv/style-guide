@@ -4,36 +4,6 @@
 
 @import '../mixins';
 
-.daptiv-loading {
-    @include center-vertical();
-    height: $loading-height;
-    margin: auto;
-    text-align: center;
-    width: $loading-width;
-
-    & > span {
-        animation: daptiv-loading 0.715s infinite alternate;
-        background: $color-primary-light;
-        border-radius: $loading-item-radius;
-        display: inline-block;
-        height: $loading-item-dimension;
-        margin: $loading-item-margin;
-        vertical-align: middle;
-        width: $loading-item-dimension;
-    }
-
-    & > span:nth-last-of-type(1) {
-        animation-delay: 0s;
-    }
-
-    & > span:nth-last-of-type(2) {
-        animation-delay: 0.2095s;
-    }
-
-    & > span:nth-last-of-type(3) {
-        animation-delay: 0.429s;
-    }
-}
 
 @keyframes daptiv-loading {
     0% {
@@ -48,5 +18,37 @@
         height: $loading-item-dimension-max;
         transform: translateY($loading-item-y-movement);
         width: $loading-item-dimension-max;
+    }
+}
+
+.daptiv-loading {
+
+    @include center-vertical();
+    height: $loading-height;
+    margin: auto;
+    text-align: center;
+    width: $loading-width;    
+
+    & > span:nth-last-of-type(1) {
+        animation-delay: 0s;
+    }
+
+    & > span:nth-last-of-type(2) {
+        animation-delay: 0.2095s;
+    }
+
+    & > span:nth-last-of-type(3) {
+        animation-delay: 0.429s;
+    }
+
+    & > span {
+        animation: daptiv-loading 0.715s infinite alternate;
+        background: $color-primary-light;
+        border-radius: $loading-item-radius;
+        display: inline-block;
+        height: $loading-item-dimension;
+        margin: $loading-item-margin;
+        vertical-align: middle;
+        width: $loading-item-dimension;
     }
 }
