@@ -15,8 +15,6 @@
 .fade-in {
     animation: fadeIn ease-in 1;
     animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    opacity: 0;  /* make things invisible upon start */
 }
 
 @keyframes fadeInDelayed {
@@ -36,6 +34,4 @@
 .fade-in-delayed {
     animation: fadeInDelayed ease-in 1;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;  /* make things invisible upon start */
 }
