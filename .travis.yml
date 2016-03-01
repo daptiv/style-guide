@@ -1,6 +1,5 @@
-language: node_js
-node_js:
-- 4.3.0
+language: ruby
 before_script:
   - npm install -g grunt-cli
+  - npm install
 script: grunt
