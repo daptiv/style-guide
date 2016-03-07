@@ -1,3 +1,4 @@
 @mixin tap-highlight-color($color) {
-    tap-highlight-color: $color;
+    // Prefix is needed because autoprefix will not prefix non standard css
+    -webkit-tap-highlight-color: $color;
 }
