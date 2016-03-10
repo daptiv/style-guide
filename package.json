@@ -30,7 +30,10 @@
   },
   "dependencies": {
     "autoprefixer": "^6.3.3",
-    "font-awesome": "^4.4.0",
-    "pygments": "^0.2.0"
+    "pygments": "^0.2.0",
+    "font-awesome": "^4.4.0"
+  },
+  "peerDependencies": {
+    "font-awesome": "^4.4.0"
   }
-}
+ }
