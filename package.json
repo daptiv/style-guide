@@ -1,6 +1,6 @@
 {
   "name": "daptiv-style-guide",
-  "version": "0.10.37",
+  "version": "0.10.38",
   "description": "Common styles and pattern library for Daptiv",
   "author": "Changepoint",
   "homepage": "https://daptiv.github.io/style-guide",
@@ -36,4 +36,4 @@
   "peerDependencies": {
     "font-awesome": "^4.4.0"
   }
- }
+}
