@@ -49,6 +49,7 @@
     .flag {
         @include tap-highlight-color(transparent);
         align-self: flex-start;
+        filter: drop-shadow(-2px 2px 1.5px rgba($color-base-70, 0.4));
         flex-shrink: 0;
         height: $flag-height;
         margin-bottom: $flag-margin-bottom;
@@ -60,12 +61,8 @@
             cursor: pointer;
         }
 
-        &:active .image {
+        &:active {
             filter: none;
-        }
-
-        .image {
-            filter: drop-shadow(-2px 2px 1.5px rgba($color-base-70, 0.4));
         }
 
         .off .image {
