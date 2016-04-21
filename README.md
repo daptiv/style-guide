@@ -13,7 +13,7 @@ Style-guide is available as [bower](http://bower.io/) package. This can be inclu
 
 * First install dependencies `npm install && bundle install`
 * For development, run: `grunt serve` this starts a local web server and a watch task.
-* In a browser, go to: `http//localhost:8888/style-guide` this will automatically refresh when changes are made.
+* In a browser, go to: `http://localhost:8888/style-guide` this will automatically refresh when changes are made.
 
 ## Pull requests
 
