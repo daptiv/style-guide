@@ -21,10 +21,16 @@ We use [pullquester](https://github.com/daptiv/pullquester) to create pull reque
 
 ## Publishing
 
-To publish the site:
+### The site:
 
 1. Pull latest master: `git checkout master && git pull`
 2. Run `npm version patch`
+
+### The npm package
+
+1. Pull latest master: `git checkout master && git pull`
+2. log in to npm `npm login`
+3. publish the package `npm publish`
 
 ### More Information 
 
