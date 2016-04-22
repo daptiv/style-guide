@@ -19,10 +19,12 @@
         {
             "name": "Joel Brighton",
             "value": "@joebri"
-        },
+        }
+    ],
+    "testers": [
         {
-            "name": "Jonathan Park",
-            "value": "@park9140"
+            "name": "Phillip Balsley",
+            "value": "@pbalsley"
         }
     ]
 }
