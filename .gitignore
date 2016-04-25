@@ -12,7 +12,6 @@ docs/fonts/
 .sass-cache/
 Gemfile.lock
 
-.npmrc
 .idea/.name
 
 .idea/jsLibraryMappings.xml
