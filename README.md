@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/daptiv/style-guide.svg?branch=master)](https://travis-ci.org/daptiv/style-guide)
+
 [![octocat style](http://matthias.vallentin.net/blog/2012/12/octocat.jpeg)](https://daptiv.github.io/style-guide/)
 
 # Style Guide
@@ -11,7 +13,7 @@ Style-guide is available as [bower](http://bower.io/) package. This can be inclu
 
 * First install dependencies `npm install && bundle install`
 * For development, run: `grunt serve` this starts a local web server and a watch task.
-* In a browser, go to: `http//localhost:8888/style-guide` this will automatically refresh when changes are made.
+* In a browser, go to: `http://localhost:8888/style-guide` this will automatically refresh when changes are made.
 
 ## Pull requests
 
@@ -19,10 +21,16 @@ We use [pullquester](https://github.com/daptiv/pullquester) to create pull reque
 
 ## Publishing
 
-To publish the site:
+### The site:
 
 1. Pull latest master: `git checkout master && git pull`
 2. Run `npm version patch`
+
+### The npm package
+
+1. Pull latest master: `git checkout master && git pull`
+2. log in to npm `npm login`
+3. publish the package `npm publish`
 
 ### More Information 
 
