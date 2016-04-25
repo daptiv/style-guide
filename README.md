@@ -28,6 +28,9 @@ We use [pullquester](https://github.com/daptiv/pullquester) to create pull reque
 
 ### The npm package
 
+#### Pre-requisties
+Before publishing you need to have a [npm account](https://www.npmjs.com/signup). Once you have an account, please ask one of the owners (listed in owners.md file) to add you as colloborator. 
+
 1. Pull latest master: `git checkout master && git pull`
 2. log in to npm `npm login`
 3. publish the package `npm publish`
