@@ -26,16 +26,15 @@ We use [pullquester](https://github.com/daptiv/pullquester) to create pull reque
 1. Pull latest master: `git checkout master && git pull`
 2. Run `npm version patch`
 
-### The npm package
+### The npm package:
 
-#### Pre-requisties
-Before publishing you need to have a [npm account](https://www.npmjs.com/signup). Once you have an account, please ask one of the owners (listed in owners.md file) to add you as colloborator. 
+**IMPORTANT NOTE:** Before publishing you need to have a [npm account](https://www.npmjs.com/signup). Once you have an account, please create a pull request adding yourself to the [CONTRIBUTORS](CONTRIBUTORS.md) file referencing one of the [owners](owners.md) to review.
 
 1. Pull latest master: `git checkout master && git pull`
 2. log in to npm `npm login`
 3. publish the package `npm publish`
 
-### More Information 
+### More Information
 
 Some versions of npm do not correctly call the `postversion` script. If you run npm version and all it outputs to the command line is a version number, you are running one of the affected versions of npm.
 
