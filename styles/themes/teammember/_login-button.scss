@@ -3,3 +3,33 @@
     height: 44px;
     margin-top: 40px;
 }
+
+input.loginButton,
+button.loginButton
+{
+    -webkit-appearance: none;
+    background-color: $color-primary-medium;
+    border: 1px solid $color-primary-dark-shadow;
+    border-radius: 1px;
+    color: $color-base-0;
+    cursor: pointer;
+    font-size: 21px;
+    text-shadow: 0 1px 1px $color-primary-dark-shadow;
+    height: 30px;
+    padding: 0 34px;
+    box-shadow: rgba(23, 54, 101, 0.8) 0 2px 6px 0;
+
+    &:focus,
+    &:hover {
+        background-color: $color-primary-medium-light;
+    }
+
+    &[disabled] {
+        background-color: $color-base-60;
+        cursor: default;
+    }
+
+    &:active {
+        background-color: $color-primary-dark;
+    }
+}

@@ -27,12 +27,48 @@
                 color: $color-attention-error;
             }
         }
+    }
 
-        &.error:before {
-            @extend .error-icon;
-            position: absolute;
-            right: 10px;
-            top: 38px;
-        }
+    &.error:before {
+        @extend .error-icon;
+        position: absolute;
+        right: 10px;
+        top: 38px;
+    }
+}
+
+.error-icon {
+    content: $error-icon;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: $color-attention-error;
+    font-size: 18px;
+}
+
+#login-validation-message {
+    margin-top: 5px;
+    background-color: white;
+    border: 1px inset $color-attention-error;
+    border-radius: 5px;
+    height: 36px;
+    width: 282px;
+    margin: 10px auto;
+    position: relative;
+
+    div {
+        font-size: 12px;
+        color: $color-attention-error;
+        margin-bottom: 0;
+        padding: 11px 10px 11px 26px;
+        background-color: $error-summary-background;
+    }
+
+    &:before {
+        @extend .error-icon;
+        position: absolute;
+        top: 7px;
+        left: 10px;
     }
 }
