@@ -1,0 +1,38 @@
+@import 'variables';
+
+.prepend-wrapper {
+    position: relative;
+
+    input.text {
+        border: 1px solid rgba(134, 181, 225, 0.4);
+        -webkit-border-radius: 0;
+        box-shadow: rgba(134, 181, 225, 0.32) 1px 1px 1px 0 inset;
+        font-size: 12px;
+        height: 44px;
+        line-height: 12px;
+        margin-top: 24px;
+        padding: 15px 10px;
+        width: 100%;
+
+        &.error:focus,
+        &.error {
+            border: 1px solid $color-attention-error;
+            outline: none;
+
+            &::-webkit-input-placeholder {
+                color: $color-attention-error;
+            }
+
+            &:-moz-placeholder {
+                color: $color-attention-error;
+            }
+        }
+
+        &.error:before {
+            @extend .error-icon;
+            position: absolute;
+            right: 10px;
+            top: 38px;
+        }
+    }
+}
