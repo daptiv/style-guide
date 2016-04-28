@@ -1,23 +1,30 @@
-#login-btn {
-    font-size: 21px;
-    height: 44px;
-    margin-top: 40px;
+$login-button-font-size: 21px;
+$login-button-height: 30px;
+$login-button-padding: 0 34px;
+$login-button-container-height: 44px;
+$login-button-container-margin-top: 40px;
+$login-button-box-shadow-color: rgba(23, 54, 101, 0.8);
+
+
+.login-btn {
+    font-size: $login-button-font-size;
+    height: $login-button-container-height;
+    margin-top: $login-button-container-margin-top;
 }
 
-input.loginButton,
-button.loginButton
-{
+input.login-button,
+button.login-button {
     -webkit-appearance: none;
     background-color: $color-primary-medium;
     border: 1px solid $color-primary-dark-shadow;
     border-radius: 1px;
+    box-shadow: $login-button-box-shadow-color 0 2px 6px 0;
     color: $color-base-0;
     cursor: pointer;
-    font-size: 21px;
+    font-size: $login-button-font-size;
+    height: $login-button-height;
+    padding: $login-button-padding;
     text-shadow: 0 1px 1px $color-primary-dark-shadow;
-    height: 30px;
-    padding: 0 34px;
-    box-shadow: rgba(23, 54, 101, 0.8) 0 2px 6px 0;
 
     &:focus,
     &:hover {
