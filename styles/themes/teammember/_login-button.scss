@@ -12,31 +12,33 @@ $login-button-box-shadow-color: rgba(23, 54, 101, 0.8);
     margin-top: $login-button-container-margin-top;
 }
 
-input.login-button,
-button.login-button {
-    -webkit-appearance: none;
-    background-color: $color-primary-medium;
-    border: 1px solid $color-primary-dark-shadow;
-    border-radius: 1px;
-    box-shadow: $login-button-box-shadow-color 0 2px 6px 0;
-    color: $color-base-0;
-    cursor: pointer;
-    font-size: $login-button-font-size;
-    height: $login-button-height;
-    padding: $login-button-padding;
-    text-shadow: 0 1px 1px $color-primary-dark-shadow;
+input,
+button {
+    &.login-button {
+        -webkit-appearance: none;
+        background-color: $color-primary-medium;
+        border: 1px solid $color-primary-dark-shadow;
+        border-radius: 1px;
+        box-shadow: $login-button-box-shadow-color 0 2px 6px 0;
+        color: $color-base-0;
+        cursor: pointer;
+        font-size: $login-button-font-size;
+        height: $login-button-height;
+        padding: $login-button-padding;
+        text-shadow: 0 1px 1px $color-primary-dark-shadow;
 
-    &:focus,
-    &:hover {
-        background-color: $color-primary-medium-light;
-    }
+        &:focus,
+        &:hover {
+            background-color: $color-primary-medium-light;
+        }
 
-    &[disabled] {
-        background-color: $color-base-60;
-        cursor: default;
-    }
+        &[disabled] {
+            background-color: $color-base-60;
+            cursor: default;
+        }
 
-    &:active {
-        background-color: $color-primary-dark;
+        &:active {
+            background-color: $color-primary-dark;
+        }
     }
 }

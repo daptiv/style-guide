@@ -32,14 +32,16 @@ $badge-responsive-margin: 69px;
         margin: 0 auto;
         width: $footer-details-width;
 
-        p.copyright {
-            color: $login-font-color;
-            display: block;
-            font-size: $font-size-base;
-            padding-top: $copyright-padding-top;
-            text-align: center;
-            width: $footer-details-width;
-        }
+        p {
+            &.copyright {
+                color: $login-font-color;
+                display: block;
+                font-size: $font-size-base;
+                padding-top: $copyright-padding-top;
+                text-align: center;
+                width: $footer-details-width;
+            }
+      }
     }
 }
 
@@ -66,12 +68,14 @@ $badge-responsive-margin: 69px;
             margin-left: $badge-responsive-margin;
             vertical-align: middle;
 
-            p.copyright {
-                clear: left;
-                display: block;
-                float: left;
-                padding-top: 0;
-                text-align: initial;
+            p {
+                &.copyright {
+                    clear: left;
+                    display: block;
+                    float: left;
+                    padding-top: 0;
+                    text-align: initial;
+                }
             }
         }
     }
