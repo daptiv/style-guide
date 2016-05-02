@@ -51,6 +51,10 @@
         @include icon-small(before, right, $fa-var-exclamation-triangle);
     }
 
+    &.hand-stop {
+        @include icon-small(before, right, $fa-var-hand-paper-o);
+    }
+
     // sizing of icons
     &.small:after {
         font-size: $icon-size-small;

@@ -35,4 +35,10 @@
         color: $button-color-disabled;
         cursor: default;
     }
+
+    &.button-large {
+        @include font-size-xlarge();
+        height: $button-large-height;
+        padding: $button-large-padding;
+    }
 }

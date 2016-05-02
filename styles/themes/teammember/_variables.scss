@@ -1,4 +1,5 @@
 @import '../../../node_modules/font-awesome/scss/font-awesome';
+@import '../../variables';
 @import '../../mixins';
 @import '../../colors';
 
@@ -37,7 +38,5 @@ $login-footer-height: 143px;
 $login-font-color: $color-base-0;
 $standard-footer-breakpoint: 599px;
 $login-footer-height: 143px;
-$error-summary-background: rgba(234, 88, 51, 0.2);
 $error-icon: $fa-var-exclamation-triangle;
 $login-area-v2-width: 320px;
-$work-wise-logo-max-width: 124px;
