@@ -5,18 +5,18 @@ $grid-gutter-width: $standard-gutter-width;
 
 $copyright-padding-top: 24px;
 
-$footer-height: 100% !default;
+$footer-height: 143px;
 
-$header-width: 320px !default;
+$header-width: 320px;
 
-$daptiv-container-bg-bg-size: 768px 400px !default;
-$daptiv-container-bg-height: 100% !default;
-$daptiv-container-bg-width: 100% !default;
-$daptiv-container-bg-min-height: 100% !default;
+$daptiv-container-bg-bg-size: 768px 400px;
+$daptiv-container-bg-height: calc(100% - #{$footer-height});
+$daptiv-container-bg-width: 100%;
+$daptiv-container-bg-min-height: 414px;
 
-$static-header-width: 100% !default;
-$static-header-padding-bottom: 100% !default;
-$static-header-padding-top: 100% !default;
+$static-header-width: 300px;
+$static-header-padding-bottom: 16px;
+$static-header-padding-top: 43px;
 
-$separator-height: 100% !default;
-$separator-width: 1px !default;
+$separator-height: 41px;
+$separator-width: 1px;

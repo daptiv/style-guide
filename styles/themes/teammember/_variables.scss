@@ -1,7 +1,7 @@
 @import '../../../node_modules/font-awesome/scss/font-awesome';
-@import '../../variables';
+//@import '../../variables';
 @import '../../mixins';
-@import '../../colors';
+//@import '../../colors';
 
 //== Typography
 //
@@ -33,5 +33,3 @@ $font-size-larger-weight-bold: 500;
 $icon-size-small: 14px;
 $icon-size-medium: 21px;
 $icon-size-large: 28px;
-
-$error-icon: $fa-var-exclamation-triangle;
