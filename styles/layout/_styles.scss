@@ -91,23 +91,42 @@
     width: $daptiv-container-bg-width;
 }
 
-.footer {
+.daptiv-footer {
     background-image: radial-gradient(50% 99%, $color-primary-dark 0%, $color-primary-dark-shadow 100%);
     box-shadow: inset 0 3px 3px 0 $color-primary-dark-shadow;
-    height: $footer-height;
+    height: $daptiv-footer-height;
     width: 100%;
 }
 
-.static-header {
-    padding-bottom: $static-header-padding-bottom;
-    padding-top: $static-header-padding-top;
-    width: $static-header-width;
+.daptiv-static-header {
+    padding-bottom: $daptiv-static-header-padding-bottom;
+    padding-top: $daptiv-static-header-padding-top;
+    width: $daptiv-static-header-width;
 }
 
-.separator {
+.daptiv-separator {
     background-image: linear-gradient(-180deg, rgba($color-secondary-light, 0) 0%, $color-secondary-light 51%, rgba($color-secondary-light, 0) 97%);
     box-shadow: 1px 0 2px 0 rgba($color-primary-dark-shadow, 0.5);
-    height: $separator-height;
+    height: $daptiv-separator-height;
     vertical-align: bottom;
-    width: $separator-width;
+    width: $daptiv-separator-width;
+}
+
+.daptiv-message-container {
+    background-color: $color-base-0;
+    border: $border-width-base inset $color-base-70;
+    border-radius: $daptiv-message-container-border-radius;
+    color: $color-text-medium;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    line-height: $daptiv-message-container-line-height;
+    position: relative;
+
+    .message {
+        @include font-size-base();
+
+    }
+
+
 }
