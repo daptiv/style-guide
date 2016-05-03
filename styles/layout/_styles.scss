@@ -62,6 +62,12 @@
 
 .center {
     margin: 0 auto;
+    text-align: center;
+}
+
+.inline-block-component {
+    display: inline-block;
+    width: 100%;
 }
 
 .copyright {
@@ -74,6 +80,17 @@
     width: 100%;
 }
 
+.daptiv-container-bg {
+    background-color: $color-primary-dark;
+    background-image: radial-gradient(ellipse farthest-side at center top, $color-primary-medium 0%, $color-primary-dark 100%);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: $daptiv-container-bg-bg-size;
+    height: $daptiv-container-bg-height;
+    min-height: $daptiv-container-bg-min-height;
+    width: $daptiv-container-bg-width;
+}
+
 .footer {
     background-image: radial-gradient(50% 99%, $color-primary-dark 0%, $color-primary-dark-shadow 100%);
     box-shadow: inset 0 3px 3px 0 $color-primary-dark-shadow;
@@ -81,16 +98,24 @@
     width: 100%;
 }
 
-@media only screen and (min-width: $standard-footer-breakpoint) {
+.static-header {
+    padding-bottom: $static-header-padding-bottom;
+    padding-top: $static-header-padding-top;
+    width: $static-header-width;
+}
 
-    .footer {
-        line-height: $login-footer-height;
-        padding: 0 $footer-breakpoint-margin;
-    }
+.separator {
+    background-image: linear-gradient(-180deg, rgba($color-secondary-light, 0) 0%, $color-secondary-light 51%, rgba($color-secondary-light, 0) 97%);
+    box-shadow: 1px 0 2px 0 rgba($color-primary-dark-shadow, 0.5);
+    height: $separator-height;
+    vertical-align: bottom;
+    width: $separator-width;
+}
 
-    .copyright {
-        display: block;
-        padding-top: 0;
-        text-align: initial;
-    }
+.product-name {
+    color: $color-base-20;
+    font-size: $font-size-xlarger;
+    font-weight: $font-size-base-weight-light;
+    text-shadow: 0 1px 0 rgba($color-base-100, 0.5);
+    vertical-align: middle;
 }

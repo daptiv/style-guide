@@ -2,17 +2,21 @@
 //
 //## Variables for grid layout
 $grid-gutter-width: $standard-gutter-width;
-//TODO remove this
-//$copyright-width: 328px;
-$copyright-padding-top: 24px;
 
+$copyright-padding-top: 24px;
 
 $footer-height: 100% !default;
 
-//TODO: find a better name
-$footer-breakpoint-margin: 69px;
-
-//TODO: refactor these
-$login-footer-height: 143px !default;
-$standard-footer-breakpoint: 599px;
 $header-width: 320px !default;
+
+$daptiv-container-bg-bg-size: 768px 400px !default;
+$daptiv-container-bg-height: 100% !default;
+$daptiv-container-bg-width: 100% !default;
+$daptiv-container-bg-min-height: 100% !default;
+
+$static-header-width: 100% !default;
+$static-header-padding-bottom: 100% !default;
+$static-header-padding-top: 100% !default;
+
+$separator-height: 100% !default;
+$separator-width: 1px !default;

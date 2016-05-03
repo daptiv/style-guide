@@ -45,15 +45,3 @@ $iso-badge-width: 116px;
         width: $iso-badge-width;
     }
 }
-
-@media only screen and (min-width: $standard-footer-breakpoint) {
-    .iso-badge {
-        //display: inline-block;
-        float: right;
-        padding-top: 0;
-
-        em {
-            vertical-align: middle;
-        }
-    }
-}
