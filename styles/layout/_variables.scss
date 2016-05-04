@@ -3,3 +3,23 @@
 //## Variables for grid layout
 $grid-gutter-width: $standard-gutter-width;
 
+$copyright-padding-top: 24px;
+
+$daptiv-footer-height: 143px;
+
+$header-width: 320px;
+
+$daptiv-container-bg-background-size: 768px 400px;
+$daptiv-container-bg-height: calc(100% - #{$daptiv-footer-height});
+$daptiv-container-bg-width: 100%;
+$daptiv-container-bg-min-height: 414px;
+
+$daptiv-static-header-width: 300px;
+$daptiv-static-header-padding-bottom: 16px;
+$daptiv-static-header-padding-top: 43px;
+
+$daptiv-separator-height: 41px;
+$daptiv-separator-width: 1px;
+
+$daptiv-message-container-line-height: 14px;
+$daptiv-message-container-border-radius: 5px;

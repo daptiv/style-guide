@@ -73,3 +73,31 @@ $font-size-larger-weight-bold: 500;
     font-size: $font-size-larger;
     font-weight: $font-size-larger-weight-bold;
 }
+
+$font-size-xlarge: 21px;
+$font-size-xlarge-weight: 300;
+$font-size-xlarge-weight-bold: 500;
+
+@mixin font-size-xlarge() {
+    font-size: $font-size-xlarge;
+    font-weight: $font-size-xlarge-weight;
+}
+
+@mixin font-size-xlarge-bold() {
+    font-size: $font-size-xlarge;
+    font-weight: $font-size-xlarge-weight-bold;
+}
+
+$font-size-xlarger: 28px;
+$font-size-xlarger-weight: 300;
+$font-size-xlarger-weight-bold: 500;
+
+@mixin font-size-xlarger() {
+    font-size: $font-size-xlarger;
+    font-weight: $font-size-xlarger-weight;
+}
+
+@mixin font-size-xlarger-bold() {
+    font-size: $font-size-xlarger;
+    font-weight: $font-size-xlarger-weight-bold;
+}
