@@ -60,7 +60,7 @@
     text-align: right;
 }
 
-.center {
+.daptiv-center {
     margin: 0 auto;
     text-align: center;
 }
@@ -70,7 +70,7 @@
     width: 100%;
 }
 
-.copyright {
+.daptiv-copyright {
     color: $color-base-0;
     display: block;
     font-size: $font-size-base;
@@ -85,7 +85,7 @@
     background-image: radial-gradient(ellipse farthest-side at center top, $color-primary-medium 0%, $color-primary-dark 100%);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: $daptiv-container-bg-bg-size;
+    background-size: $daptiv-container-bg-background-size;
     height: $daptiv-container-bg-height;
     min-height: $daptiv-container-bg-min-height;
     width: $daptiv-container-bg-width;
