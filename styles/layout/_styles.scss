@@ -99,6 +99,9 @@
 }
 
 .daptiv-static-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-bottom: $daptiv-static-header-padding-bottom;
     padding-top: $daptiv-static-header-padding-top;
     width: $daptiv-static-header-width;
@@ -108,7 +111,6 @@
     background-image: linear-gradient(-180deg, rgba($color-secondary-light, 0) 0%, $color-secondary-light 51%, rgba($color-secondary-light, 0) 97%);
     box-shadow: 1px 0 2px 0 rgba($color-primary-dark-shadow, 0.5);
     height: $daptiv-separator-height;
-    vertical-align: bottom;
     width: $daptiv-separator-width;
 }
 
