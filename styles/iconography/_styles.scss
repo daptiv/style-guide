@@ -55,6 +55,10 @@
         @include icon-small(before, right, $fa-var-hand-paper-o);
     }
 
+    &.external-link {
+        @include icon-small-block($fa-var-external-link);
+    }
+
     // sizing of icons
     &.small:after {
         font-size: $icon-size-small;
