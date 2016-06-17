@@ -52,10 +52,10 @@ Card for use in card lists
         <section class="flex-column">
             <div class="item-title block-component">
                 <span class="item-number">1.2.3.4.5</span>
-                <span class="name" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">Some Thing</span>
+                <span class="name">A really long title here will wrap to the next line with an  indent so it is easier to read</span>
             </div>
 
-            <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
+            <div class="related-title block-component">Related Thing</div>
         </section>
         <flag class="flag">
             <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
@@ -67,7 +67,78 @@ Card for use in card lists
             </span>
         </flag>
     </section>
-    <footer class="small end block-component">CurrentStatus</footer>
+    <footer class="small block-component status">Unknown/No Status</footer>
+</div>
+{% endsnippet %}
+
+
+{% snippet html %}
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name">Some Thing</span>
+            </div>
+        </section>
+    </section>
+    <footer class="small block-component status notstarted">Not Started</footer>
+</div>
+{% endsnippet %}
+
+{% snippet html %}
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name">Some Thing</span>
+            </div>
+        </section>
+    </section>
+    <footer class="small block-component status inprogress">In Progress</footer>
+</div>
+{% endsnippet %}
+
+{% snippet html %}
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name">Some Thing</span>
+            </div>
+        </section>
+    </section>
+    <footer class="small block-component status onhold">On Hold</footer>
+</div>
+{% endsnippet %}
+
+{% snippet html %}
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name">Some Thing</span>
+            </div>
+        </section>
+    </section>
+    <footer class="small block-component status overdue">Overdue</footer>
+</div>
+{% endsnippet %}
+
+{% snippet html %}
+<div class="card">
+    <section class="flex-row">
+        <section class="flex-column">
+            <div class="item-title block-component">
+                <span class="item-number">1.2.3.4.5</span>
+                <span class="name">Some Thing</span>
+            </div>
+        </section>
+    </section>
+    <footer class="small block-component status complete">Complete</footer>
 </div>
 {% endsnippet %}
 

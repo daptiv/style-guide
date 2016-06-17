@@ -1,3 +1,4 @@
+
 .card {
     background-color: $card-background-color;
     border: 1px solid $card-border-color;
@@ -22,6 +23,7 @@
 
         .item-number {
             @include font-size-base-light();
+
             vertical-align: text-bottom;
         }
 
@@ -32,6 +34,7 @@
 
     .related-title {
         @include font-size-base-light();
+
         font-style: italic;
         line-height: $card-text-height-larger;
         padding-right: $card-title-right-padding;
@@ -39,7 +42,39 @@
 
     .status {
         @include font-size-base();
+        border-color: $card-status-transparent-border-color;
+        border-radius: $card-status-border-radius;
+        border-style: solid;
+        border-width: $card-status-border-width;
         line-height: $card-text-height-large;
+        padding-bottom: $card-status-padding;
+        padding-top: $card-status-padding;
+        text-align: center;
+    }
+
+    .status.overdue {
+        background-color: $card-status-overdue-background-color;
+        border-color: $card-status-overdue-border-color;
+    }
+
+    .status.notstarted {
+        background-color: $card-status-notstarted-background-color;
+        border-color: $card-status-notstarted-border-color;
+    }
+
+    .status.inprogress {
+        background-color: $card-status-inprogress-background-color;
+        border-color: $card-status-inprogress-border-color;
+    }
+
+    .status.onhold {
+        background-color: $card-status-onhold-background-color;
+        border-color: $card-status-onhold-border-color;
+    }
+
+    .status.complete {
+        background-color: $card-status-complete-background-color;
+        border-color: $card-status-complete-border-color;
     }
 
     .end {
