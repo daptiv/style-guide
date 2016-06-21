@@ -67,77 +67,19 @@ Card for use in card lists
             </span>
         </flag>
     </section>
-    <footer class="small block-component status">Unknown/No Status</footer>
+    <footer class="small block-component status">Status</footer>
 </div>
 {% endsnippet %}
 
+### Status
 
 {% snippet html %}
 <div class="card">
-    <section class="flex-row">
-        <section class="flex-column">
-            <div class="item-title block-component">
-                <span class="item-number">1.2.3.4.5</span>
-                <span class="name">Some Thing</span>
-            </div>
-        </section>
-    </section>
-    <footer class="small block-component status notstarted">Not Started</footer>
-</div>
-{% endsnippet %}
-
-{% snippet html %}
-<div class="card">
-    <section class="flex-row">
-        <section class="flex-column">
-            <div class="item-title block-component">
-                <span class="item-number">1.2.3.4.5</span>
-                <span class="name">Some Thing</span>
-            </div>
-        </section>
-    </section>
-    <footer class="small block-component status inprogress">In Progress</footer>
-</div>
-{% endsnippet %}
-
-{% snippet html %}
-<div class="card">
-    <section class="flex-row">
-        <section class="flex-column">
-            <div class="item-title block-component">
-                <span class="item-number">1.2.3.4.5</span>
-                <span class="name">Some Thing</span>
-            </div>
-        </section>
-    </section>
-    <footer class="small block-component status onhold">On Hold</footer>
-</div>
-{% endsnippet %}
-
-{% snippet html %}
-<div class="card">
-    <section class="flex-row">
-        <section class="flex-column">
-            <div class="item-title block-component">
-                <span class="item-number">1.2.3.4.5</span>
-                <span class="name">Some Thing</span>
-            </div>
-        </section>
-    </section>
-    <footer class="small block-component status overdue">Overdue</footer>
-</div>
-{% endsnippet %}
-
-{% snippet html %}
-<div class="card">
-    <section class="flex-row">
-        <section class="flex-column">
-            <div class="item-title block-component">
-                <span class="item-number">1.2.3.4.5</span>
-                <span class="name">Some Thing</span>
-            </div>
-        </section>
-    </section>
+    <footer class="small block-component status">Unknown/No Status</footer><br>
+    <footer class="small block-component status notstarted">Not Started</footer><br>
+    <footer class="small block-component status inprogress">In Progress</footer><br>
+    <footer class="small block-component status onhold">On Hold</footer><br>
+    <footer class="small block-component status overdue">Overdue</footer><br>
     <footer class="small block-component status complete">Complete</footer>
 </div>
 {% endsnippet %}
