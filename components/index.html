@@ -63,7 +63,10 @@
 <ul id="markdown-toc">
   <li><a href="#panel" id="markdown-toc-panel">Panel</a></li>
   <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a></li>
-  <li><a href="#card" id="markdown-toc-card">Card</a></li>
+  <li><a href="#card" id="markdown-toc-card">Card</a>    <ul>
+      <li><a href="#status" id="markdown-toc-status">Status</a></li>
+    </ul>
+  </li>
   <li><a href="#drop-down-list" id="markdown-toc-drop-down-list">Drop-down list</a>    <ul>
       <li><a href="#closed" id="markdown-toc-closed">Closed</a></li>
       <li><a href="#open" id="markdown-toc-open">Open</a></li>
@@ -156,10 +159,10 @@
         <section class="flex-column">
             <div class="item-title block-component">
                 <span class="item-number">1.2.3.4.5</span>
-                <span class="name" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">Some Thing</span>
+                <span class="name">A really long title here will wrap to the next line with an  indent so it is easier to read</span>
             </div>
 
-            <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
+            <div class="related-title block-component">Related Thing</div>
         </section>
         <flag class="flag">
             <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
@@ -171,7 +174,7 @@
             </span>
         </flag>
     </section>
-    <footer class="small end block-component">CurrentStatus</footer>
+    <footer class="small block-component status">Status</footer>
 </div>
 </div>
 <div class="snippet-content">
@@ -180,10 +183,10 @@
         <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;flex-column&quot;</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;item-title block-component&quot;</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;item-number&quot;</span><span class="nt">&gt;</span>1.2.3.4.5<span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;name&quot;</span> <span class="na">onclick=</span><span class="s">&quot;this.innerHTML = &#39;A really long name is now on this card that will be really awesome&#39;&quot;</span><span class="nt">&gt;</span>Some Thing<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>A really long title here will wrap to the next line with an  indent so it is easier to read<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;related-title block-component&quot;</span> <span class="na">onclick=</span><span class="s">&quot;this.innerHTML = &#39;A really long name is now on this card that will be really awesome&#39;&quot;</span><span class="nt">&gt;</span>1; Related Thing<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;related-title block-component&quot;</span><span class="nt">&gt;</span>Related Thing<span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/section&gt;</span>
         <span class="nt">&lt;flag</span> <span class="na">class=</span><span class="s">&quot;flag&quot;</span><span class="nt">&gt;</span>
             <span class="c">&lt;!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327</span>
@@ -195,7 +198,36 @@
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/flag&gt;</span>
     <span class="nt">&lt;/section&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small end block-component&quot;</span><span class="nt">&gt;</span>CurrentStatus<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span><span class="nt">&gt;</span>Status<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<h3 id="status">Status</h3>
+
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="card">
+    <footer class="small block-component status">Unknown/No Status</footer><br />
+    <footer class="small block-component status notstarted">Not Started</footer><br />
+    <footer class="small block-component status inprogress">In Progress</footer><br />
+    <footer class="small block-component status onhold">On Hold</footer><br />
+    <footer class="small block-component status overdue">Overdue</footer><br />
+    <footer class="small block-component status complete">Complete</footer>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;card&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span><span class="nt">&gt;</span>Unknown/No Status<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status notstarted&quot;</span><span class="nt">&gt;</span>Not Started<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status inprogress&quot;</span><span class="nt">&gt;</span>In Progress<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status onhold&quot;</span><span class="nt">&gt;</span>On Hold<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status overdue&quot;</span><span class="nt">&gt;</span>Overdue<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status complete&quot;</span><span class="nt">&gt;</span>Complete<span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -378,7 +410,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.42</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.43</strong>
         </footer>
     </div>
 

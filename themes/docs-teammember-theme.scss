@@ -15,6 +15,6 @@ $fa-font-path: '../fonts';
 @import 'nav';
 @import 'components';
 @import "../pygments-default-theme.css";
-
+@import "../docs-variables";
 @import "../docs-base";
 @import "themes/teammember/_component-overrides";
