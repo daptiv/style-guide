@@ -52,10 +52,10 @@ Card for use in card lists
         <section class="flex-column">
             <div class="item-title block-component">
                 <span class="item-number">1.2.3.4.5</span>
-                <span class="name" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">Some Thing</span>
+                <span class="name">A really long title here will wrap to the next line with an  indent so it is easier to read</span>
             </div>
 
-            <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
+            <div class="related-title block-component">Related Thing</div>
         </section>
         <flag class="flag">
             <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
@@ -67,7 +67,20 @@ Card for use in card lists
             </span>
         </flag>
     </section>
-    <footer class="small end block-component">CurrentStatus</footer>
+    <footer class="small block-component status">Status</footer>
+</div>
+{% endsnippet %}
+
+### Status
+
+{% snippet html %}
+<div class="card">
+    <footer class="small block-component status">Unknown/No Status</footer><br>
+    <footer class="small block-component status notstarted">Not Started</footer><br>
+    <footer class="small block-component status inprogress">In Progress</footer><br>
+    <footer class="small block-component status onhold">On Hold</footer><br>
+    <footer class="small block-component status overdue">Overdue</footer><br>
+    <footer class="small block-component status complete">Complete</footer>
 </div>
 {% endsnippet %}
 
