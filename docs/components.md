@@ -67,7 +67,7 @@ Card for use in card lists
             </span>
         </flag>
     </section>
-    <footer class="small block-component status">Status</footer>
+    <footer class="small block-component status">Card Status</footer>
 </div>
 {% endsnippet %}
 
