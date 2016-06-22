@@ -47,9 +47,8 @@
         border-style: solid;
         border-width: $card-status-border-width;
         line-height: $card-text-height-large;
-        padding-bottom: $card-status-padding;
-        padding-top: $card-status-padding;
-        text-align: center;
+        max-width: $card-status-max-width;
+        padding: $card-status-padding;
     }
 
     .status.overdue {
