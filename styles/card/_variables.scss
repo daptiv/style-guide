@@ -18,9 +18,10 @@ $card-title-right-padding: 48px;
 $card-title-indent: 12px;
 
 $card-status-border-radius: $standard-whitespace-unit;
-$card-status-border-width: $border-width-thick;
+$card-status-border-width: 1px;
 $card-status-transparent-border-color: rgba(255, 255, 255, 0);
-$card-status-padding: $half-whitespace-unit;
+$card-status-max-width: 222px;
+$card-status-padding: $half-whitespace-unit $card-title-indent;
 $card-status-notstarted-background-color: $color-status-notstarted-light;
 $card-status-notstarted-border-color: $color-status-notstarted;
 $card-status-inprogress-background-color: $color-status-inprogress-light;
