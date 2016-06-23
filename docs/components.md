@@ -134,10 +134,10 @@ Used for side bars
     </div>
     <div class="daptiv-side-bar initial">
         <nav class="daptiv-side-menu">
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+            <a class="item" href="#" onclick="return false;">Home</a>
+            <a class="selected item" href="#" onclick="return false;">Selected</a>
+            <a class="item" href="#" onclick="return false;">About</a>
+            <a class="item" href="#" onclick="return false;">Contact</a>
         </nav>
     </div>
 </div>
@@ -148,12 +148,12 @@ Used for side bars
 Used for right side menu
 {% snippet html %}
 <nav class="daptiv-side-bar daptiv-side-menu">
-    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
-    <hr class="daptiv-side-menu-divider" />
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+    <a class="readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
+    <hr class="divider" />
+    <a class="item" href="#" onclick="return false;">Home</a>
+    <a class="selected item" href="#" onclick="return false;">Selected</a>
+    <a class="item" href="#" onclick="return false;">About</a>
+    <a class="item" href="#" onclick="return false;">Contact</a>
 </nav>
 {% endsnippet %}
 <br />

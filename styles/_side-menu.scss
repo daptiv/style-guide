@@ -6,36 +6,36 @@ $side-menu-item-horizontal-padding: 12px;
 .daptiv-side-menu {
     @include font-size-larger();
     overflow: hidden;
-}
 
-.daptiv-side-menu-divider {
-    border: 0;
-    border-bottom: 1px solid rgba($color-primary-medium, 0.32);
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
+    .divider {
+        border: 0;
+        border-bottom: 1px solid rgba($color-primary-medium, 0.32);
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+    }
 
-.daptiv-side-menu-readonly {
-    @include font-size-medium();
-    color: $color-text-white;
-    display: block;
-    line-height: 48px;
-    padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
-    z-index: 1;
-}
+    .readonly {
+        @include font-size-medium();
+        color: $color-text-white;
+        display: block;
+        line-height: 48px;
+        padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
+        z-index: 1;
+    }
 
-.daptiv-side-menu-item {
-    color: $color-text-white;
-    display: block;
-    line-height: 48px;
-    padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
-    text-decoration: none;
+    .item {
+        color: $color-text-white;
+        display: block;
+        line-height: 48px;
+        padding: $side-menu-item-vertical-padding $side-menu-item-horizontal-padding;
+        text-decoration: none;
 
-    &.selected,
-    &:hover {
-        background-color: $color-primary-dark;
-        box-shadow: 4px 0 5px 0 rgba($color-primary-dark-shadow, 0.72);
-        width: 100%;
+        &.selected,
+        &:hover {
+            background-color: $color-primary-dark;
+            box-shadow: 4px 0 5px 0 rgba($color-primary-dark-shadow, 0.72);
+            width: 100%;
+        }
     }
 }
