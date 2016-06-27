@@ -47,7 +47,7 @@
         border-style: solid;
         border-width: $card-status-border-width;
         line-height: $card-text-height-large;
-        max-width: $card-status-max-width;
+        margin-top: $card-status-top-margin;
         padding: $card-status-padding;
     }
 

@@ -46,6 +46,18 @@ Panel is a quick, easy way to display content with a title.
 
 Card for use in card lists
 
+<script>
+var cardClassId = 0;
+var statusClasses = ['', 'notstarted', 'inprogress', 'onhold', 'overdue', 'complete'];
+function cycleStatusClasses(el) {
+    var classname = "small block-component status ";
+    cardClassId = (cardClassId + 1) % statusClasses.length;
+    var nextStatus = statusClasses[cardClassId];
+    el.className = classname + nextStatus;
+    el.innerHTML = 'Click To Cycle Card Status: ' + nextStatus;
+}
+</script>
+
 {% snippet html %}
 <div class="card">
     <section class="flex-row">
@@ -55,7 +67,7 @@ Card for use in card lists
                 <span class="name">A really long title here will wrap to the next line with an  indent so it is easier to read</span>
             </div>
 
-            <div class="related-title block-component">Related Thing</div>
+            <div class="related-title block-component">This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.</div>
         </section>
         <flag class="flag">
             <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
@@ -67,19 +79,21 @@ Card for use in card lists
             </span>
         </flag>
     </section>
-    <footer class="small block-component status">Card Status</footer>
+
+    <footer class="small block-component status" onclick="cycleStatusClasses(this)">Click To Cycle Card Status:</footer>
 </div>
+
 {% endsnippet %}
 
 ### Status
 
 {% snippet html %}
 <div class="card">
-    <footer class="small block-component status">Unknown/No Status</footer><br>
-    <footer class="small block-component status notstarted">Not Started</footer><br>
-    <footer class="small block-component status inprogress">In Progress</footer><br>
-    <footer class="small block-component status onhold">On Hold</footer><br>
-    <footer class="small block-component status overdue">Overdue</footer><br>
+    <footer class="small block-component status">Unknown/No Status</footer>
+    <footer class="small block-component status notstarted">Not Started</footer>
+    <footer class="small block-component status inprogress">In Progress</footer>
+    <footer class="small block-component status onhold">On Hold</footer>
+    <footer class="small block-component status overdue">Overdue</footer>
     <footer class="small block-component status complete">Complete</footer>
 </div>
 {% endsnippet %}
