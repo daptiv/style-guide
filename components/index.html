@@ -149,6 +149,18 @@
 
 <p>Card for use in card lists</p>
 
+<script>
+var cardClassId = 0;
+var statusClasses = ['', 'notstarted', 'inprogress', 'onhold', 'overdue', 'complete'];
+function cycleStatusClasses(el) {
+    var classname = "small block-component status ";
+    cardClassId = (cardClassId + 1) % statusClasses.length;
+    var nextStatus = statusClasses[cardClassId];
+    el.className = classname + nextStatus;
+    el.innerHTML = 'Click To Cycle Card Status: ' + nextStatus;
+}
+</script>
+
 <div class="snippet">
 <div class="snippet-src-button-container">
 <button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
@@ -162,7 +174,7 @@
                 <span class="name">A really long title here will wrap to the next line with an  indent so it is easier to read</span>
             </div>
 
-            <div class="related-title block-component">Related Thing</div>
+            <div class="related-title block-component">This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.</div>
         </section>
         <flag class="flag">
             <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
@@ -174,7 +186,8 @@
             </span>
         </flag>
     </section>
-    <footer class="small block-component status">Card Status</footer>
+
+    <footer class="small block-component status" onclick="cycleStatusClasses(this)">Click To Cycle Card Status:</footer>
 </div>
 </div>
 <div class="snippet-content">
@@ -186,7 +199,7 @@
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>A really long title here will wrap to the next line with an  indent so it is easier to read<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;related-title block-component&quot;</span><span class="nt">&gt;</span>Related Thing<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;related-title block-component&quot;</span><span class="nt">&gt;</span>This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.<span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/section&gt;</span>
         <span class="nt">&lt;flag</span> <span class="na">class=</span><span class="s">&quot;flag&quot;</span><span class="nt">&gt;</span>
             <span class="c">&lt;!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327</span>
@@ -198,7 +211,8 @@
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/flag&gt;</span>
     <span class="nt">&lt;/section&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span><span class="nt">&gt;</span>Card Status<span class="nt">&lt;/footer&gt;</span>
+
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span> <span class="na">onclick=</span><span class="s">&quot;cycleStatusClasses(this)&quot;</span><span class="nt">&gt;</span>Click To Cycle Card Status:<span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -212,21 +226,21 @@
 </div>
 <div class="snippet-header">
 <div class="card">
-    <footer class="small block-component status">Unknown/No Status</footer><br />
-    <footer class="small block-component status notstarted">Not Started</footer><br />
-    <footer class="small block-component status inprogress">In Progress</footer><br />
-    <footer class="small block-component status onhold">On Hold</footer><br />
-    <footer class="small block-component status overdue">Overdue</footer><br />
+    <footer class="small block-component status">Unknown/No Status</footer>
+    <footer class="small block-component status notstarted">Not Started</footer>
+    <footer class="small block-component status inprogress">In Progress</footer>
+    <footer class="small block-component status onhold">On Hold</footer>
+    <footer class="small block-component status overdue">Overdue</footer>
     <footer class="small block-component status complete">Complete</footer>
 </div>
 </div>
 <div class="snippet-content">
 <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;card&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span><span class="nt">&gt;</span>Unknown/No Status<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status notstarted&quot;</span><span class="nt">&gt;</span>Not Started<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status inprogress&quot;</span><span class="nt">&gt;</span>In Progress<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status onhold&quot;</span><span class="nt">&gt;</span>On Hold<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status overdue&quot;</span><span class="nt">&gt;</span>Overdue<span class="nt">&lt;/footer&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span><span class="nt">&gt;</span>Unknown/No Status<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status notstarted&quot;</span><span class="nt">&gt;</span>Not Started<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status inprogress&quot;</span><span class="nt">&gt;</span>In Progress<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status onhold&quot;</span><span class="nt">&gt;</span>On Hold<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status overdue&quot;</span><span class="nt">&gt;</span>Overdue<span class="nt">&lt;/footer&gt;</span>
     <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status complete&quot;</span><span class="nt">&gt;</span>Complete<span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
@@ -410,7 +424,7 @@
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.45</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.46</strong>
         </footer>
     </div>
 
