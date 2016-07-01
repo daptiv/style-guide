@@ -1,0 +1,37 @@
+
+.snippet-header {
+    border: $snippet-border;
+    border-top-left-radius: $snippet-border-radius;
+    border-top-right-radius: $snippet-border-radius;
+    margin-top: $snippet-border-radius/2;
+    padding: $snippet-padding;
+}
+
+.snippet-content {
+    background-color: $snippet-content-background;
+    border: $snippet-border;
+    border-bottom-left-radius: $snippet-border-radius;
+    border-bottom-right-radius: $snippet-border-radius;
+    border-top: 0;
+    display: none;
+    margin-bottom: $snippet-border-radius/2;
+    overflow: scroll;
+    padding: $snippet-padding;
+}
+
+.snippet-src-button-container {
+    height: $snippet-src-button-container-height;
+}
+
+.snippet-src-button {
+    background-color: $snippet-src-button-background;
+    //border: $snippet-src-button-border-size solid $snippet-src-button-border-color;
+    border: $snippet-border;
+    cursor: pointer;
+    float: right;
+    height: $snippet-src-button-height;
+    line-height: normal;
+    &:focus {
+        outline: 0;
+    }
+}

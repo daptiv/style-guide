@@ -46,16 +46,28 @@ Panel is a quick, easy way to display content with a title.
 
 Card for use in card lists
 
+<script>
+var cardClassId = 0;
+var statusClasses = ['', 'notstarted', 'inprogress', 'onhold', 'overdue', 'complete'];
+function cycleStatusClasses(el) {
+    var classname = "small block-component status ";
+    cardClassId = (cardClassId + 1) % statusClasses.length;
+    var nextStatus = statusClasses[cardClassId];
+    el.className = classname + nextStatus;
+    el.innerHTML = 'Click To Cycle Card Status: ' + nextStatus;
+}
+</script>
+
 {% snippet html %}
 <div class="card">
     <section class="flex-row">
         <section class="flex-column">
             <div class="item-title block-component">
                 <span class="item-number">1.2.3.4.5</span>
-                <span class="name" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">Some Thing</span>
+                <span class="name">A really long title here will wrap to the next line with an  indent so it is easier to read</span>
             </div>
 
-            <div class="related-title block-component" onclick="this.innerHTML = 'A really long name is now on this card that will be really awesome'">1; Related Thing</div>
+            <div class="related-title block-component">This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.</div>
         </section>
         <flag class="flag">
             <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
@@ -67,7 +79,22 @@ Card for use in card lists
             </span>
         </flag>
     </section>
-    <footer class="small end block-component">CurrentStatus</footer>
+
+    <footer class="small block-component status" onclick="cycleStatusClasses(this)">Click To Cycle Card Status:</footer>
+</div>
+
+{% endsnippet %}
+
+### Status
+
+{% snippet html %}
+<div class="card">
+    <footer class="small block-component status">Unknown/No Status</footer>
+    <footer class="small block-component status notstarted">Not Started</footer>
+    <footer class="small block-component status inprogress">In Progress</footer>
+    <footer class="small block-component status onhold">On Hold</footer>
+    <footer class="small block-component status overdue">Overdue</footer>
+    <footer class="small block-component status complete">Complete</footer>
 </div>
 {% endsnippet %}
 
@@ -121,10 +148,10 @@ Used for side bars
     </div>
     <div class="daptiv-side-bar initial">
         <nav class="daptiv-side-menu">
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-            <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-            <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+            <a class="item" href="#" onclick="return false;">Home</a>
+            <a class="selected item" href="#" onclick="return false;">Selected</a>
+            <a class="item" href="#" onclick="return false;">About</a>
+            <a class="item" href="#" onclick="return false;">Contact</a>
         </nav>
     </div>
 </div>
@@ -135,12 +162,12 @@ Used for side bars
 Used for right side menu
 {% snippet html %}
 <nav class="daptiv-side-bar daptiv-side-menu">
-    <a class="daptiv-side-menu-readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
-    <hr class="daptiv-side-menu-divider" />
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Home</a>
-    <a class="selected daptiv-side-menu-item" href="#" onclick="return false;">Selected</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">About</a>
-    <a class="daptiv-side-menu-item" href="#" onclick="return false;">Contact</a>
+    <a class="readonly" href="#" onclick="return false;" tabIndex="-1">Read Only</a>
+    <hr class="divider" />
+    <a class="item" href="#" onclick="return false;">Home</a>
+    <a class="selected item" href="#" onclick="return false;">Selected</a>
+    <a class="item" href="#" onclick="return false;">About</a>
+    <a class="item" href="#" onclick="return false;">Contact</a>
 </nav>
 {% endsnippet %}
 <br />
