@@ -175,6 +175,6 @@ Used for right side menu
 ## Tooltip
 Used for custom tooltips  
 {% snippet html %}
-<div class="daptiv-tooltip">Hover to see tooltip<span>Lorem ipsum dolor sit amet</span></div>
+<div class="daptiv-tooltip-container">Hover to see tooltip<span class='tooltip'>Lorem ipsum dolor sit amet</span></div>
 {% endsnippet %}
 <br />

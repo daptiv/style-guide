@@ -2,10 +2,10 @@
 //
 //## styles for Tooltip
 
-.daptiv-tooltip {
+.daptiv-tooltip-container {
     position: relative;
 
-    & > span {
+    & .tooltip {
         background-color: $color-base-0;
         border: 1px solid $color-base-50;
         border-radius: 1px;
@@ -23,7 +23,7 @@
         z-index: $tooltip-z-index;
     }
 
-    &:hover > span {
+    &:hover .tooltip {
         display: block;
     }
 }
