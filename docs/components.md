@@ -171,3 +171,10 @@ Used for right side menu
 </nav>
 {% endsnippet %}
 <br />
+
+## Tooltip
+Used for custom tooltips  
+{% snippet html %}
+<div class="daptiv-tooltip">Hover to see tooltip<span>Lorem ipsum dolor sit amet</span></div>
+{% endsnippet %}
+<br />

@@ -1,0 +1,29 @@
+//== Tooltip
+//
+//## styles for Tooltip
+
+.daptiv-tooltip {
+    position: relative;
+
+    & > span {
+        background-color: $color-base-0;
+        border: 1px solid $color-base-50;
+        border-radius: 1px;
+        color: $color-base-90;
+        display: none;
+        font-family: $font-family-base;
+        font-size: $tooltip-font-size;
+        left: $tooltip-default-left;
+        letter-spacing: 1px;
+        line-height: $tooltip-line-height;
+        padding: $tooltip-padding-top-bottom $tooltip-padding-left-right;
+        position: absolute;
+        text-align: left;
+        top: $tooltip-default-top;
+        z-index: $tooltip-z-index;
+    }
+
+    &:hover > span {
+        display: block;
+    }
+}
