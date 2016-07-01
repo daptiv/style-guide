@@ -13,7 +13,7 @@
         display: none;
         font-family: $font-family-base;
         font-size: $tooltip-font-size;
-        letter-spacing: 1px;
+        letter-spacing: 0;
         line-height: $tooltip-line-height;
         padding: $tooltip-padding-top-bottom $tooltip-padding-left-right;
         position: absolute;
