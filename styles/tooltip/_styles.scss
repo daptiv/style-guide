@@ -1,0 +1,29 @@
+//== Tooltip
+//
+//## styles for Tooltip
+
+.daptiv-tooltip-container {
+    position: relative;
+
+    & .tooltip {
+        animation-duration: $tooltip-show-delay;
+        animation-name: showDelayed;
+        background-color: $color-base-0;
+        border: 1px solid $color-base-50;
+        border-radius: 1px;
+        color: $color-base-90;
+        display: none;
+        font-family: $font-family-base;
+        font-size: $tooltip-font-size;
+        letter-spacing: 0;
+        line-height: $tooltip-line-height;
+        padding: $tooltip-padding-vertical $tooltip-padding-horizontal;
+        position: absolute;
+        text-align: left;
+        z-index: $tooltip-z-index;
+    }
+
+    &:hover .tooltip {
+        display: block;
+    }
+}
