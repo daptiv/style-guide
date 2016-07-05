@@ -15,7 +15,7 @@
         font-size: $tooltip-font-size;
         letter-spacing: 0;
         line-height: $tooltip-line-height;
-        padding: $tooltip-padding-top-bottom $tooltip-padding-left-right;
+        padding: $tooltip-padding-vertical $tooltip-padding-horizontal;
         position: absolute;
         text-align: left;
         z-index: $tooltip-z-index;
