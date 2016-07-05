@@ -6,6 +6,8 @@
     position: relative;
 
     & .tooltip {
+        animation-duration: $tooltip-show-delay;
+        animation-name: showDelayed;
         background-color: $color-base-0;
         border: 1px solid $color-base-50;
         border-radius: 1px;
