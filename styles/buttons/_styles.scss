@@ -8,6 +8,10 @@
     height: $button-height;
     padding: 0 $button-pad-h;
 
+    &:focus {
+        outline: none;
+    }
+
     &:hover {
         background-color: $button-bg-hover;
         cursor: pointer;
