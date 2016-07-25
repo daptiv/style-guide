@@ -29,4 +29,5 @@ The help icon: <i class="icon help"></i>
 {% iconblock calendar %}
 {% iconblock flag %}
 {% iconblock circle %}
+{% iconblock close %}
 {% iconblock external-link %}
