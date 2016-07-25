@@ -74,6 +74,7 @@ section: Guide
 {% colorswatch color-primary-dark-24 %}
 {% colorswatch color-primary-dark-40 %}
 {% colorswatch color-primary-medium-48 %}
+{% colorswatch color-primary-medium-light-56 %}
 {% colorswatch color-primary-light-40 %}
 {% colorswatch color-primary-light-54 %}
 {% colorswatch color-sky-blue-60 %}
