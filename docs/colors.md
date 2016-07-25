@@ -14,6 +14,7 @@ section: Guide
 ### Secondary Color Palette
 {% colorswatch color-secondary-medium %}
 {% colorswatch color-secondary-light %}
+{% colorswatch color-sky-blue %}
 {% colorswatch color-tomato %}
 {% colorswatch color-kelley-green %}
 {% colorswatch color-marigold %}
@@ -75,6 +76,7 @@ section: Guide
 {% colorswatch color-primary-medium-48 %}
 {% colorswatch color-primary-light-40 %}
 {% colorswatch color-primary-light-54 %}
+{% colorswatch color-sky-blue-60 %}
 {% colorswatch color-tomato-48 %}
 {% colorswatch color-tomato-08 %}
 {% colorswatch color-kelley-green-48 %}

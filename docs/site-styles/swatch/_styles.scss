@@ -35,6 +35,10 @@
     @include swatch-with-label($color-secondary-light);
 }
 
+.labeled-swatch-color-sky-blue {
+    @include swatch-with-label($color-sky-blue);
+}
+
 .labeled-swatch-color-tomato {
     @include swatch-with-label($color-tomato);
 }
@@ -197,12 +201,20 @@
     @include swatch-with-label($color-primary-medium-48);
 }
 
+.labeled-swatch-color-primary-medium-light-56 {
+    @include swatch-with-label($color-primary-medium-light-56);
+}
+
 .labeled-swatch-color-primary-light-40 {
     @include swatch-with-label($color-primary-light-40);
 }
 
 .labeled-swatch-color-primary-light-54 {
     @include swatch-with-label($color-primary-light-54);
+}
+
+.labeled-swatch-color-sky-blue-60 {
+    @include swatch-with-label($color-sky-blue-60);
 }
 
 .labeled-swatch-color-tomato-48 {
