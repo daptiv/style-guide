@@ -72,6 +72,10 @@
         font-size: $icon-size-large;
     }
 
+    &.close {
+        @include icon-small-block($fa-var-times);
+    }
+
     &.circle {
         &:after {
             background-color: $color-base-100;
