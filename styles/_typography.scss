@@ -33,7 +33,7 @@ $font-size-normal: $font-size-base;
 
 $font-size-medium:  14px;
 $font-size-medium-weight: 500;
-$font-size-larger-weight-bold: 700;
+$font-size-medium-weight-bold: 700;
 
 @mixin font-size-medium() {
     font-size: $font-size-medium;

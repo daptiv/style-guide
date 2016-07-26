@@ -1,0 +1,60 @@
+.font-block {
+    margin-bottom: 8px;
+}
+
+
+.font-xsmall {
+    font-size: $font-size-xsmall;
+}
+
+.font-base {
+    @include font-size-base();
+}
+
+.font-base-bold {
+    @include font-size-base-bold();
+}
+
+.font-base-light {
+    @include font-size-base-light();
+}
+
+.font-medium {
+    @include font-size-medium();
+}
+
+.font-medium-bold {
+    @include font-size-medium-bold();
+}
+
+.font-large {
+    @include font-size-large();
+}
+
+.font-large-bold {
+    @include font-size-large-bold()
+}
+
+.font-larger {
+    @include font-size-larger();
+}
+
+.font-larger-bold {
+    @include font-size-larger-bold();
+}
+
+.font-xlarge {
+    @include font-size-xlarge();
+}
+
+.font-xlarge-bold {
+    @include font-size-xlarge-bold();
+}
+
+.font-xlarger {
+    @include font-size-xlarger();
+}
+
+.font-xlarger-bold {
+    @include font-size-xlarger-bold();
+}
