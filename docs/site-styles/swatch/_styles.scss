@@ -201,6 +201,10 @@
     @include swatch-with-label($color-primary-medium-48);
 }
 
+.labeled-swatch-color-primary-medium-40 {
+    @include swatch-with-label($color-primary-medium-40);
+}
+
 .labeled-swatch-color-primary-medium-light-56 {
     @include swatch-with-label($color-primary-medium-light-56);
 }

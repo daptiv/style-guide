@@ -2,8 +2,6 @@
 .card {
     background-color: $card-background-color;
     border: 1px solid $card-border-color;
-    border-radius: 6px 0 0 6px;
-    box-shadow: 0 0 0 1px $card-box-shadow-color;
     color: $color-text-dark;
     display: flex;
     flex-direction: column;
