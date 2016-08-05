@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 1px 1px 3px; // extra 1px corrects for width of shadow border
     min-height: $card-height;
     overflow-wrap: break-word;
     padding: $card-v-padding $card-padding;
