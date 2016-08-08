@@ -6,7 +6,7 @@ $card-text-height-xlarge: 1.3;
 $card-text-height-larger: 1.2;
 $card-text-height-large: 1.1;
 
-$card-border-color: $color-primary-dark-24-over-white;
+$card-border-color: $color-primary-medium-40;
 $card-box-shadow-color: $color-primary-light-40-over-white;
 $card-background-color: $color-base-0;
 $card-height: 80px;
@@ -18,7 +18,7 @@ $card-title-right-padding: 48px;
 $card-title-indent: 12px;
 
 $card-status-top-margin: $card-title-indent;
-$card-status-border-radius: $standard-whitespace-unit;
+$card-status-border-radius: 1px;
 $card-status-border-width: 1px;
 $card-status-transparent-border-color: rgba(255, 255, 255, 0);
 $card-status-padding: $half-whitespace-unit $card-title-indent;
@@ -33,10 +33,9 @@ $card-status-complete-border-color: $color-status-complete;
 $card-status-overdue-background-color: $color-status-overdue-light;
 $card-status-overdue-border-color: $color-status-overdue;
 
-$flag-overhang-adjustment: 3px;
-$flag-margin-right: -($card-h-padding + $flag-overhang-adjustment);
+$flag-margin-right: -($card-h-padding);
 $flag-margin-bottom: $card-v-padding;
-$flag-total-top-padding: 28px;
+$flag-total-top-padding: 14px;
 $flag-padding-top: $flag-total-top-padding - $card-v-padding;
 
 $flag-height: 31px;

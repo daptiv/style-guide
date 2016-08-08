@@ -33,6 +33,11 @@
     700);
 }
 
+.daptiv-header {
+    background-color: $color-primary-dark;
+    background-image: none;
+}
+
 .daptiv-nav {
     @include font-size-larger();
     background: transparent;
