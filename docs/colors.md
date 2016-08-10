@@ -63,6 +63,7 @@ section: Guide
 {% colorswatch color-status-complete-light %}
 
 ### Colors With Transparency Palette
+{% colorswatch color-base-90-40 %}
 {% colorswatch color-primary-dark-05-over-white %}
 {% colorswatch color-primary-dark-08-over-white %}
 {% colorswatch color-primary-dark-24-over-white %}
