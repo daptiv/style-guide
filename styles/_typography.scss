@@ -49,6 +49,7 @@ $font-weight-base: $font-family-base;
 $font-size-large: 14px;
 $font-size-large-weight: 300;
 $font-size-large-weight-bold: 500;
+$font-weight-x-light: 100;
 
 @mixin font-size-large() {
     font-size: $font-size-large;
