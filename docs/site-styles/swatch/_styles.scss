@@ -248,3 +248,7 @@
 .labeled-swatch-color-marigold-08 {
     @include swatch-with-label($color-marigold-08);
 }
+
+.labeled-swatch-color-base-90-40 {
+    @include swatch-with-label($color-base-90-40);
+}
