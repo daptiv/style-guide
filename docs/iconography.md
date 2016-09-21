@@ -31,3 +31,7 @@ The help icon: <i class="icon help"></i>
 {% iconblock circle %}
 {% iconblock close %}
 {% iconblock external-link %}
+{% iconblock thumbs-up %}
+{% iconblock thumbs-down %}
+{% iconblock exclamation-triangle %}
+{% iconblock hand-stop %}
