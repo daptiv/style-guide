@@ -55,6 +55,14 @@
         @include icon-small(before, right, $fa-var-hand-paper-o);
     }
 
+    &.thumbs-up {
+        @include icon-small(before, right, $fa-var-thumbs-up);
+    }
+
+    &.thumbs-down {
+        @include icon-small(before, right, $fa-var-thumbs-down);
+    }
+
     &.external-link {
         @include icon-small-block($fa-var-external-link);
     }
