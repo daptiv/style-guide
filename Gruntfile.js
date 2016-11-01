@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                 files: [{
                         expand: true,
                         src: 'node_modules/font-awesome/fonts/*',
-                        dest: 'docs/fonts/',
+                        dest: 'fonts/',
                         flatten: true,
                         filter: 'isFile'
                     },
@@ -44,23 +44,45 @@ module.exports = function(grunt) {
             },
             css: {
                 src: 'docs/pygments-default-theme.css',
-                dest: '_css/pygments-default-theme.css'
+                dest: 'build/pygments-default-theme.css'
+            },
+            css_dist: {
+                expand: true,
+                flatten: true,
+                src: 'build/*',
+                dest: 'css/'
             }
         },
 
         cssmin: {
             css: {
-                src: ['_css/style-guide.css'],
+                src: ['build/style-guide.css'],
                 dest: 'docs/style-guide.min.css'
             },
+            css_dist: {
+                src: ['build/style-guide.css'],
+                dest: 'css/style-guide.min.css'
+            },
+            themes_dist: {
+                src: ['build/teammember-style-guide.css'],
+                dest: 'css/teammember-style-guide.min.css'
+            },
+            dist: {
+                expand: true,
+                src: ['css/**/*.css'],
+                rename: function(dest, src) {
+                    return dest + src.replace(/\.css$/, ".min.css").replace(/docs-/, '');
+                },
+                dest: 'css/'
+            },
             jekyll: {
-                src: ['_css/docs.css'],
+                src: ['build/docs.css'],
                 dest: 'docs/docs.min.css'
             },
             themes: {
                 expand: true,
                 flatten: true,
-                src: ['_css/themes/*.css'],
+                src: ['build/themes/*.css'],
                 dest: 'docs/themes/',
                 rename: function(dest, src) {
                     return dest + src.replace(/\.css$/, ".min.css");
@@ -75,6 +97,9 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
+                src: 'css/**/*.css'
+            },
+            docs: {
                 src: 'docs/themes/**/*.css'
             }
         },
@@ -121,7 +146,7 @@ module.exports = function(grunt) {
                 colophon: true
             },
             src: [
-                '_css/style-guide.css'
+                'build/style-guide.css'
             ]
         },
 
@@ -129,11 +154,16 @@ module.exports = function(grunt) {
             options: {
                 precision: 6,
                 sourceComments: false,
-                loadPath: ['./styles/', './bower_components/', './node_modules/']
+                loadPath: ['./scss/', './bower_components/', './node_modules/']
             },
             dist: {
                 files: {
-                    '_css/style-guide.css': 'styles/style-guide.scss'
+                    'build/style-guide.css': 'scss/style-guide.scss'
+                }
+            },
+            themes: {
+                files: {
+                    'build/teammember-style-guide.css': 'scss/themes/teammember.scss'
                 }
             },
             docs: {
@@ -141,17 +171,17 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'docs/themes',
                     src: ['*.scss'],
-                    dest: '_css/themes',
+                    dest: 'build/themes',
                     ext: '.css'
                 },
                 {
-                    '_css/docs.css': 'docs/docs.scss',
+                    'build/docs.css': 'docs/docs.scss',
                 }]
             },
         },
 
         scsslint: {
-            allFiles: ['styles/**/*.scss'],
+            allFiles: ['scss/**/*.scss'],
             options: {
                 config: '.scss-lint.yml',
                 colorizeOutput: true
@@ -163,7 +193,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             sass: {
-                files: ['styles/**/*.scss'],
+                files: ['scss/**/*.scss'],
                 tasks: ['styles', 'jekyll:dev']
             },
             jekyll: {
@@ -189,7 +219,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     // Generate and format the CSS
-    grunt.registerTask('styles', ['scsslint', 'sass', 'copy:css', 'cssmin', 'postcss', 'copy:fonts']);
+    grunt.registerTask('styles', ['scsslint', 'sass', 'copy:css', 'cssmin', 'copy:css_dist', 'postcss', 'copy:fonts']);
+    grunt.registerTask('build', ['scsslint', 'sass:dist', 'sass:themes', 'copy:css', 'postcss:dist', 'cssmin:css_dist', 'cssmin:themes_dist', 'copy:css_dist', 'copy:fonts']);
 
     //running pattern library locally
     grunt.registerTask('serve',['default', 'connect', 'watch']);
