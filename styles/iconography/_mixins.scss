@@ -9,12 +9,16 @@
     }
 }
 
-@mixin icon-small-block($content) {
+@mixin icon-block-with-size($content, $size) {
     &:after {
         @extend .fa;
         content: $content;
-        font-size: $icon-size-small;
+        font-size: $size;
         text-align: center;
         vertical-align: middle;
     }
+}
+
+@mixin icon-small-block($content) {
+    @include icon-block-with-size($content, $icon-size-small);
 }

@@ -87,29 +87,29 @@
     .flag {
         @include tap-highlight-color(transparent);
         align-self: flex-start;
+        color: $flag-on-fill-color;
         flex-shrink: 0;
-        height: $flag-height;
-        margin-bottom: $flag-margin-bottom;
-        margin-right: $flag-margin-right;
-        margin-top: $flag-padding-top;
-        width: $flag-width;
 
         &:hover {
             cursor: pointer;
         }
 
-        &:active {
-            filter: none;
+        &.on {
+            @include icon-block-with-size($fa-var-flag-o, $icon-size-large);
+            font-size: $icon-size-large;
+
+            &:after {
+                transform: scale(-1, 1);
+            }
         }
 
-        .off .image {
-            fill: $flag-off-fill-color;
-            stroke: $flag-off-outline-color;
-        }
+        &.off {
+            @include icon-block-with-size($fa-var-flag, $icon-size-large);
+            font-size: $icon-size-large;
 
-        .on .image {
-            fill: $flag-on-fill-color;
-            stroke: $flag-on-outline-color;
+            &:after {
+                transform: scale(-1, 1);
+            }
         }
     }
 }

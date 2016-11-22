@@ -69,7 +69,7 @@ function cycleStatusClasses(el) {
 
             <div class="related-title block-component">This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.</div>
         </section>
-        <flag class="icon flag-filled large">
+        <flag class="flag on">
         </flag>
     </section>
 
