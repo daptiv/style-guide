@@ -85,18 +85,44 @@ function cycleStatusClasses(el) {
 
 {% endsnippet %}
 
-### Status
+### Status Bar
 
 {% snippet html %}
 <div class="card">
-    <footer class="small block-component status">Unknown/No Status</footer>
-    <footer class="small block-component status notstarted">Not Started</footer>
-    <footer class="small block-component status inprogress">In Progress</footer>
-    <footer class="small block-component status onhold">On Hold</footer>
-    <footer class="small block-component status overdue">Overdue</footer>
-    <footer class="small block-component status complete">Complete</footer>
+    <footer class="small block-component status bar">Unknown/No Status</footer>
+    <footer class="small block-component status bar notstarted">Not Started</footer>
+    <footer class="small block-component status bar inprogress">In Progress</footer>
+    <footer class="small block-component status bar onhold">On Hold</footer>
+    <footer class="small block-component status bar overdue">Overdue</footer>
+    <footer class="small block-component status bar complete">Complete</footer>
 </div>
 {% endsnippet %}
+
+### Status Circle
+
+{% snippet html %}
+<div class="card">
+    <div class="status-row">
+        <span class="small status circle"></span><span>Unknown/No Status</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle notstarted"></span><span>Not Started</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle inprogress"></span><span>In Progress</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle onhold"></span></span>On Hold</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle overdue"></span></span>Overdue</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle complete"></span></span>Complete</span>
+    </div>
+</div>
+{% endsnippet %}
+
 
 ## Drop-down list
 Used for drop-down lists<br />
