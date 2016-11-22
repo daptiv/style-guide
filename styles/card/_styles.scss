@@ -13,7 +13,6 @@
 
     .item-title {
         line-height: $card-text-height-larger;
-        margin-bottom: 10px;
         padding-left: $card-title-indent;
         padding-right: $card-title-right-padding;
         text-indent: -$card-title-indent;
@@ -34,6 +33,7 @@
 
         font-style: italic;
         line-height: $card-text-height-larger;
+        margin-top: 10px;
         padding-right: $card-title-right-padding;
     }
 
@@ -87,29 +87,29 @@
     .flag {
         @include tap-highlight-color(transparent);
         align-self: flex-start;
+        color: $flag-on-fill-color;
         flex-shrink: 0;
-        height: $flag-height;
-        margin-bottom: $flag-margin-bottom;
-        margin-right: $flag-margin-right;
-        margin-top: $flag-padding-top;
-        width: $flag-width;
 
         &:hover {
             cursor: pointer;
         }
 
-        &:active {
-            filter: none;
+        &.on {
+            @include icon-block-with-size($fa-var-flag-o, $icon-size-large);
+
+            &:after {
+                transform: scale(-1, 1);
+                vertical-align: top;
+            }
         }
 
-        .off .image {
-            fill: $flag-off-fill-color;
-            stroke: $flag-off-outline-color;
-        }
+        &.off {
+            @include icon-block-with-size($fa-var-flag, $icon-size-large);
 
-        .on .image {
-            fill: $flag-on-fill-color;
-            stroke: $flag-on-outline-color;
+            &:after {
+                transform: scale(-1, 1);
+                vertical-align: top;
+            }
         }
     }
 }

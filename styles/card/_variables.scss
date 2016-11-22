@@ -32,16 +32,6 @@ $card-status-complete-border-color: $color-status-complete;
 $card-status-overdue-background-color: $color-status-overdue-light;
 $card-status-overdue-border-color: $color-status-overdue;
 
-$flag-margin-right: -($card-padding);
-$flag-margin-bottom: $card-v-padding;
-$flag-total-top-padding: 14px;
-$flag-padding-top: $flag-total-top-padding - $card-v-padding;
-
-$flag-height: 31px;
-$flag-width: 47px;
-$flag-off-fill-color: #fff;
-$flag-off-outline-color: #979797;
-$flag-on-fill-color: #f3d8a2;
-$flag-on-outline-color: #dfa13c;
+$flag-on-fill-color: $color-secondary-medium;
 
 $task-list-max-width: 344px;

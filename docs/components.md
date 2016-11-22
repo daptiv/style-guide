@@ -69,14 +69,7 @@ function cycleStatusClasses(el) {
 
             <div class="related-title block-component">This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.</div>
         </section>
-        <flag class="flag">
-            <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
-                Operating on classes doesn't work with SVG elements in IE 11 #6327 -->
-            <span class="on" onclick="this.classList.toggle('on'); this.classList.toggle('off')">
-                <svg class="image" viewBox="0 0 46 32">
-                    <path d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>
-                </svg>
-            </span>
+        <flag class="flag on">
         </flag>
     </section>
 

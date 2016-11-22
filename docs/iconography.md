@@ -35,3 +35,4 @@ The help icon: <i class="icon help"></i>
 {% iconblock thumbs-down %}
 {% iconblock exclamation-triangle %}
 {% iconblock hand-stop %}
+{% iconblock flag-filled %}
