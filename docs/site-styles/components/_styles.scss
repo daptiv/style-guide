@@ -1,0 +1,10 @@
+.status-row {
+    display: flex;
+    margin-bottom: $status-row-margin;
+
+    .status.circle {
+        width: $status-circle-diameter;
+        height: $status-circle-diameter;
+        margin-right: $status-row-margin;
+    }
+}
