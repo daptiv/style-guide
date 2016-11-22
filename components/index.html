@@ -65,7 +65,8 @@
   <li><a href="#panel" id="markdown-toc-panel">Panel</a></li>
   <li><a href="#buttons" id="markdown-toc-buttons">Buttons</a></li>
   <li><a href="#card" id="markdown-toc-card">Card</a>    <ul>
-      <li><a href="#status" id="markdown-toc-status">Status</a></li>
+      <li><a href="#status-bar" id="markdown-toc-status-bar">Status Bar</a></li>
+      <li><a href="#status-circle" id="markdown-toc-status-circle">Status Circle</a></li>
     </ul>
   </li>
   <li><a href="#drop-down-list" id="markdown-toc-drop-down-list">Drop-down list</a>    <ul>
@@ -178,14 +179,7 @@ function cycleStatusClasses(el) {
 
             <div class="related-title block-component">This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.</div>
         </section>
-        <flag class="flag">
-            <!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327
-                Operating on classes doesn't work with SVG elements in IE 11 #6327 -->
-            <span class="on" onclick="this.classList.toggle('on'); this.classList.toggle('off')">
-                <svg class="image" viewbox="0 0 46 32">
-                    <path d="M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32"></path>
-                </svg>
-            </span>
+        <flag class="flag on">
         </flag>
     </section>
 
@@ -203,14 +197,7 @@ function cycleStatusClasses(el) {
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;related-title block-component&quot;</span><span class="nt">&gt;</span>This is a secondary title which could be used to indicate a related item or some additional context which is not part of the title.<span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/section&gt;</span>
-        <span class="nt">&lt;flag</span> <span class="na">class=</span><span class="s">&quot;flag&quot;</span><span class="nt">&gt;</span>
-            <span class="c">&lt;!-- IE11 fix for issue: https://github.com/angular/angular/issues/6327</span>
-<span class="c">                Operating on classes doesn&#39;t work with SVG elements in IE 11 #6327 --&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;on&quot;</span> <span class="na">onclick=</span><span class="s">&quot;this.classList.toggle(&#39;on&#39;); this.classList.toggle(&#39;off&#39;)&quot;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">&quot;image&quot;</span> <span class="na">viewBox=</span><span class="s">&quot;0 0 46 32&quot;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">&quot;M2.5,.5 L45.5,0.5 L45.5,27.5 L2.5,27.5 L12,14 L2.5,0.5 M0,32&quot;</span><span class="nt">&gt;&lt;/path&gt;</span>
-                <span class="nt">&lt;/svg&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;flag</span> <span class="na">class=</span><span class="s">&quot;flag on&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/flag&gt;</span>
     <span class="nt">&lt;/section&gt;</span>
 
@@ -220,7 +207,7 @@ function cycleStatusClasses(el) {
 </div>
 </div>
 
-<h3 id="status">Status</h3>
+<h3 id="status-bar">Status Bar</h3>
 
 <div class="snippet">
 <div class="snippet-src-button-container">
@@ -228,22 +215,75 @@ function cycleStatusClasses(el) {
 </div>
 <div class="snippet-header">
 <div class="card">
-    <footer class="small block-component status">Unknown/No Status</footer>
-    <footer class="small block-component status notstarted">Not Started</footer>
-    <footer class="small block-component status inprogress">In Progress</footer>
-    <footer class="small block-component status onhold">On Hold</footer>
-    <footer class="small block-component status overdue">Overdue</footer>
-    <footer class="small block-component status complete">Complete</footer>
+    <footer class="small block-component status bar">Unknown/No Status</footer>
+    <footer class="small block-component status bar notstarted">Not Started</footer>
+    <footer class="small block-component status bar inprogress">In Progress</footer>
+    <footer class="small block-component status bar onhold">On Hold</footer>
+    <footer class="small block-component status bar overdue">Overdue</footer>
+    <footer class="small block-component status bar complete">Complete</footer>
 </div>
 </div>
 <div class="snippet-content">
 <div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;card&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status&quot;</span><span class="nt">&gt;</span>Unknown/No Status<span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status notstarted&quot;</span><span class="nt">&gt;</span>Not Started<span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status inprogress&quot;</span><span class="nt">&gt;</span>In Progress<span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status onhold&quot;</span><span class="nt">&gt;</span>On Hold<span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status overdue&quot;</span><span class="nt">&gt;</span>Overdue<span class="nt">&lt;/footer&gt;</span>
-    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status complete&quot;</span><span class="nt">&gt;</span>Complete<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status bar&quot;</span><span class="nt">&gt;</span>Unknown/No Status<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status bar notstarted&quot;</span><span class="nt">&gt;</span>Not Started<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status bar inprogress&quot;</span><span class="nt">&gt;</span>In Progress<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status bar onhold&quot;</span><span class="nt">&gt;</span>On Hold<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status bar overdue&quot;</span><span class="nt">&gt;</span>Overdue<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">&quot;small block-component status bar complete&quot;</span><span class="nt">&gt;</span>Complete<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<h3 id="status-circle">Status Circle</h3>
+
+<div class="snippet">
+<div class="snippet-src-button-container">
+<button type="button" class="snippet-src-button" title="Show Source" onclick="var s = this.parentElement.parentElement.querySelector('.snippet-content').style; var visible = (s.display === 'block'); s.display = visible ? 'none' : 'block';this.innerText= (visible ? 'Show' : 'Hide') + ' Source';">Show Source</button>
+</div>
+<div class="snippet-header">
+<div class="card">
+    <div class="status-row">
+        <span class="small status circle"></span><span>Unknown/No Status</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle notstarted"></span><span>Not Started</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle inprogress"></span><span>In Progress</span>
+    </div>
+    <div class="status-row">
+        <span class="small status circle onhold"></span>On Hold
+    </div>
+    <div class="status-row">
+        <span class="small status circle overdue"></span>Overdue
+    </div>
+    <div class="status-row">
+        <span class="small status circle complete"></span>Complete
+    </div>
+</div>
+</div>
+<div class="snippet-content">
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;card&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;status-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;small status circle&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;span&gt;</span>Unknown/No Status<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;status-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;small status circle notstarted&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;span&gt;</span>Not Started<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;status-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;small status circle inprogress&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;span&gt;</span>In Progress<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;status-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;small status circle onhold&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;/span&gt;</span>On Hold<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;status-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;small status circle overdue&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;/span&gt;</span>Overdue<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;status-row&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;small status circle complete&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;/span&gt;</span>Complete<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -442,7 +482,7 @@ function cycleStatusClasses(el) {
 
         <footer class="footer">
             Copyright Changepoint 2016.<br>
-            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.56</strong>
+            Created and maintained by the Daptiv team at Changepoint. <strong>Current version is 0.10.57</strong>
         </footer>
     </div>
 
