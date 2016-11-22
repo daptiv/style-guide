@@ -1,0 +1,10 @@
+.status-row {
+    display: flex;
+    margin-bottom: 5px;
+
+    .status.circle {
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+    }
+}

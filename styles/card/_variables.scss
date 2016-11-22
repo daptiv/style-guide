@@ -17,11 +17,11 @@ $card-v-padding: $standard-whitespace-unit;
 $card-title-right-padding: 48px;
 $card-title-indent: 12px;
 
-$card-status-top-margin: $card-title-indent;
-$card-status-border-radius: 1px;
+$card-status-bar-top-margin: $card-title-indent;
+$card-status-bar-border-radius: 1px;
 $card-status-border-width: 1px;
 $card-status-transparent-border-color: rgba(255, 255, 255, 0);
-$card-status-padding: $half-whitespace-unit $card-title-indent;
+$card-status-bar-padding: $half-whitespace-unit $card-title-indent;
 $card-status-notstarted-background-color: $color-status-notstarted-light;
 $card-status-notstarted-border-color: $color-status-notstarted;
 $card-status-inprogress-background-color: $color-status-inprogress-light;

@@ -40,12 +40,19 @@
     .status {
         @include font-size-base();
         border-color: $card-status-transparent-border-color;
-        border-radius: $card-status-border-radius;
         border-style: solid;
         border-width: $card-status-border-width;
         line-height: $card-text-height-large;
-        margin-top: $card-status-top-margin;
-        padding: $card-status-padding;
+    }
+
+    .status.circle {
+        border-radius: 50%;
+    }
+
+    .status.bar {
+        border-radius: $card-status-bar-border-radius;
+        margin-top: $card-status-bar-top-margin;
+        padding: $card-status-bar-padding;
     }
 
     .status.overdue {
