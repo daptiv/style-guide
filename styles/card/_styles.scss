@@ -33,7 +33,7 @@
 
         font-style: italic;
         line-height: $card-text-height-larger;
-        margin-top: 10px;
+        margin-top: $title-separator-spacing;
         padding-right: $card-title-right-padding;
     }
 
@@ -95,7 +95,7 @@
         }
 
         &.on {
-            @include icon-block-with-size($fa-var-flag-o, $icon-size-large);
+            @include icon-block-with-size($fa-var-flag, $icon-size-large);
 
             &:after {
                 transform: scale(-1, 1);
@@ -104,7 +104,7 @@
         }
 
         &.off {
-            @include icon-block-with-size($fa-var-flag, $icon-size-large);
+            @include icon-block-with-size($fa-var-flag-o, $icon-size-large);
 
             &:after {
                 transform: scale(-1, 1);
