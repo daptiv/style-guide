@@ -19,6 +19,18 @@
     @include swatch-with-label($color-primary-medium);
 }
 
+.labeled-swatch-color-primary-medium-300 {
+    @include swatch-with-label($color-primary-medium-300);
+}
+
+.labeled-swatch-color-primary-medium-400 {
+    @include swatch-with-label($color-primary-medium-400);
+}
+
+.labeled-swatch-color-primary-medium-500 {
+    @include swatch-with-label($color-primary-medium-500);
+}
+
 .labeled-swatch-color-primary-medium-light {
     @include swatch-with-label($color-primary-medium-light);
 }
@@ -47,12 +59,48 @@
     @include swatch-with-label($color-tomato);
 }
 
+.labeled-swatch-color-tomato-300 {
+    @include swatch-with-label($color-tomato-300);
+}
+
+.labeled-swatch-color-tomato-400 {
+    @include swatch-with-label($color-tomato-400);
+}
+
+.labeled-swatch-color-tomato-500 {
+    @include swatch-with-label($color-tomato-500);
+}
+
 .labeled-swatch-color-kelley-green {
     @include swatch-with-label($color-kelley-green);
 }
 
+.labeled-swatch-color-kelley-green-300 {
+    @include swatch-with-label($color-kelley-green-300);
+}
+
+.labeled-swatch-color-kelley-green-400 {
+    @include swatch-with-label($color-kelley-green-400);
+}
+
+.labeled-swatch-color-kelley-green-500 {
+    @include swatch-with-label($color-kelley-green-500);
+}
+
 .labeled-swatch-color-marigold {
     @include swatch-with-label($color-marigold);
+}
+
+.labeled-swatch-color-marigold-300 {
+    @include swatch-with-label($color-marigold-300);
+}
+
+.labeled-swatch-color-marigold-400 {
+    @include swatch-with-label($color-marigold-400);
+}
+
+.labeled-swatch-color-marigold-500 {
+    @include swatch-with-label($color-marigold-500);
 }
 
 .labeled-swatch-color-base-0 {
