@@ -62,6 +62,26 @@ section: Guide
 {% colorswatch color-status-complete %}
 {% colorswatch color-status-complete-light %}
 
+
+### Color Gradients
+{% colorswatch color-tomato %}
+{% colorswatch color-tomato-300 %}
+{% colorswatch color-tomato-400 %}
+{% colorswatch color-tomato-500 %}
+{% colorswatch color-kelley-green %}
+{% colorswatch color-kelley-green-300 %}
+{% colorswatch color-kelley-green-400 %}
+{% colorswatch color-kelley-green-500 %}
+{% colorswatch color-marigold %}
+{% colorswatch color-marigold-300 %}
+{% colorswatch color-marigold-400 %}
+{% colorswatch color-marigold-500 %}
+{% colorswatch color-primary-medium %}
+{% colorswatch color-primary-medium-300 %}
+{% colorswatch color-primary-medium-400 %}
+{% colorswatch color-primary-medium-500 %}
+
+
 ### Colors With Transparency Palette
 {% colorswatch color-base-90-40 %}
 {% colorswatch color-primary-dark-05-over-white %}
