@@ -1,0 +1,13 @@
+.swatch {
+    background: #ccc;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.swatch.blue {
+    background: #33c;
+}
+.swatch.purple {
+    background: #c3c;
+}

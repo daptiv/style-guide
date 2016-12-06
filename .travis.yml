@@ -2,6 +2,6 @@ language: ruby
 rvm:
   - 2.2.0
 before_script:
-  - npm install -g grunt-cli
-  - npm install
-script: grunt
+  - npm install -g yarn
+  - yarn
+script: XXX
