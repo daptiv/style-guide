@@ -1,0 +1,104 @@
+//== drop-down-list
+//
+//## styles for drop-down-list
+
+.daptiv-drop-down-list {
+    @include font-size-medium();
+    display: inline-block;
+    max-width: $dropdownlist-item-max-width;
+    min-width: $dropdownlist-item-min-width;
+    position: relative;
+
+    .content {
+        background: $color-base-0;
+        border: solid $dropdownlist-border-size $dropdownlist-border-color;
+        border-top: 0;
+        box-shadow: -1px 1px 8px 0 rgba($color-base-90, 0.24);
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+
+        > :hover {
+            background: $color-secondary-light;
+            color: $color-text-dark;
+        }
+
+        .item {
+            line-height: $dropdownlist-item-height;
+        }
+    }
+
+    .item {
+        color: $color-text-dark;
+        display: flex;
+        margin: 0;
+        overflow: hidden;
+        padding: 0 $dropdownlist-item-padding;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+
+        &.current {
+            background: transparent;
+            border: solid $dropdownlist-border-size transparent;
+            width: 100%;
+
+            &:hover {
+                background-color: $dropdownlist-bg;
+                border-color: $dropdownlist-border-color;
+            }
+        }
+
+        &.selected {
+            border-left: 1px solid $color-primary-light;
+            position: relative;
+
+            &:before {
+                /* create a triangle using borders with it's tip pointing right and it's base against the left border
+                https://css-tricks.com/snippets/css/css-triangle/
+                */
+                $half-triangle-base: 5px;
+                $triangle-to-tip: 3px;
+                border-bottom: $half-triangle-base solid transparent;
+                border-left: $triangle-to-tip solid $dropdownlist-selected-triangle-color;
+                border-top: $half-triangle-base solid transparent;
+                content: '.';
+                font-size: 0;
+                height: 0;
+                left: 0;
+                position: absolute;
+                top: calc(50% - #{$half-triangle-base});
+                width: 0;
+            }
+        }
+    }
+
+    .item .icon {
+        color: $color-base-70;
+        padding-right: $dropdownlist-item-padding-right;
+
+        &.menu {
+            color: $color-base-90;
+            margin-left: $dropdownlist-item-padding-right;
+        }
+    }
+
+    .item .title {
+        flex-grow: 1;
+    }
+
+    &.open {
+        .item {
+            &.current {
+                background-color: $dropdownlist-bg;
+                border-color: $dropdownlist-border-color;
+            }
+        }
+
+        .content {
+            display: block;
+        }
+    }
+}

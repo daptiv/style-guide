@@ -1,0 +1,71 @@
+//== Nav/Subnav
+//
+//## Styles for Tab Navigation and Sub-Navigation
+
+.daptiv-nav {
+    @include font-size-larger();
+
+    background: $nav-bg;
+    height: $nav-height;
+    line-height: $nav-height;
+    width: 100%;
+
+    .tab {
+        background-color: transparent;
+        border: 0;
+        border-bottom: $nav-border-width solid transparent;
+        color: $nav-font-color;
+        display: inline-block;
+        line-height: $nav-height - $nav-border-width - $nav-border-width;
+        padding: 0 $nav-tab-h-pad;
+        text-decoration: none;
+
+        &:not(.selected):hover {
+            border-bottom-color: $color-secondary-light;
+            color: $nav-font-color-hover;
+        }
+
+        &:not(.selected):active {
+            background-color: $nav-bg;
+            border-bottom-color: $color-secondary-light;
+            color: $nav-font-color-active;
+        }
+
+        &.selected {
+            background-color: $nav-tab-selected-bg;
+            border-bottom-color: $nav-tab-selected-border-color;
+        }
+
+        &.selected:active {
+            background-color: $nav-tab-selected-bg;
+            border-bottom-color: $color-secondary-light;
+        }
+
+        // Keep this after .selected
+        &:focus {
+            border-bottom-color: $color-secondary-light;
+            outline: none;
+        }
+    }
+
+    &.empty {
+        height: $nav-height-empty;
+        line-height: $nav-height-empty;
+    }
+}
+
+
+/*
+    Sub Navigation tab
+*/
+.daptiv-subnav {
+    background: $subnav-bg;
+    font: $subnav-font;
+    height: $subnav-height;
+    line-height: $subnav-height;
+    width: 100%;
+
+    .tab {
+        @include nav-link;
+    }
+}

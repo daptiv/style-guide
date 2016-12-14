@@ -1,0 +1,48 @@
+
+.daptiv-button {
+    background-color: $button-bg;
+    border: $button-border;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    font: $button-font;
+    height: $button-height;
+    padding: $button-padding;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $button-bg-hover;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: $button-bg-active;
+    }
+
+    &.alternate {
+        background-color: $button-bg-alternate;
+
+        &:hover {
+            background-color: $button-bg-alternate-hover;
+        }
+
+        &:active {
+            background-color: $button-bg-alternate-active;
+        }
+    }
+
+    &:disabled,
+    &.alternate:disabled {
+        background: $button-bg-disabled;
+        color: $button-color-disabled;
+        cursor: default;
+    }
+
+    &.button-large {
+        @include font-size-xlarge();
+        height: $button-large-height;
+        padding: $button-large-padding;
+    }
+}

@@ -1,0 +1,71 @@
+
+// Base
+@mixin font-size-base() {
+    font-size: $font-size-base;
+    font-weight: $font-size-base-weight;
+}
+
+@mixin font-size-base-bold() {
+    font-size: $font-size-base;
+    font-weight: $font-size-base-weight-bold;
+}
+
+@mixin font-size-base-light() {
+    font-size: $font-size-base;
+    font-weight: $font-size-base-weight-light;
+}
+
+// Medium
+@mixin font-size-medium() {
+    font-size: $font-size-medium;
+    font-weight: $font-size-medium-weight;
+}
+
+@mixin font-size-medium-bold() {
+    font-size: $font-size-medium;
+    font-weight: $font-size-medium-weight-bold;
+}
+
+// Large
+@mixin font-size-large() {
+    font-size: $font-size-large;
+    font-weight: $font-size-large-weight;
+}
+
+@mixin font-size-large-bold() {
+    font-size: $font-size-large;
+    font-weight: $font-size-large-weight-bold;
+}
+
+// Larger
+@mixin font-size-larger() {
+    font-size: $font-size-larger;
+    font-weight: $font-size-larger-weight;
+}
+
+@mixin font-size-larger-bold() {
+    font-size: $font-size-larger;
+    font-weight: $font-size-larger-weight-bold;
+}
+
+// X-Large
+@mixin font-size-xlarge() {
+    font-size: $font-size-xlarge;
+    font-weight: $font-size-xlarge-weight;
+}
+
+@mixin font-size-xlarge-bold() {
+    font-size: $font-size-xlarge;
+    font-weight: $font-size-xlarge-weight-bold;
+}
+
+// X-Larger
+@mixin font-size-xlarger() {
+    font-size: $font-size-xlarger;
+    font-weight: $font-size-xlarger-weight;
+}
+
+@mixin font-size-xlarger-bold() {
+    font-size: $font-size-xlarger;
+    font-weight: $font-size-xlarger-weight-bold;
+}

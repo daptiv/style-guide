@@ -1,0 +1,22 @@
+table {
+    border: 1;
+}
+.swatch {
+    background: #ccc;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.swatch.color-blue {
+    background: #33c;
+}
+.swatch.color-purple {
+    background: #9c27b0;
+}
+.swatch.color-green {
+    background: #4caf50;
+}
+.swatch.color-grey {
+    background: #9e9e9e;
+}

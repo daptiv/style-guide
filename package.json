@@ -1,6 +1,6 @@
 {
   "name": "daptiv-style-guide",
-  "version": "0.10.56",
+  "version": "2.0.0",
   "description": "Common styles and pattern library for Daptiv",
   "author": "Changepoint",
   "homepage": "https://daptiv.github.io/style-guide",
@@ -10,16 +10,19 @@
   },
   "files": [
     "fonts/",
+    "font-awesome/",
     "css/",
     "scss/"
   ],
   "scripts": {
-    "postversion": "git push && git push --tags && grunt publish"
+    "start": "fractal start"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.0.8"
+    "@frctl/fractal": "^1.0.11",
+    "gulp-sass": "^3.0.0",
+    "scss-tokenizer": "^0.0.1"
   }
 }
