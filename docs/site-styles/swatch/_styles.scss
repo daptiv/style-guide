@@ -15,6 +15,10 @@
     @include swatch-with-label($color-primary-dark-shadow);
 }
 
+.labeled-swatch-color-primary-light-400 {
+    @include swatch-with-label($color-primary-light-400);
+}
+
 .labeled-swatch-color-primary-medium {
     @include swatch-with-label($color-primary-medium);
 }

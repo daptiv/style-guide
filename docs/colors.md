@@ -76,6 +76,7 @@ section: Guide
 {% colorswatch color-marigold-300 %}
 {% colorswatch color-marigold-400 %}
 {% colorswatch color-marigold-500 %}
+{% colorswatch color-primary-light-400 %}
 {% colorswatch color-primary-medium %}
 {% colorswatch color-primary-medium-300 %}
 {% colorswatch color-primary-medium-400 %}
