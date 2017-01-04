@@ -9,12 +9,12 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../_theme/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../_theme/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../_theme/css/default.css?cachebust=1.0.7" type="text/css">
+<link rel="stylesheet" href="../../_theme/css/default.css?cachebust=1.0.7" type="text/css">
 
 
-<title>OMG We So Stylish | daptiv-style-guide</title>
+<title>Navigation | daptiv-style-guide</title>
 
 </head>
 <body>
@@ -37,7 +37,7 @@
 </svg>
 
     </button>
-    <a href="../index.html" class="Header-title" data-pjax>daptiv-style-guide</a>
+    <a href="../../index.html" class="Header-title" data-pjax>daptiv-style-guide</a>
 </div>
 
     </div>
@@ -52,7 +52,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">OMG We So Stylish</h1>
+        <h1 class="Document-title">Navigation</h1>
         
 
 
@@ -69,15 +69,57 @@
 
     
     
-    <h1 id="welcome">Welcome</h1>
-<p>This is the page of docs. Here, we can doc.</p>
-<h2 id="check-out-these-colors">check out these colors</h2>
+    <p>These are the different types of navigation components.</p>
 <ul>
-<li>they’re cool</li>
-<li>they look cool</li>
-<li>they’re colors</li>
+<li>Will be replaced with the ToC, excluding the “Contents” header
+{:toc}</li>
 </ul>
-<code><pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button </span></span></span><span class="hljs-template-variable">{{mode}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{text}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></pre></code>
+<h2 id="tab-navigation">Tab Navigation</h2>
+<p>Navigation for switching views. Results in a collection of left aligned, horizontal tabs. The example below shows a selected, regular and menu tab; the later causes display of the <a href="#tab-navigation-menu-dropdown">Tab Navigation Menu Dropdown</a>.</p>
+<p>{% snippet html %}
+<!-- Empty comments used to remove line breaks. --></p>
+<p><div class="daptiv-header">
+    <nav class="daptiv-nav ">
+        <a class="tab" href="#" onclick="return false;">Home</a><!--
+        --><a class="selected tab" href="#" onclick="return false;">Selected</a><!--
+        --><a class="tab" href="#" onclick="return false;">About</a><a class="tab" href="#" onclick="return false;">Contact</a>
+    </nav>
+</div>
+{% endsnippet %}
+<br /></p>
+<h2 id="tab-navigation-menu-dropdown">Tab Navigation Menu Dropdown</h2>
+<p>{% snippet html %}</p>
+<p><div class="daptiv-dropdown">
+    <a class="item" href="#" onclick="return false;">Item 1</a>
+    <a class="item" href="#" onclick="return false;">Item 2</a>
+    <a class="selected item" href="#" onclick="return false;">Selected Item 3</a>
+    <a class="disabled item" href="#" onclick="return false;">Disabled Item 4</a>
+    <span class="label" tabindex="-1">Label Item 5</span>
+</div>
+{% endsnippet %}
+<br /></p>
+<h2 id="alternate-tab-navigation-menu-dropdown">Alternate Tab-Navigation Menu Dropdown</h2>
+<p>{% snippet html %}</p>
+<p><div class="daptiv-dropdown">
+    <a class="alternate item" href="#" onclick="return false;">Item 1</a>
+    <a class="alternate item" href="#" onclick="return false;">Item 2</a>
+    <a class="alternate selected item" href="#" onclick="return false;">Selected Item 3</a>
+    <a class="alternate disabled item" href="#" onclick="return false;">Disabled Item 4</a>
+</div>
+{% endsnippet %}
+<br /></p>
+<h2 id="tab-sub-navigation">Tab Sub-Navigation</h2>
+<p>{% snippet html %}</p>
+<p><nav class="daptiv-subnav">
+    <a class="tab" href="#" onclick="return false;">Home</a>
+    <a class="selected tab" href="#" onclick="return false;">Selected</a>
+    <a class="tab" href="#" onclick="return false;">About</a>
+    <a class="tab" href="#" onclick="return false;">Contact</a>
+    <a class="disabled tab" href="#" onclick="return false;" tabIndex="-1">Disabled</a>
+</nav>
+{% endsnippet %}
+<br /></p>
+
     
 
 
@@ -120,7 +162,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/button--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/button--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -144,7 +186,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/button--secondary.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/button--secondary.html" data-pjax>
                 <span>Secondary</span>
                 
 
@@ -173,7 +215,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/colors.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/colors.html" data-pjax>
                 <span>Colors</span>
                 
 
@@ -197,7 +239,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/container.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/container.html" data-pjax>
                 <span>Container</span>
                 
 
@@ -221,7 +263,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/div.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/div.html" data-pjax>
                 <span>Div</span>
                 
 
@@ -245,7 +287,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/picklist.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/picklist.html" data-pjax>
                 <span>Picklist</span>
                 
 
@@ -269,7 +311,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/table.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/table.html" data-pjax>
                 <span>Table</span>
                 
 
@@ -320,7 +362,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/animations.html" data-pjax>
+            <a class="Tree-entityLink" href="animations.html" data-pjax>
                 <span>Animations</span>
                 
             </a>
@@ -330,7 +372,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/colors.html" data-pjax>
+            <a class="Tree-entityLink" href="colors.html" data-pjax>
                 <span>Colors</span>
                 
             </a>
@@ -340,7 +382,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/components.html" data-pjax>
+            <a class="Tree-entityLink" href="components.html" data-pjax>
                 <span>Components</span>
                 
             </a>
@@ -350,7 +392,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/iconography.html" data-pjax>
+            <a class="Tree-entityLink" href="iconography.html" data-pjax>
                 <span>Iconography</span>
                 
             </a>
@@ -360,7 +402,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/identity.html" data-pjax>
+            <a class="Tree-entityLink" href="identity.html" data-pjax>
                 <span>Identity</span>
                 
             </a>
@@ -370,7 +412,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old.html" data-pjax>
+            <a class="Tree-entityLink" href="../old.html" data-pjax>
                 <span>Overview</span>
                 
             </a>
@@ -380,7 +422,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/layout.html" data-pjax>
+            <a class="Tree-entityLink" href="layout.html" data-pjax>
                 <span>Layout</span>
                 
             </a>
@@ -389,8 +431,8 @@
     
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/nav.html" data-pjax>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Nav</span>
                 
             </a>
@@ -400,7 +442,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/stats.html" data-pjax>
+            <a class="Tree-entityLink" href="stats.html" data-pjax>
                 <span>Stats</span>
                 
             </a>
@@ -410,7 +452,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old/typography.html" data-pjax>
+            <a class="Tree-entityLink" href="typography.html" data-pjax>
                 <span>Typography</span>
                 
             </a>
@@ -424,8 +466,8 @@
     
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../welcome.html" data-pjax>
                 <span>Welcome</span>
                 
             </a>
@@ -452,7 +494,7 @@
 
 
 
-<script src="../_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
+<script src="../../_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
 
 
 

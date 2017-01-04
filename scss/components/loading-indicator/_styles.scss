@@ -2,9 +2,6 @@
 //
 //## Classes for loading indicator
 
-@import '../mixins';
-
-
 @keyframes daptiv-loading {
     0% {
         background-color: $color-primary-light;

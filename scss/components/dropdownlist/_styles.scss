@@ -10,18 +10,19 @@
     position: relative;
 
     .content {
-        background: $color-base-0;
+        @include standard-box-shadow();
+
+        background: $dropdownlist-background;
         border: solid $dropdownlist-border-size $dropdownlist-border-color;
         border-top: 0;
-        box-shadow: -1px 1px 8px 0 rgba($color-base-90, 0.24);
         display: none;
         position: absolute;
         top: 100%;
         width: 100%;
 
         > :hover {
-            background: $color-secondary-light;
-            color: $color-text-dark;
+            background: $dropdownlist-item-background-hover;
+            color: $dropdownlist-item-text-color;
         }
 
         .item {
@@ -30,7 +31,7 @@
     }
 
     .item {
-        color: $color-text-dark;
+        color: $dropdownlist-item-text-color;
         display: flex;
         margin: 0;
         overflow: hidden;
@@ -46,24 +47,23 @@
             width: 100%;
 
             &:hover {
-                background-color: $dropdownlist-bg;
+                background: $dropdownlist-background;
                 border-color: $dropdownlist-border-color;
             }
         }
 
         &.selected {
-            border-left: 1px solid $color-primary-light;
+            border-left: 1px solid $dropdownlist-item-border-color-selected;
             position: relative;
 
             &:before {
                 /* create a triangle using borders with it's tip pointing right and it's base against the left border
                 https://css-tricks.com/snippets/css/css-triangle/
                 */
-                $half-triangle-base: 5px;
-                $triangle-to-tip: 3px;
+                $half-triangle-base: $dropdownlist-item-triangle-base / 2;
                 border-bottom: $half-triangle-base solid transparent;
-                border-left: $triangle-to-tip solid $dropdownlist-selected-triangle-color;
-                border-top: $half-triangle-base solid transparent;
+                border-left: $dropdownlist-item-triangle-base-to-tip solid $dropdownlist-item-triangle-color-selected;
+                border-top: $half-triangle-base  solid transparent;
                 content: '.';
                 font-size: 0;
                 height: 0;
@@ -76,11 +76,11 @@
     }
 
     .item .icon {
-        color: $color-base-70;
+        color: $dropdownlist-item-icon-color;
         padding-right: $dropdownlist-item-padding-right;
 
         &.menu {
-            color: $color-base-90;
+            color: $dropdownlist-menu-arrow-color;
             margin-left: $dropdownlist-item-padding-right;
         }
     }
@@ -92,7 +92,7 @@
     &.open {
         .item {
             &.current {
-                background-color: $dropdownlist-bg;
+                background: $dropdownlist-background;
                 border-color: $dropdownlist-border-color;
             }
         }

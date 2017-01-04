@@ -1,0 +1,11 @@
+/* border */
+$standard-border-width: 1px;
+$standard-thick-border: $standard-border-width * 2;
+
+/* spacing */
+$standard-whitespace-unit: 8px;
+$half-whitespace-unit: $standard-whitespace-unit / 2;
+$double-whitespace-unit: $standard-whitespace-unit * 2;
+
+/* layout */
+$standard-gutter-width: 12px;

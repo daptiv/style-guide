@@ -86,8 +86,8 @@
 
     &.circle {
         &:after {
-            background-color: $color-base-100;
-            border: 1px solid $color-base-100;
+            background-color: $color-base-900;
+            border: 1px solid $color-base-900;
             border-radius: 50%;
             content: '';
             display: inline-block;

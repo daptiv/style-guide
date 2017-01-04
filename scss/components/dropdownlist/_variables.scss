@@ -1,0 +1,23 @@
+//== drop-down-list
+//
+//## variables for drop-down-list
+
+$dropdownlist-background: $color-base-300;
+$dropdownlist-border-size: $standard-border-width;
+$dropdownlist-border-color: $color-base-500;
+
+$dropdownlist-item-background-hover: $color-secondary-light;
+$dropdownlist-item-background: $dropdownlist-background;
+$dropdownlist-item-border-color-focus: $color-primary-light;
+$dropdownlist-item-border-color-selected: $color-primary-light;
+$dropdownlist-item-height: 48px;
+$dropdownlist-item-max-width: 300px;
+$dropdownlist-item-min-width: 150px;
+$dropdownlist-item-padding: $standard-whitespace-unit;
+$dropdownlist-item-padding-right: $standard-whitespace-unit;
+$dropdownlist-item-text-color: $color-text-dark;
+$dropdownlist-item-triangle-base: 10px;
+$dropdownlist-item-triangle-base-to-tip: 3px;
+$dropdownlist-item-triangle-color-selected: $color-primary-light;
+$dropdownlist-item-icon-color: $color-base-600;
+$dropdownlist-menu-arrow-color: $color-base-800;

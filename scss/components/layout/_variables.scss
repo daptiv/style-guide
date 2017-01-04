@@ -4,11 +4,15 @@
 $grid-gutter-width: $standard-gutter-width;
 
 $copyright-padding-top: 24px;
+$copyright-text-color: $color-base-0;
 
+$footer-background-color: $color-primary-dark-700;
 $daptiv-footer-height: 143px;
 
+$header-background-color: $color-primary-dark;
 $header-width: 320px;
 
+$container-background-color: $color-primary-dark;
 $daptiv-container-bg-background-size: 768px 400px;
 $daptiv-container-bg-height: calc(100% - #{$daptiv-footer-height});
 $daptiv-container-bg-width: 100%;

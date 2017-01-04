@@ -1,13 +1,13 @@
 .daptiv-dropdown {
-    background: $dropdown-bg;
+    background: $dropdown-background;
     display: inline-block;
     font: $dropdown-font;
     line-height: $dropdown-item-height;
 
     .item {
-        background: $color-base-0;
+        background: $dropdown-item-background;
         border: 0;
-        color: $color-text-dark;
+        color: $dropdown-item-text-color;
         display: block;
         height: $dropdown-item-height;
         margin: $dropdown-item-border-size;
@@ -24,42 +24,42 @@
         }
 
         &:not(.selected):hover {
-            background: $color-secondary-light;
-            color: $color-text-dark;
+            background: $dropdown-item-background-hover;
+            color: $dropdown-item-text-color;
         }
 
         &.selected {
-            color: $color-primary-medium;
+            color: $dropdown-item-text-color-selected;
         }
 
         &.disabled {
-            background: $color-base-0;
-            color: $color-base-60;
+            background: $dropdown-item-background-disabled;
+            color: $dropdown-item-text-color-disabled;
             cursor: default;
 
             &:hover {
-                background: $color-base-0;
-                color: $color-base-60;
+                background: $dropdown-item-background-disabled;
+                color: $dropdown-item-text-color-disabled;
             }
         }
 
         &.alternate {
-            background: $color-base-30;
+            background: $dropdown-item-background-alt;
 
             &.selected {
-                background: $color-base-30;
+                background: $dropdown-item-background-alt;
             }
 
             &.disabled:hover {
-                background: $color-base-30;
+                background: $dropdown-item-background-alt;
             }
         }
     }
 
     .label {
-        background: $color-base-30;
+        background: $dropdown-label-background;
         border: 0;
-        color: $color-text-dark;
+        color: $dropdown-label-text-color;
         cursor: default;
         display: block;
         height: $dropdown-item-height;

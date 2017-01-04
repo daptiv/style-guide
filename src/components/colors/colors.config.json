@@ -2,14 +2,104 @@
     "context": {
         "colors": [
             {
+                "name": "color-base-0",
+                "valueType": "value",
+                "value": "#fff"
+            },
+            {
+                "name": "color-base-100",
+                "valueType": "value",
+                "value": "#f5f5f5"
+            },
+            {
+                "name": "color-base-200",
+                "valueType": "value",
+                "value": "#eee"
+            },
+            {
+                "name": "color-base-300",
+                "valueType": "value",
+                "value": "#ddd"
+            },
+            {
+                "name": "color-base-400",
+                "valueType": "value",
+                "value": "#ccc"
+            },
+            {
+                "name": "color-base-500",
+                "valueType": "value",
+                "value": "#b3b3b3"
+            },
+            {
+                "name": "color-base-600",
+                "valueType": "value",
+                "value": "#8c8c8c"
+            },
+            {
+                "name": "color-base-700",
+                "valueType": "value",
+                "value": "#666"
+            },
+            {
+                "name": "color-base-800",
+                "valueType": "value",
+                "value": "#333"
+            },
+            {
+                "name": "color-base-900",
+                "valueType": "value",
+                "value": "#000"
+            },
+            {
                 "name": "color-primary-dark",
                 "valueType": "value",
                 "value": "#1c427b"
             },
             {
-                "name": "color-primary-dark-shadow",
+                "name": "color-primary-dark-100",
                 "valueType": "value",
-                "value": "#173665"
+                "value": "#dae1ea"
+            },
+            {
+                "name": "color-primary-dark-200",
+                "valueType": "value",
+                "value": "#c9d2e0"
+            },
+            {
+                "name": "color-primary-dark-300",
+                "valueType": "value",
+                "value": "#92a5c0"
+            },
+            {
+                "name": "color-primary-dark-400",
+                "valueType": "value",
+                "value": "#5b77a0"
+            },
+            {
+                "name": "color-primary-dark-500",
+                "valueType": "reference",
+                "value": "color-primary-dark"
+            },
+            {
+                "name": "color-primary-dark-600",
+                "valueType": "value",
+                "value": "#193b6e"
+            },
+            {
+                "name": "color-primary-dark-700",
+                "valueType": "value",
+                "value": "#163461"
+            },
+            {
+                "name": "color-primary-dark-800",
+                "valueType": "value",
+                "value": "#132d54"
+            },
+            {
+                "name": "color-primary-dark-900",
+                "valueType": "value",
+                "value": "#102647"
             },
             {
                 "name": "color-primary-medium",
@@ -17,279 +107,14 @@
                 "value": "#2e6fb1"
             },
             {
-                "name": "color-primary-medium-light",
+                "name": "color-primary-medium-100",
                 "valueType": "value",
-                "value": "#0085cf"
+                "value": "#dde8f2"
             },
             {
-                "name": "color-primary-light",
+                "name": "color-primary-medium-200",
                 "valueType": "value",
-                "value": "#86b5e1"
-            },
-            {
-                "name": "color-secondary-medium",
-                "valueType": "value",
-                "value": "#dfa13c"
-            },
-            {
-                "name": "color-secondary-light",
-                "valueType": "value",
-                "value": "#f3d8a2"
-            },
-            {
-                "name": "color-primary-sky-blue-medium",
-                "valueType": "value",
-                "value": "#397abd"
-            },
-            {
-                "name": "color-primary-sky-blue-light",
-                "valueType": "value",
-                "value": "#bbdbf2"
-            },
-            {
-                "name": "color-tomato",
-                "valueType": "value",
-                "value": "#ea5833"
-            },
-            {
-                "name": "color-kelley-green",
-                "valueType": "value",
-                "value": "#009b3a"
-            },
-            {
-                "name": "color-marigold",
-                "valueType": "value",
-                "value": "#fbbc05"
-            },
-            {
-                "name": "color-base-100",
-                "valueType": "value",
-                "value": "#000"
-            },
-            {
-                "name": "color-base-90",
-                "valueType": "value",
-                "value": "#333"
-            },
-            {
-                "name": "color-base-80",
-                "valueType": "value",
-                "value": "#666"
-            },
-            {
-                "name": "color-base-70",
-                "valueType": "value",
-                "value": "#8c8c8c"
-            },
-            {
-                "name": "color-base-60",
-                "valueType": "value",
-                "value": "#b3b3b3"
-            },
-            {
-                "name": "color-base-50",
-                "valueType": "value",
-                "value": "#ccc"
-            },
-            {
-                "name": "color-base-40",
-                "valueType": "value",
-                "value": "#ddd"
-            },
-            {
-                "name": "color-base-30",
-                "valueType": "value",
-                "value": "#eee"
-            },
-            {
-                "name": "color-base-20",
-                "valueType": "value",
-                "value": "#f5f5f5"
-            },
-            {
-                "name": "color-base-0",
-                "valueType": "value",
-                "value": "#fff"
-            },
-            {
-                "name": "color-attention-error",
-                "valueType": "reference",
-                "value": "color-tomato"
-            },
-            {
-                "name": "color-text-dark",
-                "valueType": "reference",
-                "value": "color-base-90"
-            },
-            {
-                "name": "color-text-medium",
-                "valueType": "reference",
-                "value": "color-base-80"
-            },
-            {
-                "name": "color-text-light",
-                "valueType": "reference",
-                "value": "color-base-60"
-            },
-            {
-                "name": "color-text-white",
-                "valueType": "reference",
-                "value": "color-base-0"
-            },
-            {
-                "name": "color-text-default",
-                "valueType": "reference",
-                "value": "color-text-dark"
-            },
-            {
-                "name": "color-text-disabled",
-                "valueType": "reference",
-                "value": "color-text-light"
-            },
-            {
-                "name": "color-text-link",
-                "valueType": "reference",
-                "value": "color-primary-dark"
-            },
-            {
-                "name": "color-text-accent-dark",
-                "valueType": "reference",
-                "value": "color-primary-medium"
-            },
-            {
-                "name": "color-text-accent-medium",
-                "valueType": "reference",
-                "value": "color-primary-medium-light"
-            },
-            {
-                "name": "color-text-accent-light",
-                "valueType": "reference",
-                "value": "color-primary-light"
-            },
-            {
-                "name": "color-primary-dark-05-over-white",
-                "valueType": "value",
-                "value": "#e1e6ee"
-            },
-            {
-                "name": "color-primary-dark-08-over-white",
-                "valueType": "value",
-                "value": "#edf0f5"
-            },
-            {
-                "name": "color-primary-dark-24-over-white",
-                "valueType": "value",
-                "value": "#d0e1f2"
-            },
-            {
-                "name": "color-primary-light-40-over-white",
-                "valueType": "value",
-                "value": "#a5bbd5"
-            },
-            {
-                "name": "color-primary-light-56-over-white",
-                "valueType": "value",
-                "value": "#9bb7da"
-            },
-            {
-                "name": "color-primary-dark-40-over-white",
-                "valueType": "value",
-                "value": "#7692be"
-            },
-            {
-                "name": "color-primary-dark-05",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-dark-08",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-dark-24",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-dark-40",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-dark-48",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-medium-48",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-medium-40",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-medium-light-56",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-light-40",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-light-54",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-primary-sky-blue-light-60",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-tomato-48",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-tomato-08",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-kelley-green-48",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-kelley-green-08",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-base-50-24",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-base-90-40",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-marigold-48",
-                "valueType": "reference",
-                "value": "rgba"
-            },
-            {
-                "name": "color-marigold-08",
-                "valueType": "reference",
-                "value": "rgba"
+                "value": "#cdddec"
             },
             {
                 "name": "color-primary-medium-300",
@@ -307,34 +132,304 @@
                 "value": "color-primary-medium"
             },
             {
-                "name": "color-marigold-300",
+                "name": "color-primary-medium-600",
                 "valueType": "value",
-                "value": "#fdd79c"
+                "value": "#2a67a3"
             },
             {
-                "name": "color-marigold-400",
+                "name": "color-primary-medium-700",
                 "valueType": "value",
-                "value": "#fbc26a"
+                "value": "#275f96"
             },
             {
-                "name": "color-marigold-500",
+                "name": "color-primary-medium-800",
+                "valueType": "value",
+                "value": "#24588c"
+            },
+            {
+                "name": "color-primary-medium-900",
+                "valueType": "value",
+                "value": "#204f7d"
+            },
+            {
+                "name": "color-primary-medium-light",
+                "valueType": "value",
+                "value": "#0085cf"
+            },
+            {
+                "name": "color-primary-medium-light-100",
+                "valueType": "value",
+                "value": "#d6ebf7"
+            },
+            {
+                "name": "color-primary-medium-light-200",
+                "valueType": "value",
+                "value": "#c2e2f4"
+            },
+            {
+                "name": "color-primary-medium-light-300",
+                "valueType": "value",
+                "value": "#85c5e8"
+            },
+            {
+                "name": "color-primary-medium-light-400",
+                "valueType": "value",
+                "value": "#47a7dc"
+            },
+            {
+                "name": "color-primary-medium-light-500",
                 "valueType": "reference",
-                "value": "color-marigold"
+                "value": "color-primary-medium-light"
             },
             {
-                "name": "color-tomato-300",
+                "name": "color-primary-medium-light-600",
                 "valueType": "value",
-                "value": "#f5af9d"
+                "value": "#007ec2"
             },
             {
-                "name": "color-tomato-400",
+                "name": "color-primary-medium-light-700",
                 "valueType": "value",
-                "value": "#ef866c"
+                "value": "#0076b5"
             },
             {
-                "name": "color-tomato-500",
+                "name": "color-primary-medium-light-800",
+                "valueType": "value",
+                "value": "#006da8"
+            },
+            {
+                "name": "color-primary-medium-light-900",
+                "valueType": "value",
+                "value": "#00659c"
+            },
+            {
+                "name": "color-primary-light",
+                "valueType": "value",
+                "value": "#86b5e1"
+            },
+            {
+                "name": "color-primary-light-100",
+                "valueType": "value",
+                "value": "#ebf3fa"
+            },
+            {
+                "name": "color-primary-light-200",
+                "valueType": "value",
+                "value": "#e2edf8"
+            },
+            {
+                "name": "color-primary-light-300",
+                "valueType": "value",
+                "value": "#c5dcf1"
+            },
+            {
+                "name": "color-primary-light-400",
+                "valueType": "value",
+                "value": "#a7c9e9"
+            },
+            {
+                "name": "color-primary-light-500",
                 "valueType": "reference",
-                "value": "color-tomato"
+                "value": "color-primary-light"
+            },
+            {
+                "name": "color-primary-light-600",
+                "valueType": "value",
+                "value": "#7fabd4"
+            },
+            {
+                "name": "color-primary-light-700",
+                "valueType": "value",
+                "value": "#77a0c7"
+            },
+            {
+                "name": "color-primary-light-800",
+                "valueType": "value",
+                "value": "#7096ba"
+            },
+            {
+                "name": "color-primary-light-900",
+                "valueType": "value",
+                "value": "#688cad"
+            },
+            {
+                "name": "color-secondary-medium",
+                "valueType": "value",
+                "value": "#dfa13c"
+            },
+            {
+                "name": "color-secondary-medium-100",
+                "valueType": "value",
+                "value": "#faf0e0"
+            },
+            {
+                "name": "color-secondary-medium-200",
+                "valueType": "value",
+                "value": "#f8e9d0"
+            },
+            {
+                "name": "color-secondary-medium-300",
+                "valueType": "value",
+                "value": "#f0d2a2"
+            },
+            {
+                "name": "color-secondary-medium-400",
+                "valueType": "value",
+                "value": "#e8bb72"
+            },
+            {
+                "name": "color-secondary-medium-500",
+                "valueType": "reference",
+                "value": "color-secondary-medium"
+            },
+            {
+                "name": "color-secondary-medium-600",
+                "valueType": "value",
+                "value": "#d19738"
+            },
+            {
+                "name": "color-secondary-medium-700",
+                "valueType": "value",
+                "value": "#c48d35"
+            },
+            {
+                "name": "color-secondary-medium-800",
+                "valueType": "value",
+                "value": "#b88432"
+            },
+            {
+                "name": "color-secondary-medium-900",
+                "valueType": "value",
+                "value": "#ab7b2e"
+            },
+            {
+                "name": "color-secondary-light",
+                "valueType": "value",
+                "value": "#f3d8a2"
+            },
+            {
+                "name": "color-secondary-light-100",
+                "valueType": "value",
+                "value": "#fdf9f0"
+            },
+            {
+                "name": "color-secondary-light-200",
+                "valueType": "value",
+                "value": "#fcf6e9"
+            },
+            {
+                "name": "color-secondary-light-300",
+                "valueType": "value",
+                "value": "#faedd3"
+            },
+            {
+                "name": "color-secondary-light-400",
+                "valueType": "value",
+                "value": "#f6e3bc"
+            },
+            {
+                "name": "color-secondary-light-500",
+                "valueType": "reference",
+                "value": "color-secondary-light"
+            },
+            {
+                "name": "color-secondary-light-600",
+                "valueType": "value",
+                "value": "#e6cc9a"
+            },
+            {
+                "name": "color-secondary-light-700",
+                "valueType": "value",
+                "value": "#d9c191"
+            },
+            {
+                "name": "color-secondary-light-800",
+                "valueType": "value",
+                "value": "#ccb689"
+            },
+            {
+                "name": "color-secondary-light-900",
+                "valueType": "value",
+                "value": "#bfaa80"
+            },
+            {
+                "name": "color-text-dark",
+                "valueType": "reference",
+                "value": "color-base-800"
+            },
+            {
+                "name": "color-text-medium",
+                "valueType": "reference",
+                "value": "color-base-700"
+            },
+            {
+                "name": "color-text-light",
+                "valueType": "reference",
+                "value": "color-base-500"
+            },
+            {
+                "name": "color-text-white",
+                "valueType": "reference",
+                "value": "color-base-0"
+            },
+            {
+                "name": "color-text",
+                "valueType": "reference",
+                "value": "color-text-dark"
+            },
+            {
+                "name": "color-text-disabled",
+                "valueType": "reference",
+                "value": "color-text-light"
+            },
+            {
+                "name": "color-text-link",
+                "valueType": "reference",
+                "value": "color-primary-dark"
+            },
+            {
+                "name": "color-text-link-hover",
+                "valueType": "reference",
+                "value": "color-primary-medium"
+            },
+            {
+                "name": "color-text-link-on-dark",
+                "valueType": "reference",
+                "value": "color-text-white"
+            },
+            {
+                "name": "color-text-link-hover-on-dark",
+                "valueType": "reference",
+                "value": "color-secondary-light"
+            },
+            {
+                "name": "color-text-accent-dark",
+                "valueType": "reference",
+                "value": "color-primary-medium"
+            },
+            {
+                "name": "color-text-accent-medium",
+                "valueType": "reference",
+                "value": "color-primary-medium-light"
+            },
+            {
+                "name": "color-text-accent-light",
+                "valueType": "reference",
+                "value": "color-primary-light"
+            },
+            {
+                "name": "color-kelley-green",
+                "valueType": "value",
+                "value": "#009b3a"
+            },
+            {
+                "name": "color-kelley-green-100",
+                "valueType": "value",
+                "value": "#d6efdf"
+            },
+            {
+                "name": "color-kelley-green-200",
+                "valueType": "value",
+                "value": "#c2e7d0"
             },
             {
                 "name": "color-kelley-green-300",
@@ -352,14 +447,134 @@
                 "value": "color-kelley-green"
             },
             {
+                "name": "color-kelley-green-600",
+                "valueType": "value",
+                "value": "#008f34"
+            },
+            {
+                "name": "color-kelley-green-700",
+                "valueType": "value",
+                "value": "#008230"
+            },
+            {
+                "name": "color-kelley-green-800",
+                "valueType": "value",
+                "value": "#00752b"
+            },
+            {
+                "name": "color-kelley-green-900",
+                "valueType": "value",
+                "value": "#006926"
+            },
+            {
+                "name": "color-marigold",
+                "valueType": "value",
+                "value": "#fbbc05"
+            },
+            {
+                "name": "color-marigold-100",
+                "valueType": "value",
+                "value": "#fef1de"
+            },
+            {
+                "name": "color-marigold-200",
+                "valueType": "value",
+                "value": "#feebce"
+            },
+            {
+                "name": "color-marigold-300",
+                "valueType": "value",
+                "value": "#fdd79c"
+            },
+            {
+                "name": "color-marigold-400",
+                "valueType": "value",
+                "value": "#fbc26a"
+            },
+            {
+                "name": "color-marigold-500",
+                "valueType": "reference",
+                "value": "color-marigold"
+            },
+            {
+                "name": "color-marigold-600",
+                "valueType": "value",
+                "value": "#eda42d"
+            },
+            {
+                "name": "color-marigold-700",
+                "valueType": "value",
+                "value": "#e09b2b"
+            },
+            {
+                "name": "color-marigold-800",
+                "valueType": "value",
+                "value": "#d49228"
+            },
+            {
+                "name": "color-marigold-900",
+                "valueType": "value",
+                "value": "#c48d35"
+            },
+            {
+                "name": "color-tomato",
+                "valueType": "value",
+                "value": "#ea5833"
+            },
+            {
+                "name": "color-tomato-100",
+                "valueType": "value",
+                "value": "#FBE4DE"
+            },
+            {
+                "name": "color-tomato-200",
+                "valueType": "value",
+                "value": "#FAD7CE"
+            },
+            {
+                "name": "color-tomato-300",
+                "valueType": "value",
+                "value": "#f5af9d"
+            },
+            {
+                "name": "color-tomato-400",
+                "valueType": "value",
+                "value": "#ef866c"
+            },
+            {
+                "name": "color-tomato-500",
+                "valueType": "reference",
+                "value": "color-tomato"
+            },
+            {
+                "name": "color-tomato-600",
+                "valueType": "value",
+                "value": "#DE5331"
+            },
+            {
+                "name": "color-tomato-700",
+                "valueType": "value",
+                "value": "#D14F2E"
+            },
+            {
+                "name": "color-tomato-800",
+                "valueType": "value",
+                "value": "#C44A2B"
+            },
+            {
+                "name": "color-tomato-900",
+                "valueType": "value",
+                "value": "#B84528"
+            },
+            {
                 "name": "color-status-notstarted",
                 "valueType": "reference",
-                "value": "color-base-50"
+                "value": "color-base-400"
             },
             {
                 "name": "color-status-notstarted-light",
                 "valueType": "reference",
-                "value": "color-base-40"
+                "value": "color-base-300"
             },
             {
                 "name": "color-status-inprogress",

@@ -1,111 +1,158 @@
 //== Colors
 //
-// NOTE: when adding a color, also do the following:
-//
-// 1. add an entry in /docs/colors.md
-//    ex: {% colorswatch color-status-complete %}
-//
-// 2. add a labeled swatch rule for the color in /docs/site-styles/swatch/_styles.scss
-//    ex: .labeled-swatch-color-status-complete {
-//            @include swatch-with-label($color-status-complete);
-//        }
 
-
-//## Primary palette
-$color-primary-dark: #1c427b;
-$color-primary-dark-shadow: #173665;
-$color-primary-medium: #2e6fb1;
-$color-primary-medium-light: #0085cf;
-$color-primary-light: #86b5e1;
-
-//## Secondary palette
-$color-secondary-medium: #dfa13c;
-$color-secondary-light: #f3d8a2;
-$color-primary-sky-blue-medium: #397abd;
-$color-primary-sky-blue-light: #bbdbf2;
-$color-tomato: #ea5833;
-$color-kelley-green: #009b3a;
-$color-marigold: #fbbc05;
-
-//## Base palette
-$color-base-100: #000;
-$color-base-90: #333;
-$color-base-80: #666;
-$color-base-70: #8c8c8c;
-$color-base-60: #b3b3b3;
-
-$color-base-50: #ccc;
-$color-base-40: #ddd;
-$color-base-30: #eee;
-$color-base-20: #f5f5f5;
+//## Grayscale
 $color-base-0: #fff;
+$color-base-100: #f5f5f5;
+$color-base-200: #eee;
+$color-base-300: #ddd;
+$color-base-400: #ccc;
+$color-base-500: #b3b3b3;
+$color-base-600: #8c8c8c;
+$color-base-700: #666;
+$color-base-800: #333;
+$color-base-900: #000;
 
-//## Attention color palette
-$color-attention-error: $color-tomato;
 
-//## Typography palette
-$color-text-dark: $color-base-90;
-$color-text-medium: $color-base-80;
-$color-text-light: $color-base-60;
+//# Primary and Secondary Palette
+
+//## Primary Dark
+$color-primary-dark: #1c427b;
+$color-primary-dark-100: #dae1ea;
+$color-primary-dark-200: #c9d2e0;
+$color-primary-dark-300: #92a5c0;
+$color-primary-dark-400: #5b77a0;
+$color-primary-dark-500: $color-primary-dark;
+$color-primary-dark-600: #193b6e;
+$color-primary-dark-700: #163461;
+$color-primary-dark-800: #132d54;
+$color-primary-dark-900: #102647;
+
+//## Primary Medium
+$color-primary-medium: #2e6fb1;
+$color-primary-medium-100: #dde8f2;
+$color-primary-medium-200: #cdddec;
+$color-primary-medium-300: #9bbada;
+$color-primary-medium-400: #6897c6;
+$color-primary-medium-500: $color-primary-medium;
+$color-primary-medium-600: #2a67a3;
+$color-primary-medium-700: #275f96;
+$color-primary-medium-800: #24588c;
+$color-primary-medium-900: #204f7d;
+
+//## Primary Medium Light
+$color-primary-medium-light: #0085cf;
+$color-primary-medium-light-100: #d6ebf7;
+$color-primary-medium-light-200: #c2e2f4;
+$color-primary-medium-light-300: #85c5e8;
+$color-primary-medium-light-400: #47a7dc;
+$color-primary-medium-light-500: $color-primary-medium-light;
+$color-primary-medium-light-600: #007ec2;
+$color-primary-medium-light-700: #0076b5;
+$color-primary-medium-light-800: #006da8;
+$color-primary-medium-light-900: #00659c;
+
+//## Primary Light
+$color-primary-light: #86b5e1;
+$color-primary-light-100: #ebf3fa;
+$color-primary-light-200: #e2edf8;
+$color-primary-light-300: #c5dcf1;
+$color-primary-light-400: #a7c9e9;
+$color-primary-light-500: $color-primary-light;
+$color-primary-light-600: #7fabd4;
+$color-primary-light-700: #77a0c7;
+$color-primary-light-800: #7096ba;
+$color-primary-light-900: #688cad;
+
+//## Secondary Medium
+$color-secondary-medium: #dfa13c;
+$color-secondary-medium-100: #faf0e0;
+$color-secondary-medium-200: #f8e9d0;
+$color-secondary-medium-300: #f0d2a2;
+$color-secondary-medium-400: #e8bb72;
+$color-secondary-medium-500: $color-secondary-medium;
+$color-secondary-medium-600: #d19738;
+$color-secondary-medium-700: #c48d35;
+$color-secondary-medium-800: #b88432;
+$color-secondary-medium-900: #ab7b2e;
+
+//## Secondary Light
+$color-secondary-light: #f3d8a2;
+$color-secondary-light-100: #fdf9f0;
+$color-secondary-light-200: #fcf6e9;
+$color-secondary-light-300: #faedd3;
+$color-secondary-light-400: #f6e3bc;
+$color-secondary-light-500: $color-secondary-light;
+$color-secondary-light-600: #e6cc9a;
+$color-secondary-light-700: #d9c191;
+$color-secondary-light-800: #ccb689;
+$color-secondary-light-900: #bfaa80;
+
+//# Text Colors
+
+//## Text
+$color-text-dark: $color-base-800;
+$color-text-medium: $color-base-700;
+$color-text-light: $color-base-500;
 $color-text-white: $color-base-0;
-$color-text-default: $color-text-dark;
+$color-text: $color-text-dark;
 $color-text-disabled: $color-text-light;
-$color-text-link: $color-primary-dark;
 
+//## Link Text
+$color-text-link: $color-primary-dark;
+$color-text-link-hover: $color-primary-medium;
+$color-text-link-on-dark: $color-text-white;
+$color-text-link-hover-on-dark: $color-secondary-light;
+
+//## Accent Text
 $color-text-accent-dark: $color-primary-medium;
 $color-text-accent-medium: $color-primary-medium-light;
 $color-text-accent-light: $color-primary-light;
 
-//## Whitened Colors
-$color-primary-dark-05-over-white: #e1e6ee;
-$color-primary-dark-08-over-white: #edf0f5;
-$color-primary-dark-24-over-white: #d0e1f2;
-$color-primary-light-40-over-white: #a5bbd5;
-$color-primary-light-56-over-white: #9bb7da;
-$color-primary-dark-40-over-white: #7692be;
 
-//## Alpha Colors
-$color-primary-dark-05: rgba($color-primary-dark, 0.05);
-$color-primary-dark-08: rgba($color-primary-dark, 0.08);
-$color-primary-dark-24: rgba($color-primary-dark, 0.24);
-$color-primary-dark-40: rgba($color-primary-dark, 0.4);
-$color-primary-dark-48: rgba($color-primary-dark, 0.48);
-$color-primary-medium-48: rgba($color-primary-medium, 0.48);
-$color-primary-medium-40: rgba($color-primary-medium, 0.4);
-$color-primary-medium-light-56: rgba($color-primary-medium-light, 0.56);
-$color-primary-light-40: rgba($color-primary-light, 0.4);
-$color-primary-light-54: rgba($color-primary-light, 0.56);
-$color-primary-sky-blue-light-60: rgba($color-primary-sky-blue-light, 0.6);
-$color-tomato-48: rgba($color-tomato, 0.48);
-$color-tomato-08: rgba($color-tomato, 0.08);
-$color-kelley-green-48: rgba($color-kelley-green, 0.48);
-$color-kelley-green-08: rgba($color-kelley-green, 0.08);
-$color-base-50-24: rgba($color-base-50, 0.24);
-$color-base-90-40: rgba($color-base-90, 0.4);
-$color-marigold-48: rgba($color-marigold, 0.48);
-$color-marigold-08: rgba($color-marigold, 0.08);
+//# Status Colors
 
-//## Primary colors
-$color-primary-medium-300: #9bbada;
-$color-primary-medium-400: #6897c6;
-$color-primary-medium-500: $color-primary-medium;
-
-//## Yellow Colors
-$color-marigold-300: #fdd79c;
-$color-marigold-400: #fbc26a;
-$color-marigold-500: $color-marigold;
-
-//## Red Colors
-$color-tomato-300: #f5af9d;
-$color-tomato-400: #ef866c;
-$color-tomato-500: $color-tomato;
+//## Kelly Green Colors
+$color-kelley-green: #009b3a;
+$color-kelley-green-100: #d6efdf;
+$color-kelley-green-200: #c2e7d0;
 $color-kelley-green-300: #85cfa1;
 $color-kelley-green-400: #47b771;
 $color-kelley-green-500: $color-kelley-green;
+$color-kelley-green-600: #008f34;
+$color-kelley-green-700: #008230;
+$color-kelley-green-800: #00752b;
+$color-kelley-green-900: #006926;
 
-//## Status Colors
-$color-status-notstarted: $color-base-50;
-$color-status-notstarted-light: $color-base-40;
+//## Marigold Colors
+$color-marigold: #fbbc05;
+$color-marigold-100: #fef1de;
+$color-marigold-200: #feebce;
+$color-marigold-300: #fdd79c;
+$color-marigold-400: #fbc26a;
+$color-marigold-500: $color-marigold;
+$color-marigold-600: #eda42d;
+$color-marigold-700: #e09b2b;
+$color-marigold-800: #d49228;
+$color-marigold-900: #c48d35;
+
+//## Tomato Colors
+$color-tomato: #ea5833;
+$color-tomato-100: #FBE4DE;
+$color-tomato-200: #FAD7CE;
+$color-tomato-300: #f5af9d;
+$color-tomato-400: #ef866c;
+$color-tomato-500: $color-tomato;
+$color-tomato-600: #DE5331;
+$color-tomato-700: #D14F2E;
+$color-tomato-800: #C44A2B;
+$color-tomato-900: #B84528;
+
+//# Aliases
+
+//## Status
+$color-status-notstarted: $color-base-400;
+$color-status-notstarted-light: $color-base-300;
 $color-status-inprogress: $color-primary-medium-400;
 $color-status-inprogress-light: $color-primary-medium-300;
 $color-status-onhold: $color-marigold-400;

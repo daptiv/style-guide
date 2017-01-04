@@ -23,7 +23,7 @@
 }
 
 .daptiv-header {
-    background-color: $color-primary-dark;
+    background-color: $header-background-color;
 }
 
 .daptiv-grid {
@@ -70,7 +70,7 @@
 }
 
 .daptiv-copyright {
-    color: $color-base-0;
+    color: $copyright-text-color;
     display: block;
     font-size: $font-size-base;
     margin: 0;
@@ -79,8 +79,9 @@
     width: 100%;
 }
 
-.daptiv-container-bg {
-    background-color: $color-primary-dark;
+.daptiv-container-bg,
+.daptiv-container {
+    background-color: $container-background-color;
     background-image: radial-gradient(ellipse farthest-side at center top, $color-primary-medium 0%, $color-primary-dark 100%);
     background-position: top center;
     background-repeat: no-repeat;
@@ -91,7 +92,8 @@
 }
 
 .daptiv-footer {
-    background-image: radial-gradient(50% 99%, $color-primary-dark 0%, $color-primary-dark-shadow 100%);
+    //background-image: radial-gradient(50% 99%, $color-primary-dark 0%, $color-primary-dark-shadow 100%);
+    background-color: $footer-background-color;
     box-shadow: inset 0 3px 3px 0 $color-primary-dark-shadow;
     height: $daptiv-footer-height;
     width: 100%;
@@ -115,7 +117,7 @@
 
 .daptiv-message-container {
     background-color: $color-base-0;
-    border: $border-width-base inset $color-base-70;
+    border: $standard-border-width inset $color-base-70;
     border-radius: $daptiv-message-container-border-radius;
     color: $color-text-medium;
     display: flex;

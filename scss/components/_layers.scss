@@ -2,7 +2,7 @@
 //
 //## z-index values for different vertical layers
 
-// use for content that expressly overlapps it's neighbors
+// use for content that expressly overlaps it's neighbors
 $layer-over-siblings: 10;
 // use for any menus that are associated with content
 $layer-dropdown-menus: 100;
@@ -11,6 +11,5 @@ $layer-dropdown-menus: 100;
 $layer-messaging: 500;
 // overlays are used for global navigation and viewport positioned controls
 $layer-overlays: 1000;
-// site messaging is used for any message that should interupt full side
-// interactions
+// site messaging is used for any message that should interupt all interactions
 $layer-site-messaging: 10000;

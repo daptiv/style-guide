@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../_theme/css/default.css?cachebust=1.0.7" type="text/css">
 
 
-<title>OMG We So Stylish | daptiv-style-guide</title>
+<title>Scaffolding | daptiv-style-guide</title>
 
 </head>
 <body>
@@ -52,7 +52,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">OMG We So Stylish</h1>
+        <h1 class="Document-title">Scaffolding</h1>
         
 
 
@@ -69,15 +69,20 @@
 
     
     
-    <h1 id="welcome">Welcome</h1>
-<p>This is the page of docs. Here, we can doc.</p>
-<h2 id="check-out-these-colors">check out these colors</h2>
+    <p>Scaffolding refers to the global resets and dependencies that Daptiv is built upon.</p>
 <ul>
-<li>they’re cool</li>
-<li>they look cool</li>
-<li>they’re colors</li>
+<li>Will be replaced with the ToC, excluding the “Contents” header
+{:toc}</li>
 </ul>
-<code><pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button </span></span></span><span class="hljs-template-variable">{{mode}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{text}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></pre></code>
+<h2 id="html5-doctype">HTML5 doctype</h2>
+<p>We use certain HTML elements and CSS properties that <strong>require</strong> the use of the HTML5 doctype. Include it at the beginning of all your pages.</p>
+<p>{% highlight html %}
+&lt;!DOCTYPE html&gt;</p>
+<p><html lang="en">
+  …
+</html>
+{% endhighlight %}</p>
+
     
 
 
@@ -369,8 +374,8 @@
     
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="old.html" data-pjax>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Overview</span>
                 
             </a>
@@ -424,8 +429,8 @@
     
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="welcome.html" data-pjax>
                 <span>Welcome</span>
                 
             </a>

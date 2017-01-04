@@ -1,8 +1,23 @@
 $dropdown-font: $font-size-normal $font-family-base;
-$dropdown-bg: $color-base-50;
 
-$dropdown-item-border-size: $border-width-base;
+$dropdown-background: $color-base-400;
+$dropdown-text-color: $color-text-dark;
+
+$dropdown-item-background: $color-base-0;
+$dropdown-item-background-alt: $color-base-200;
+$dropdown-item-background-disabled: $color-base-0;
+$dropdown-item-background-hover: $color-secondary-light;
+
 $dropdown-item-border-color-focus: $color-primary-light;
+
+$dropdown-item-text-color: $dropdown-text-color;
+$dropdown-item-text-color-selected: $color-text-accent-dark;
+$dropdown-item-text-color-disabled: $color-text-disabled;
+
+$dropdown-label-background: $color-base-200;
+$dropdown-label-text-color: $dropdown-text-color;
+
+$dropdown-item-border-size: $standard-border-width;
 $dropdown-item-height: 28px;
 $dropdown-item-max-width: 300px;
 $dropdown-item-min-width: 150px;

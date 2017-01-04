@@ -2,15 +2,15 @@
 $button-bg: $color-primary-dark;
 $button-bg-hover: $color-primary-medium;
 $button-bg-active: $color-primary-medium-light;
-$button-bg-alternate: $color-base-80;
-$button-bg-alternate-hover: $color-base-70;
-$button-bg-alternate-active: $color-base-60;
-$button-bg-disabled: $color-base-40;
-$button-border: 1px solid $color-primary-dark-shadow;
+$button-bg-alternate: $color-base-700;
+$button-bg-alternate-hover: $color-base-600;
+$button-bg-alternate-active: $color-base-500;
+$button-bg-disabled: $color-base-300;
+$button-border: 1px solid $color-primary-dark-700;
 $button-border-radius: 1px;
 
-$button-color: $color-base-20;
-$button-color-disabled: $color-base-80;
+$button-color: $color-base-100;
+$button-color-disabled: $color-base-700;
 
 $button-font: $font-size-medium $font-family-base;
 $button-height: 32px;
