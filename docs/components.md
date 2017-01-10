@@ -44,7 +44,7 @@ Panel is a quick, easy way to display content with a title.
 
 ## Card
 
-Card for use in card lists
+Card for use in card lists. The below is an example card with titles and flag. 
 
 <script>
 var cardClassId = 0;
@@ -59,7 +59,7 @@ function cycleStatusClasses(el) {
 </script>
 
 {% snippet html %}
-<div class="card">
+<div class="card daptiv-padded">
     <section class="flex-row">
         <section class="flex-column">
             <div class="item-title block-component">
