@@ -129,6 +129,8 @@
         @include font-size-base();
 
     }
+}
 
-
+.daptiv-padded {
+    padding: $standard-whitespace-unit;
 }

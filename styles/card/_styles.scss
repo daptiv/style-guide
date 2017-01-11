@@ -3,13 +3,6 @@
     background-color: $card-background-color;
     border: 1px solid $card-border-color;
     color: $color-text-dark;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    overflow-wrap: break-word;
-    padding: $card-v-padding $card-padding;
-    text-align: left;
-    word-wrap: break-word;
 
     .item-title {
         line-height: $card-text-height-larger;
