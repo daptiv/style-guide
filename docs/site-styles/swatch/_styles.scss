@@ -19,6 +19,10 @@
     @include swatch-with-label($color-primary-medium);
 }
 
+.labeled-swatch-color-primary-medium-200 {
+    @include swatch-with-label($color-primary-medium-200);
+}
+
 .labeled-swatch-color-primary-medium-300 {
     @include swatch-with-label($color-primary-medium-300);
 }
