@@ -97,4 +97,12 @@
             width: $icon-size-xsmall;
         }
     }
+
+    &.bubble {
+        @include icon-small-block($fa-var-comment-o);
+    }
+
+    &.bubble-dots {
+        @include icon-small-block($fa-var-commenting-o);
+    }
 }
